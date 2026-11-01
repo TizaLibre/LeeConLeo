@@ -14,12 +14,12 @@
 | Testing | No test group: checklist, informal play-tests and an open beta ([06](06-roadmap.md) M3) |
 | Leo's design | Redesigned: a blond boy whose hair looks like a lion's mane, keeping the 2014 red vest, shorts and boots ([`content/STYLE.md`](../content/STYLE.md)) |
 | Where Stage 1 lives | Inside each step, as more game cards on its step screen ([03](03-activities.md)) |
+| Pictures | Drawn by hand as SVG, following [`content/STYLE.md`](../content/STYLE.md) |
+| Leo's voice | VoxCPM2 (Apache-2.0), pre-generated clips ([05](05-content-and-assets.md)) |
+| Code license | MIT ([`LICENSE`](../LICENSE)); content under [`LICENSE-CONTENT.md`](../LICENSE-CONTENT.md) |
 
 ## Still open
 
 | # | Question | Who can answer | Blocks |
 |---|---|---|---|
 | 1 | Is the proposed consonant order change (t and n earlier, k/w/x last, c/g split by sound) acceptable? | Teachers from the beta, or keep the 2014 order until then | M2 |
-| 2 | Do the SVG test drawings look good enough, or should most words be AI-generated? | José, after the first 10 drawings | M1 |
-| 3 | Which TTS voice (and license) sounds most natural to Chilean ears? | José, by listening to samples | M1 |
-| 4 | Code license: MIT (maximum reuse) or GPL-3.0 (forks must stay open)? | José | M0 |
