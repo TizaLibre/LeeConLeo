@@ -17,6 +17,7 @@ The 2014 code lives in the archived repository `LeeConLeo-Legacy` (see
 | 6 | [Roadmap](06-roadmap.md) | Milestones with acceptance criteria |
 | 7 | [Legacy repository](07-legacy.md) | What happens to the 2014 code |
 | 8 | [Open questions](08-open-questions.md) | Decisions still pending |
+| 9 | [Release](09-release.md) | Version, signing key, building for Google Play, privacy page, store checklist |
 
 ## Summary
 

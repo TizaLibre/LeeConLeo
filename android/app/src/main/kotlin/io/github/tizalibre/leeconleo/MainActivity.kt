@@ -1,4 +1,4 @@
-package io.github.joseortiz.lee_con_leo
+package io.github.tizalibre.leeconleo
 
 import io.flutter.embedding.android.FlutterActivity
 
