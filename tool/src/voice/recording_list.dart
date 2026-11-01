@@ -8,6 +8,7 @@ class RecordingList {
   factory RecordingList.missing(
     ContentBundle bundle, {
     required bool Function(String audioPath) hasAudio,
+    Map<String, String> recordedTexts = const {},
     Set<String> redo = const {},
   }) {
     final prompts = bundle.prompts;
@@ -15,7 +16,9 @@ class RecordingList {
       phrases: [
         for (final MapEntry(key: id, value: variants) in prompts.phrases.entries)
           for (final (index, text) in variants.indexed)
-            if (redo.contains(id) || !prompts.clips.containsKey(PromptLibrary.clipKey(id, index)))
+            if (redo.contains(id) ||
+                !prompts.clips.containsKey(PromptLibrary.clipKey(id, index)) ||
+                _changed(recordedTexts[PromptLibrary.clipKey(id, index)], text))
               {'promptId': id, 'index': index, 'text': text},
       ],
       words: [
@@ -33,6 +36,8 @@ class RecordingList {
       }.toList(),
     );
   }
+
+  static bool _changed(String? recorded, String text) => recorded != null && recorded != text;
 
   static const vowelPrefix = 'vowel.';
   static const syllablePrefix = 'syllable.';

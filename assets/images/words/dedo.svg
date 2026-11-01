@@ -1,13 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
-<ellipse cx="216" cy="372" rx="90" ry="14" fill="#3B2A20" fill-opacity="0.15"/>
-<rect x="166" y="300" width="100" height="64" rx="14" fill="#D8433B" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-<rect x="146" y="24" width="52" height="200" rx="26" fill="#F6C9A3" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-<rect x="159" y="38" width="26" height="28" rx="11" fill="#FFF4DC" stroke="#3B2A20" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M142 196 Q142 168 170 168 L262 168 Q298 168 298 206 L298 270 Q298 322 240 326 L196 326 Q142 322 142 270 Z" fill="#F6C9A3" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-<rect x="150" y="150" width="44" height="40" fill="#F6C9A3"/>
-<rect x="240" y="168" width="72" height="44" rx="22" fill="#F6C9A3" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-<rect x="240" y="210" width="72" height="44" rx="22" fill="#F6C9A3" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-<rect x="240" y="252" width="66" height="44" rx="22" fill="#F6C9A3" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M146 214 Q146 172 170 172 L244 172 L244 300 Q240 320 210 322 L196 322 Q146 318 146 270 Z" fill="#F6C9A3"/>
-<rect x="128" y="230" width="128" height="44" rx="22" transform="rotate(-12 192 252)" fill="#F6C9A3" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="214" cy="372" rx="90" ry="14" fill="#3B2A20" fill-opacity="0.15"/>
+<rect x="164" y="300" width="100" height="64" rx="14" fill="#D8433B" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="146" y="24" width="56" height="200" rx="28" fill="#F6C9A3" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="161" y="38" width="26" height="28" rx="11" fill="#FFF4DC" stroke="#3B2A20" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M140 200 Q140 170 170 170 L268 170 Q296 170 296 200 L296 276 Q296 326 244 326 L190 326 Q140 326 140 276 Z" fill="#F6C9A3" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="150" y="150" width="48" height="40" fill="#F6C9A3"/>
+<rect x="194" y="174" width="106" height="50" rx="25" fill="#F6C9A3" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="194" y="222" width="106" height="50" rx="25" fill="#F6C9A3" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="198" y="270" width="96" height="48" rx="24" fill="#F6C9A3" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="126" y="226" width="150" height="52" rx="26" transform="rotate(-14 200 252)" fill="#F6C9A3" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M140 236 L140 286 L150 300" fill="none" stroke="#F6C9A3" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="248" cy="236" rx="15" ry="12" transform="rotate(-14 248 236)" fill="#FFF4DC" stroke="#3B2A20" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
 </svg>

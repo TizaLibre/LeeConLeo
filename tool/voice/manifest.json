@@ -13,12 +13,19 @@
       "e": "Ee",
       "i": "Ii",
       "o": "Oo",
-      "u": "Uu"
+      "u": "¡U!"
     },
     "wordSpellings": {
       "ojo": "¡Ojo!",
       "pato": "Pato,",
-      "escoba": "¡Escoba!"
+      "escoba": "¡Escoba!",
+      "humo": "Umo.",
+      "lápiz": "¡Lápiz!",
+      "león": "¡León!",
+      "melón": "Un melón",
+      "mono": "Un mono",
+      "pomelo": "¡Pomelo!",
+      "zorrillo": "Zorrillo."
     }
   },
   "clips": [
@@ -169,409 +176,409 @@
     {
       "promptId": "letter.meet.a",
       "index": 0,
-      "text": "Esta es la, a. ¡La, a de abeja! ¡Tócala!",
+      "text": "Esta es la... a. ¡La... a de abeja! ¡Tócala!",
       "file": "assets/audio/prompts/letter.meet.a.0.m4a"
     },
     {
       "promptId": "letter.meet.a.upper",
       "index": 0,
-      "text": "Toca la, a mayúscula.",
+      "text": "Toca la... a mayúscula.",
       "file": "assets/audio/prompts/letter.meet.a.upper.0.m4a"
     },
     {
       "promptId": "letter.meet.a.lower",
       "index": 0,
-      "text": "Toca la, a minúscula.",
+      "text": "Toca la... a minúscula.",
       "file": "assets/audio/prompts/letter.meet.a.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.a.lower",
       "index": 0,
-      "text": "Repasa la, a minúscula con tu dedo.",
+      "text": "Repasa la... a minúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.a.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.a.upper",
       "index": 0,
-      "text": "Repasa la, a mayúscula con tu dedo.",
+      "text": "Repasa la... a mayúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.a.upper.0.m4a"
     },
     {
       "promptId": "letter.find.a",
       "index": 0,
-      "text": "Revienta las burbujas que tienen la, a.",
+      "text": "Revienta las burbujas que tienen la... a.",
       "file": "assets/audio/prompts/letter.find.a.0.m4a"
     },
     {
       "promptId": "letter.meet.e",
       "index": 0,
-      "text": "Esta es la, e. ¡La, e de elefante! ¡Tócala!",
+      "text": "Esta es la... e. ¡La... e de elefante! ¡Tócala!",
       "file": "assets/audio/prompts/letter.meet.e.0.m4a"
     },
     {
       "promptId": "letter.meet.e.upper",
       "index": 0,
-      "text": "Toca la, e mayúscula.",
+      "text": "Toca la... e mayúscula.",
       "file": "assets/audio/prompts/letter.meet.e.upper.0.m4a"
     },
     {
       "promptId": "letter.meet.e.lower",
       "index": 0,
-      "text": "Toca la, e minúscula.",
+      "text": "Toca la... e minúscula.",
       "file": "assets/audio/prompts/letter.meet.e.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.e.lower",
       "index": 0,
-      "text": "Repasa la, e minúscula con tu dedo.",
+      "text": "Repasa la... e minúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.e.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.e.upper",
       "index": 0,
-      "text": "Repasa la, e mayúscula con tu dedo.",
+      "text": "Repasa la... e mayúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.e.upper.0.m4a"
     },
     {
       "promptId": "letter.find.e",
       "index": 0,
-      "text": "Revienta las burbujas que tienen la, e.",
+      "text": "Revienta las burbujas que tienen la... e.",
       "file": "assets/audio/prompts/letter.find.e.0.m4a"
     },
     {
       "promptId": "letter.meet.i",
       "index": 0,
-      "text": "Esta es la, i. ¡La, i de iglú! ¡Tócala!",
+      "text": "Esta es la... i. ¡La... i de iglú! ¡Tócala!",
       "file": "assets/audio/prompts/letter.meet.i.0.m4a"
     },
     {
       "promptId": "letter.meet.i.upper",
       "index": 0,
-      "text": "Toca la, i mayúscula.",
+      "text": "Toca la... i mayúscula.",
       "file": "assets/audio/prompts/letter.meet.i.upper.0.m4a"
     },
     {
       "promptId": "letter.meet.i.lower",
       "index": 0,
-      "text": "Toca la, i minúscula.",
+      "text": "Toca la... i minúscula.",
       "file": "assets/audio/prompts/letter.meet.i.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.i.lower",
       "index": 0,
-      "text": "Repasa la, i minúscula con tu dedo.",
+      "text": "Repasa la... i minúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.i.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.i.upper",
       "index": 0,
-      "text": "Repasa la, i mayúscula con tu dedo.",
+      "text": "Repasa la... i mayúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.i.upper.0.m4a"
     },
     {
       "promptId": "letter.find.i",
       "index": 0,
-      "text": "Revienta las burbujas que tienen la, i.",
+      "text": "Revienta las burbujas que tienen la... i.",
       "file": "assets/audio/prompts/letter.find.i.0.m4a"
     },
     {
       "promptId": "letter.meet.o",
       "index": 0,
-      "text": "Esta es la, o. ¡La, o de oso! ¡Tócala!",
+      "text": "Esta es la... o. ¡La... o de oso! ¡Tócala!",
       "file": "assets/audio/prompts/letter.meet.o.0.m4a"
     },
     {
       "promptId": "letter.meet.o.upper",
       "index": 0,
-      "text": "Toca la, o mayúscula.",
+      "text": "Toca la... o mayúscula.",
       "file": "assets/audio/prompts/letter.meet.o.upper.0.m4a"
     },
     {
       "promptId": "letter.meet.o.lower",
       "index": 0,
-      "text": "Toca la, o minúscula.",
+      "text": "Toca la... o minúscula.",
       "file": "assets/audio/prompts/letter.meet.o.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.o.lower",
       "index": 0,
-      "text": "Repasa la, o minúscula con tu dedo.",
+      "text": "Repasa la... o minúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.o.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.o.upper",
       "index": 0,
-      "text": "Repasa la, o mayúscula con tu dedo.",
+      "text": "Repasa la... o mayúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.o.upper.0.m4a"
     },
     {
       "promptId": "letter.find.o",
       "index": 0,
-      "text": "Revienta las burbujas que tienen la, o.",
+      "text": "Revienta las burbujas que tienen la... o.",
       "file": "assets/audio/prompts/letter.find.o.0.m4a"
     },
     {
       "promptId": "letter.meet.u",
       "index": 0,
-      "text": "Esta es la, u. ¡La, u de uva! ¡Tócala!",
+      "text": "Esta es la... u. ¡La... u de uva! ¡Tócala!",
       "file": "assets/audio/prompts/letter.meet.u.0.m4a"
     },
     {
       "promptId": "letter.meet.u.upper",
       "index": 0,
-      "text": "Toca la, u mayúscula.",
+      "text": "Toca la... u mayúscula.",
       "file": "assets/audio/prompts/letter.meet.u.upper.0.m4a"
     },
     {
       "promptId": "letter.meet.u.lower",
       "index": 0,
-      "text": "Toca la, u minúscula.",
+      "text": "Toca la... u minúscula.",
       "file": "assets/audio/prompts/letter.meet.u.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.u.lower",
       "index": 0,
-      "text": "Repasa la, u minúscula con tu dedo.",
+      "text": "Repasa la... u minúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.u.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.u.upper",
       "index": 0,
-      "text": "Repasa la, u mayúscula con tu dedo.",
+      "text": "Repasa la... u mayúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.u.upper.0.m4a"
     },
     {
       "promptId": "letter.find.u",
       "index": 0,
-      "text": "Revienta las burbujas que tienen la, u.",
+      "text": "Revienta las burbujas que tienen la... u.",
       "file": "assets/audio/prompts/letter.find.u.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.a",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, a?",
+      "text": "¿Qué dibujo empieza con... a?",
       "file": "assets/audio/prompts/syllables.starts_with.a.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.e",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, e?",
+      "text": "¿Qué dibujo empieza con... e?",
       "file": "assets/audio/prompts/syllables.starts_with.e.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.i",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, i?",
+      "text": "¿Qué dibujo empieza con... i?",
       "file": "assets/audio/prompts/syllables.starts_with.i.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.o",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, o?",
+      "text": "¿Qué dibujo empieza con... o?",
       "file": "assets/audio/prompts/syllables.starts_with.o.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.u",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, u?",
+      "text": "¿Qué dibujo empieza con... u?",
       "file": "assets/audio/prompts/syllables.starts_with.u.0.m4a"
     },
     {
       "promptId": "letter.meet.m",
       "index": 0,
-      "text": "Esta es la, eme. ¡La, eme de mesa! ¡Tócala!",
+      "text": "Esta es la... eme. ¡La... eme de mesa! ¡Tócala!",
       "file": "assets/audio/prompts/letter.meet.m.0.m4a"
     },
     {
       "promptId": "letter.meet.m.upper",
       "index": 0,
-      "text": "Toca la, eme mayúscula.",
+      "text": "Toca la... eme mayúscula.",
       "file": "assets/audio/prompts/letter.meet.m.upper.0.m4a"
     },
     {
       "promptId": "letter.meet.m.lower",
       "index": 0,
-      "text": "Toca la, eme minúscula.",
+      "text": "Toca la... eme minúscula.",
       "file": "assets/audio/prompts/letter.meet.m.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.m.lower",
       "index": 0,
-      "text": "Repasa la, eme minúscula con tu dedo.",
+      "text": "Repasa la... eme minúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.m.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.m.upper",
       "index": 0,
-      "text": "Repasa la, eme mayúscula con tu dedo.",
+      "text": "Repasa la... eme mayúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.m.upper.0.m4a"
     },
     {
       "promptId": "letter.find.m",
       "index": 0,
-      "text": "Revienta las burbujas que tienen la, eme.",
+      "text": "Revienta las burbujas que tienen la... eme.",
       "file": "assets/audio/prompts/letter.find.m.0.m4a"
     },
     {
       "promptId": "letter.meet.p",
       "index": 0,
-      "text": "Esta es la, pe. ¡La, pe de pelota! ¡Tócala!",
+      "text": "Esta es la... pe. ¡La... pe de pelota! ¡Tócala!",
       "file": "assets/audio/prompts/letter.meet.p.0.m4a"
     },
     {
       "promptId": "letter.meet.p.upper",
       "index": 0,
-      "text": "Toca la, pe mayúscula.",
+      "text": "Toca la... pe mayúscula.",
       "file": "assets/audio/prompts/letter.meet.p.upper.0.m4a"
     },
     {
       "promptId": "letter.meet.p.lower",
       "index": 0,
-      "text": "Toca la, pe minúscula.",
+      "text": "Toca la... pe minúscula.",
       "file": "assets/audio/prompts/letter.meet.p.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.p.lower",
       "index": 0,
-      "text": "Repasa la, pe minúscula con tu dedo.",
+      "text": "Repasa la... pe minúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.p.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.p.upper",
       "index": 0,
-      "text": "Repasa la, pe mayúscula con tu dedo.",
+      "text": "Repasa la... pe mayúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.p.upper.0.m4a"
     },
     {
       "promptId": "letter.find.p",
       "index": 0,
-      "text": "Revienta las burbujas que tienen la, pe.",
+      "text": "Revienta las burbujas que tienen la... pe.",
       "file": "assets/audio/prompts/letter.find.p.0.m4a"
     },
     {
       "promptId": "letter.meet.l",
       "index": 0,
-      "text": "Esta es la, ele. ¡La, ele de luna! ¡Tócala!",
+      "text": "Esta es la... ele. ¡La... ele de luna! ¡Tócala!",
       "file": "assets/audio/prompts/letter.meet.l.0.m4a"
     },
     {
       "promptId": "letter.meet.l.upper",
       "index": 0,
-      "text": "Toca la, ele mayúscula.",
+      "text": "Toca la... ele mayúscula.",
       "file": "assets/audio/prompts/letter.meet.l.upper.0.m4a"
     },
     {
       "promptId": "letter.meet.l.lower",
       "index": 0,
-      "text": "Toca la, ele minúscula.",
+      "text": "Toca la... ele minúscula.",
       "file": "assets/audio/prompts/letter.meet.l.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.l.lower",
       "index": 0,
-      "text": "Repasa la, ele minúscula con tu dedo.",
+      "text": "Repasa la... ele minúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.l.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.l.upper",
       "index": 0,
-      "text": "Repasa la, ele mayúscula con tu dedo.",
+      "text": "Repasa la... ele mayúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.l.upper.0.m4a"
     },
     {
       "promptId": "letter.find.l",
       "index": 0,
-      "text": "Revienta las burbujas que tienen la, ele.",
+      "text": "Revienta las burbujas que tienen la... ele.",
       "file": "assets/audio/prompts/letter.find.l.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.ma",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, ma?",
+      "text": "¿Qué dibujo empieza con... ma?",
       "file": "assets/audio/prompts/syllables.starts_with.ma.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.me",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, me?",
+      "text": "¿Qué dibujo empieza con... me?",
       "file": "assets/audio/prompts/syllables.starts_with.me.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.mi",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, mi?",
+      "text": "¿Qué dibujo empieza con... mi?",
       "file": "assets/audio/prompts/syllables.starts_with.mi.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.mo",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, mo?",
+      "text": "¿Qué dibujo empieza con... mo?",
       "file": "assets/audio/prompts/syllables.starts_with.mo.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.mu",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, mu?",
+      "text": "¿Qué dibujo empieza con... mu?",
       "file": "assets/audio/prompts/syllables.starts_with.mu.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.pa",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, pa?",
+      "text": "¿Qué dibujo empieza con... pa?",
       "file": "assets/audio/prompts/syllables.starts_with.pa.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.pe",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, pe?",
+      "text": "¿Qué dibujo empieza con... pe?",
       "file": "assets/audio/prompts/syllables.starts_with.pe.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.pi",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, pi?",
+      "text": "¿Qué dibujo empieza con... pi?",
       "file": "assets/audio/prompts/syllables.starts_with.pi.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.po",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, po?",
+      "text": "¿Qué dibujo empieza con... po?",
       "file": "assets/audio/prompts/syllables.starts_with.po.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.pu",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, pu?",
+      "text": "¿Qué dibujo empieza con... pu?",
       "file": "assets/audio/prompts/syllables.starts_with.pu.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.la",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, la?",
+      "text": "¿Qué dibujo empieza con... la?",
       "file": "assets/audio/prompts/syllables.starts_with.la.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.le",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, le?",
+      "text": "¿Qué dibujo empieza con... le?",
       "file": "assets/audio/prompts/syllables.starts_with.le.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.li",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, li?",
+      "text": "¿Qué dibujo empieza con... li?",
       "file": "assets/audio/prompts/syllables.starts_with.li.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.lo",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, lo?",
+      "text": "¿Qué dibujo empieza con... lo?",
       "file": "assets/audio/prompts/syllables.starts_with.lo.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.lu",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, lu?",
+      "text": "¿Qué dibujo empieza con... lu?",
       "file": "assets/audio/prompts/syllables.starts_with.lu.0.m4a"
     },
     {
@@ -607,7 +614,7 @@
       "index": 0,
       "text": "u",
       "file": "assets/audio/sounds/vowel.u.m4a",
-      "spokenAs": "Aa... Ee... Ii... Oo... Uu."
+      "spokenAs": "Aa... Ee... Ii... Oo... ¡U!."
     },
     {
       "promptId": "syllable.ma",
@@ -845,7 +852,7 @@
       "index": 0,
       "text": "león",
       "file": "assets/audio/words/leon.m4a",
-      "spokenAs": "León."
+      "spokenAs": "¡León!"
     },
     {
       "promptId": "word.libro",
@@ -887,7 +894,7 @@
       "index": 0,
       "text": "lápiz",
       "file": "assets/audio/words/lapiz.m4a",
-      "spokenAs": "Lápiz."
+      "spokenAs": "¡Lápiz!"
     },
     {
       "promptId": "word.mano",
@@ -908,7 +915,8 @@
       "index": 0,
       "text": "melón",
       "file": "assets/audio/words/melon.m4a",
-      "spokenAs": "Melón."
+      "spokenAs": "Un melón",
+      "cutAtSeconds": 0.19
     },
     {
       "promptId": "word.microfono",
@@ -938,7 +946,8 @@
       "index": 0,
       "text": "mono",
       "file": "assets/audio/words/mono.m4a",
-      "spokenAs": "Mono."
+      "spokenAs": "Un mono",
+      "cutAtSeconds": 0.22
     },
     {
       "promptId": "word.murcielago",
@@ -1065,397 +1074,397 @@
     {
       "promptId": "syllables.meet.ma",
       "index": 0,
-      "text": "La, eme, y la, a, juntas dicen, ma. ¡Toca, ma!",
+      "text": "Juntas dicen... ma. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.ma.0.m4a"
     },
     {
       "promptId": "syllables.meet.ma.choose",
       "index": 0,
-      "text": "¿Dónde dice, ma? ¡Tócala!",
+      "text": "¿Dónde dice... ma? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.ma.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.ma",
       "index": 0,
-      "text": "Escribe, ma, con tu dedo.",
+      "text": "Escribe... ma... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.ma.0.m4a"
     },
     {
       "promptId": "syllables.find.ma",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, ma.",
+      "text": "Revienta las burbujas que dicen... ma.",
       "file": "assets/audio/prompts/syllables.find.ma.0.m4a"
     },
     {
       "promptId": "syllables.meet.me",
       "index": 0,
-      "text": "La, eme, y la, e, juntas dicen, me. ¡Toca, me!",
+      "text": "Juntas dicen... me. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.me.0.m4a"
     },
     {
       "promptId": "syllables.meet.me.choose",
       "index": 0,
-      "text": "¿Dónde dice, me? ¡Tócala!",
+      "text": "¿Dónde dice... me? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.me.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.me",
       "index": 0,
-      "text": "Escribe, me, con tu dedo.",
+      "text": "Escribe... me... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.me.0.m4a"
     },
     {
       "promptId": "syllables.find.me",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, me.",
+      "text": "Revienta las burbujas que dicen... me.",
       "file": "assets/audio/prompts/syllables.find.me.0.m4a"
     },
     {
       "promptId": "syllables.meet.mi",
       "index": 0,
-      "text": "La, eme, y la, i, juntas dicen, mi. ¡Toca, mi!",
+      "text": "Juntas dicen... mi. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.mi.0.m4a"
     },
     {
       "promptId": "syllables.meet.mi.choose",
       "index": 0,
-      "text": "¿Dónde dice, mi? ¡Tócala!",
+      "text": "¿Dónde dice... mi? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.mi.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.mi",
       "index": 0,
-      "text": "Escribe, mi, con tu dedo.",
+      "text": "Escribe... mi... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.mi.0.m4a"
     },
     {
       "promptId": "syllables.find.mi",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, mi.",
+      "text": "Revienta las burbujas que dicen... mi.",
       "file": "assets/audio/prompts/syllables.find.mi.0.m4a"
     },
     {
       "promptId": "syllables.meet.mo",
       "index": 0,
-      "text": "La, eme, y la, o, juntas dicen, mo. ¡Toca, mo!",
+      "text": "Juntas dicen... mo. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.mo.0.m4a"
     },
     {
       "promptId": "syllables.meet.mo.choose",
       "index": 0,
-      "text": "¿Dónde dice, mo? ¡Tócala!",
+      "text": "¿Dónde dice... mo? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.mo.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.mo",
       "index": 0,
-      "text": "Escribe, mo, con tu dedo.",
+      "text": "Escribe... mo... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.mo.0.m4a"
     },
     {
       "promptId": "syllables.find.mo",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, mo.",
+      "text": "Revienta las burbujas que dicen... mo.",
       "file": "assets/audio/prompts/syllables.find.mo.0.m4a"
     },
     {
       "promptId": "syllables.meet.mu",
       "index": 0,
-      "text": "La, eme, y la, u, juntas dicen, mu. ¡Toca, mu!",
+      "text": "Juntas dicen... mu. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.mu.0.m4a"
     },
     {
       "promptId": "syllables.meet.mu.choose",
       "index": 0,
-      "text": "¿Dónde dice, mu? ¡Tócala!",
+      "text": "¿Dónde dice... mu? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.mu.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.mu",
       "index": 0,
-      "text": "Escribe, mu, con tu dedo.",
+      "text": "Escribe... mu... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.mu.0.m4a"
     },
     {
       "promptId": "syllables.find.mu",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, mu.",
+      "text": "Revienta las burbujas que dicen... mu.",
       "file": "assets/audio/prompts/syllables.find.mu.0.m4a"
     },
     {
       "promptId": "syllables.meet.pa",
       "index": 0,
-      "text": "La, pe, y la, a, juntas dicen, pa. ¡Toca, pa!",
+      "text": "Juntas dicen... pa. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.pa.0.m4a"
     },
     {
       "promptId": "syllables.meet.pa.choose",
       "index": 0,
-      "text": "¿Dónde dice, pa? ¡Tócala!",
+      "text": "¿Dónde dice... pa? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.pa.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.pa",
       "index": 0,
-      "text": "Escribe, pa, con tu dedo.",
+      "text": "Escribe... pa... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.pa.0.m4a"
     },
     {
       "promptId": "syllables.find.pa",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, pa.",
+      "text": "Revienta las burbujas que dicen... pa.",
       "file": "assets/audio/prompts/syllables.find.pa.0.m4a"
     },
     {
       "promptId": "syllables.meet.pe",
       "index": 0,
-      "text": "La, pe, y la, e, juntas dicen, pe. ¡Toca, pe!",
+      "text": "Juntas dicen... pe. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.pe.0.m4a"
     },
     {
       "promptId": "syllables.meet.pe.choose",
       "index": 0,
-      "text": "¿Dónde dice, pe? ¡Tócala!",
+      "text": "¿Dónde dice... pe? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.pe.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.pe",
       "index": 0,
-      "text": "Escribe, pe, con tu dedo.",
+      "text": "Escribe... pe... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.pe.0.m4a"
     },
     {
       "promptId": "syllables.find.pe",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, pe.",
+      "text": "Revienta las burbujas que dicen... pe.",
       "file": "assets/audio/prompts/syllables.find.pe.0.m4a"
     },
     {
       "promptId": "syllables.meet.pi",
       "index": 0,
-      "text": "La, pe, y la, i, juntas dicen, pi. ¡Toca, pi!",
+      "text": "Juntas dicen... pi. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.pi.0.m4a"
     },
     {
       "promptId": "syllables.meet.pi.choose",
       "index": 0,
-      "text": "¿Dónde dice, pi? ¡Tócala!",
+      "text": "¿Dónde dice... pi? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.pi.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.pi",
       "index": 0,
-      "text": "Escribe, pi, con tu dedo.",
+      "text": "Escribe... pi... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.pi.0.m4a"
     },
     {
       "promptId": "syllables.find.pi",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, pi.",
+      "text": "Revienta las burbujas que dicen... pi.",
       "file": "assets/audio/prompts/syllables.find.pi.0.m4a"
     },
     {
       "promptId": "syllables.meet.po",
       "index": 0,
-      "text": "La, pe, y la, o, juntas dicen, po. ¡Toca, po!",
+      "text": "Juntas dicen... po. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.po.0.m4a"
     },
     {
       "promptId": "syllables.meet.po.choose",
       "index": 0,
-      "text": "¿Dónde dice, po? ¡Tócala!",
+      "text": "¿Dónde dice... po? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.po.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.po",
       "index": 0,
-      "text": "Escribe, po, con tu dedo.",
+      "text": "Escribe... po... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.po.0.m4a"
     },
     {
       "promptId": "syllables.find.po",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, po.",
+      "text": "Revienta las burbujas que dicen... po.",
       "file": "assets/audio/prompts/syllables.find.po.0.m4a"
     },
     {
       "promptId": "syllables.meet.pu",
       "index": 0,
-      "text": "La, pe, y la, u, juntas dicen, pu. ¡Toca, pu!",
+      "text": "Juntas dicen... pu. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.pu.0.m4a"
     },
     {
       "promptId": "syllables.meet.pu.choose",
       "index": 0,
-      "text": "¿Dónde dice, pu? ¡Tócala!",
+      "text": "¿Dónde dice... pu? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.pu.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.pu",
       "index": 0,
-      "text": "Escribe, pu, con tu dedo.",
+      "text": "Escribe... pu... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.pu.0.m4a"
     },
     {
       "promptId": "syllables.find.pu",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, pu.",
+      "text": "Revienta las burbujas que dicen... pu.",
       "file": "assets/audio/prompts/syllables.find.pu.0.m4a"
     },
     {
       "promptId": "syllables.meet.la",
       "index": 0,
-      "text": "La, ele, y la, a, juntas dicen, la. ¡Toca, la!",
+      "text": "Juntas dicen... la. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.la.0.m4a"
     },
     {
       "promptId": "syllables.meet.la.choose",
       "index": 0,
-      "text": "¿Dónde dice, la? ¡Tócala!",
+      "text": "¿Dónde dice... la? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.la.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.la",
       "index": 0,
-      "text": "Escribe, la, con tu dedo.",
+      "text": "Escribe... la... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.la.0.m4a"
     },
     {
       "promptId": "syllables.find.la",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, la.",
+      "text": "Revienta las burbujas que dicen... la.",
       "file": "assets/audio/prompts/syllables.find.la.0.m4a"
     },
     {
       "promptId": "syllables.meet.le",
       "index": 0,
-      "text": "La, ele, y la, e, juntas dicen, le. ¡Toca, le!",
+      "text": "Juntas dicen... le. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.le.0.m4a"
     },
     {
       "promptId": "syllables.meet.le.choose",
       "index": 0,
-      "text": "¿Dónde dice, le? ¡Tócala!",
+      "text": "¿Dónde dice... le? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.le.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.le",
       "index": 0,
-      "text": "Escribe, le, con tu dedo.",
+      "text": "Escribe... le... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.le.0.m4a"
     },
     {
       "promptId": "syllables.find.le",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, le.",
+      "text": "Revienta las burbujas que dicen... le.",
       "file": "assets/audio/prompts/syllables.find.le.0.m4a"
     },
     {
       "promptId": "syllables.meet.li",
       "index": 0,
-      "text": "La, ele, y la, i, juntas dicen, li. ¡Toca, li!",
+      "text": "Juntas dicen... li. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.li.0.m4a"
     },
     {
       "promptId": "syllables.meet.li.choose",
       "index": 0,
-      "text": "¿Dónde dice, li? ¡Tócala!",
+      "text": "¿Dónde dice... li? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.li.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.li",
       "index": 0,
-      "text": "Escribe, li, con tu dedo.",
+      "text": "Escribe... li... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.li.0.m4a"
     },
     {
       "promptId": "syllables.find.li",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, li.",
+      "text": "Revienta las burbujas que dicen... li.",
       "file": "assets/audio/prompts/syllables.find.li.0.m4a"
     },
     {
       "promptId": "syllables.meet.lo",
       "index": 0,
-      "text": "La, ele, y la, o, juntas dicen, lo. ¡Toca, lo!",
+      "text": "Juntas dicen... lo. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.lo.0.m4a"
     },
     {
       "promptId": "syllables.meet.lo.choose",
       "index": 0,
-      "text": "¿Dónde dice, lo? ¡Tócala!",
+      "text": "¿Dónde dice... lo? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.lo.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.lo",
       "index": 0,
-      "text": "Escribe, lo, con tu dedo.",
+      "text": "Escribe... lo... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.lo.0.m4a"
     },
     {
       "promptId": "syllables.find.lo",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, lo.",
+      "text": "Revienta las burbujas que dicen... lo.",
       "file": "assets/audio/prompts/syllables.find.lo.0.m4a"
     },
     {
       "promptId": "syllables.meet.lu",
       "index": 0,
-      "text": "La, ele, y la, u, juntas dicen, lu. ¡Toca, lu!",
+      "text": "Juntas dicen... lu. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.lu.0.m4a"
     },
     {
       "promptId": "syllables.meet.lu.choose",
       "index": 0,
-      "text": "¿Dónde dice, lu? ¡Tócala!",
+      "text": "¿Dónde dice... lu? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.lu.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.lu",
       "index": 0,
-      "text": "Escribe, lu, con tu dedo.",
+      "text": "Escribe... lu... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.lu.0.m4a"
     },
     {
       "promptId": "syllables.find.lu",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, lu.",
+      "text": "Revienta las burbujas que dicen... lu.",
       "file": "assets/audio/prompts/syllables.find.lu.0.m4a"
     },
     {
       "promptId": "syllables.ends_with.ma",
       "index": 0,
-      "text": "¿Qué dibujo termina con, ma?",
+      "text": "¿Qué dibujo termina en... ma?",
       "file": "assets/audio/prompts/syllables.ends_with.ma.0.m4a"
     },
     {
       "promptId": "syllables.ends_with.mo",
       "index": 0,
-      "text": "¿Qué dibujo termina con, mo?",
+      "text": "¿Qué dibujo termina en... mo?",
       "file": "assets/audio/prompts/syllables.ends_with.mo.0.m4a"
     },
     {
       "promptId": "syllables.ends_with.pa",
       "index": 0,
-      "text": "¿Qué dibujo termina con, pa?",
+      "text": "¿Qué dibujo termina en... pa?",
       "file": "assets/audio/prompts/syllables.ends_with.pa.0.m4a"
     },
     {
       "promptId": "syllables.ends_with.po",
       "index": 0,
-      "text": "¿Qué dibujo termina con, po?",
+      "text": "¿Qué dibujo termina en... po?",
       "file": "assets/audio/prompts/syllables.ends_with.po.0.m4a"
     },
     {
       "promptId": "syllables.ends_with.la",
       "index": 0,
-      "text": "¿Qué dibujo termina con, la?",
+      "text": "¿Qué dibujo termina en... la?",
       "file": "assets/audio/prompts/syllables.ends_with.la.0.m4a"
     },
     {
       "promptId": "syllables.ends_with.lo",
       "index": 0,
-      "text": "¿Qué dibujo termina con, lo?",
+      "text": "¿Qué dibujo termina en... lo?",
       "file": "assets/audio/prompts/syllables.ends_with.lo.0.m4a"
     },
     {
@@ -1484,7 +1493,7 @@
       "index": 0,
       "text": "humo",
       "file": "assets/audio/words/humo.m4a",
-      "spokenAs": "Humo."
+      "spokenAs": "Umo."
     },
     {
       "promptId": "word.mapa",
@@ -1648,7 +1657,7 @@
       "index": 0,
       "text": "pomelo",
       "file": "assets/audio/words/pomelo.m4a",
-      "spokenAs": "Pomelo."
+      "spokenAs": "¡Pomelo!"
     },
     {
       "promptId": "profiles.intro",
@@ -1707,13 +1716,13 @@
     {
       "promptId": "listening.clap.abeja",
       "index": 0,
-      "text": "A... be... ja.",
+      "text": "Aa... be... ja.",
       "file": "assets/audio/prompts/listening.clap.abeja.0.m4a"
     },
     {
       "promptId": "listening.clap.avión",
       "index": 0,
-      "text": "A... vión.",
+      "text": "Aa... vión.",
       "file": "assets/audio/prompts/listening.clap.avión.0.m4a"
     },
     {
@@ -1723,15 +1732,9 @@
       "file": "assets/audio/prompts/listening.clap.cama.0.m4a"
     },
     {
-      "promptId": "listening.clap.caramelo",
-      "index": 0,
-      "text": "Ca... ra... me... lo.",
-      "file": "assets/audio/prompts/listening.clap.caramelo.0.m4a"
-    },
-    {
       "promptId": "listening.clap.elefante",
       "index": 0,
-      "text": "E... le... fan... te.",
+      "text": "Ee... le... fan... te.",
       "file": "assets/audio/prompts/listening.clap.elefante.0.m4a"
     },
     {
@@ -1755,19 +1758,19 @@
     {
       "promptId": "listening.clap.humo",
       "index": 0,
-      "text": "Hu... mo.",
+      "text": "Uu... mo.",
       "file": "assets/audio/prompts/listening.clap.humo.0.m4a"
     },
     {
       "promptId": "listening.clap.iglú",
       "index": 0,
-      "text": "I... glú.",
+      "text": "Ii... glú.",
       "file": "assets/audio/prompts/listening.clap.iglú.0.m4a"
     },
     {
       "promptId": "listening.clap.imán",
       "index": 0,
-      "text": "I... mán.",
+      "text": "Ii... mán.",
       "file": "assets/audio/prompts/listening.clap.imán.0.m4a"
     },
     {
@@ -1811,12 +1814,6 @@
       "index": 0,
       "text": "Lo... bo.",
       "file": "assets/audio/prompts/listening.clap.lobo.0.m4a"
-    },
-    {
-      "promptId": "listening.clap.loro",
-      "index": 0,
-      "text": "Lo... ro.",
-      "file": "assets/audio/prompts/listening.clap.loro.0.m4a"
     },
     {
       "promptId": "listening.clap.luna",
@@ -1911,25 +1908,25 @@
     {
       "promptId": "listening.clap.ojo",
       "index": 0,
-      "text": "O... jo.",
+      "text": "Oo... jo.",
       "file": "assets/audio/prompts/listening.clap.ojo.0.m4a"
     },
     {
       "promptId": "listening.clap.ola",
       "index": 0,
-      "text": "O... la.",
+      "text": "Oo... la.",
       "file": "assets/audio/prompts/listening.clap.ola.0.m4a"
     },
     {
       "promptId": "listening.clap.oso",
       "index": 0,
-      "text": "O... so.",
+      "text": "Oo... so.",
       "file": "assets/audio/prompts/listening.clap.oso.0.m4a"
     },
     {
       "promptId": "listening.clap.oveja",
       "index": 0,
-      "text": "O... ve... ja.",
+      "text": "Oo... ve... ja.",
       "file": "assets/audio/prompts/listening.clap.oveja.0.m4a"
     },
     {
@@ -1967,12 +1964,6 @@
       "index": 0,
       "text": "Pe... lo... ta.",
       "file": "assets/audio/prompts/listening.clap.pelota.0.m4a"
-    },
-    {
-      "promptId": "listening.clap.pera",
-      "index": 0,
-      "text": "Pe... ra.",
-      "file": "assets/audio/prompts/listening.clap.pera.0.m4a"
     },
     {
       "promptId": "listening.clap.perro",
@@ -2017,12 +2008,6 @@
       "file": "assets/audio/prompts/listening.clap.pomelo.0.m4a"
     },
     {
-      "promptId": "listening.clap.poroto",
-      "index": 0,
-      "text": "Po... ro... to.",
-      "file": "assets/audio/prompts/listening.clap.poroto.0.m4a"
-    },
-    {
       "promptId": "listening.clap.pulpo",
       "index": 0,
       "text": "Pul... po.",
@@ -2061,19 +2046,19 @@
     {
       "promptId": "listening.clap.unicornio",
       "index": 0,
-      "text": "U... ni... cor... nio.",
+      "text": "Uu... ni... cor... nio.",
       "file": "assets/audio/prompts/listening.clap.unicornio.0.m4a"
     },
     {
       "promptId": "listening.clap.uva",
       "index": 0,
-      "text": "U... va.",
+      "text": "Uu... va.",
       "file": "assets/audio/prompts/listening.clap.uva.0.m4a"
     },
     {
       "promptId": "listening.clap.uña",
       "index": 0,
-      "text": "U... ña.",
+      "text": "Uu... ña.",
       "file": "assets/audio/prompts/listening.clap.uña.0.m4a"
     },
     {
@@ -2085,7 +2070,7 @@
     {
       "promptId": "listening.clap.árbol",
       "index": 0,
-      "text": "Ár... bol.",
+      "text": "Ár-bol.",
       "file": "assets/audio/prompts/listening.clap.árbol.0.m4a"
     },
     {
@@ -2103,397 +2088,397 @@
     {
       "promptId": "letter.meet.d",
       "index": 0,
-      "text": "Esta es la, de. ¡La, de de dedo! ¡Tócala!",
+      "text": "Esta es la... de. ¡La... de de dedo! ¡Tócala!",
       "file": "assets/audio/prompts/letter.meet.d.0.m4a"
     },
     {
       "promptId": "letter.meet.d.upper",
       "index": 0,
-      "text": "Toca la, de mayúscula.",
+      "text": "Toca la... de mayúscula.",
       "file": "assets/audio/prompts/letter.meet.d.upper.0.m4a"
     },
     {
       "promptId": "letter.meet.d.lower",
       "index": 0,
-      "text": "Toca la, de minúscula.",
+      "text": "Toca la... de minúscula.",
       "file": "assets/audio/prompts/letter.meet.d.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.d.lower",
       "index": 0,
-      "text": "Repasa la, de minúscula con tu dedo.",
+      "text": "Repasa la... de minúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.d.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.d.upper",
       "index": 0,
-      "text": "Repasa la, de mayúscula con tu dedo.",
+      "text": "Repasa la... de mayúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.d.upper.0.m4a"
     },
     {
       "promptId": "letter.find.d",
       "index": 0,
-      "text": "Revienta las burbujas que tienen la, de.",
+      "text": "Revienta las burbujas que tienen la... de.",
       "file": "assets/audio/prompts/letter.find.d.0.m4a"
     },
     {
       "promptId": "letter.meet.s",
       "index": 0,
-      "text": "Esta es la, ese. ¡La, ese de sol! ¡Tócala!",
+      "text": "Esta es la... ese. ¡La... ese de sol! ¡Tócala!",
       "file": "assets/audio/prompts/letter.meet.s.0.m4a"
     },
     {
       "promptId": "letter.meet.s.upper",
       "index": 0,
-      "text": "Toca la, ese mayúscula.",
+      "text": "Toca la... ese mayúscula.",
       "file": "assets/audio/prompts/letter.meet.s.upper.0.m4a"
     },
     {
       "promptId": "letter.meet.s.lower",
       "index": 0,
-      "text": "Toca la, ese minúscula.",
+      "text": "Toca la... ese minúscula.",
       "file": "assets/audio/prompts/letter.meet.s.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.s.lower",
       "index": 0,
-      "text": "Repasa la, ese minúscula con tu dedo.",
+      "text": "Repasa la... ese minúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.s.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.s.upper",
       "index": 0,
-      "text": "Repasa la, ese mayúscula con tu dedo.",
+      "text": "Repasa la... ese mayúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.s.upper.0.m4a"
     },
     {
       "promptId": "letter.find.s",
       "index": 0,
-      "text": "Revienta las burbujas que tienen la, ese.",
+      "text": "Revienta las burbujas que tienen la... ese.",
       "file": "assets/audio/prompts/letter.find.s.0.m4a"
     },
     {
       "promptId": "syllables.meet.da",
       "index": 0,
-      "text": "La, de, y la, a, juntas dicen, da. ¡Toca, da!",
+      "text": "Juntas dicen... da. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.da.0.m4a"
     },
     {
       "promptId": "syllables.meet.da.choose",
       "index": 0,
-      "text": "¿Dónde dice, da? ¡Tócala!",
+      "text": "¿Dónde dice... da? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.da.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.da",
       "index": 0,
-      "text": "Escribe, da, con tu dedo.",
+      "text": "Escribe... da... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.da.0.m4a"
     },
     {
       "promptId": "syllables.find.da",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, da.",
+      "text": "Revienta las burbujas que dicen... da.",
       "file": "assets/audio/prompts/syllables.find.da.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.da",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, da?",
+      "text": "¿Qué dibujo empieza con... da?",
       "file": "assets/audio/prompts/syllables.starts_with.da.0.m4a"
     },
     {
       "promptId": "syllables.meet.de",
       "index": 0,
-      "text": "La, de, y la, e, juntas dicen, de. ¡Toca, de!",
+      "text": "Juntas dicen... de. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.de.0.m4a"
     },
     {
       "promptId": "syllables.meet.de.choose",
       "index": 0,
-      "text": "¿Dónde dice, de? ¡Tócala!",
+      "text": "¿Dónde dice... de? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.de.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.de",
       "index": 0,
-      "text": "Escribe, de, con tu dedo.",
+      "text": "Escribe... de... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.de.0.m4a"
     },
     {
       "promptId": "syllables.find.de",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, de.",
+      "text": "Revienta las burbujas que dicen... de.",
       "file": "assets/audio/prompts/syllables.find.de.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.de",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, de?",
+      "text": "¿Qué dibujo empieza con... de?",
       "file": "assets/audio/prompts/syllables.starts_with.de.0.m4a"
     },
     {
       "promptId": "syllables.meet.di",
       "index": 0,
-      "text": "La, de, y la, i, juntas dicen, di. ¡Toca, di!",
+      "text": "Juntas dicen... di. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.di.0.m4a"
     },
     {
       "promptId": "syllables.meet.di.choose",
       "index": 0,
-      "text": "¿Dónde dice, di? ¡Tócala!",
+      "text": "¿Dónde dice... di? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.di.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.di",
       "index": 0,
-      "text": "Escribe, di, con tu dedo.",
+      "text": "Escribe... di... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.di.0.m4a"
     },
     {
       "promptId": "syllables.find.di",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, di.",
+      "text": "Revienta las burbujas que dicen... di.",
       "file": "assets/audio/prompts/syllables.find.di.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.di",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, di?",
+      "text": "¿Qué dibujo empieza con... di?",
       "file": "assets/audio/prompts/syllables.starts_with.di.0.m4a"
     },
     {
       "promptId": "syllables.meet.do",
       "index": 0,
-      "text": "La, de, y la, o, juntas dicen, do. ¡Toca, do!",
+      "text": "Juntas dicen... do. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.do.0.m4a"
     },
     {
       "promptId": "syllables.meet.do.choose",
       "index": 0,
-      "text": "¿Dónde dice, do? ¡Tócala!",
+      "text": "¿Dónde dice... do? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.do.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.do",
       "index": 0,
-      "text": "Escribe, do, con tu dedo.",
+      "text": "Escribe... do... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.do.0.m4a"
     },
     {
       "promptId": "syllables.find.do",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, do.",
+      "text": "Revienta las burbujas que dicen... do.",
       "file": "assets/audio/prompts/syllables.find.do.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.do",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, do?",
+      "text": "¿Qué dibujo empieza con... do?",
       "file": "assets/audio/prompts/syllables.starts_with.do.0.m4a"
     },
     {
       "promptId": "syllables.meet.du",
       "index": 0,
-      "text": "La, de, y la, u, juntas dicen, du. ¡Toca, du!",
+      "text": "Juntas dicen... du. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.du.0.m4a"
     },
     {
       "promptId": "syllables.meet.du.choose",
       "index": 0,
-      "text": "¿Dónde dice, du? ¡Tócala!",
+      "text": "¿Dónde dice... du? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.du.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.du",
       "index": 0,
-      "text": "Escribe, du, con tu dedo.",
+      "text": "Escribe... du... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.du.0.m4a"
     },
     {
       "promptId": "syllables.find.du",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, du.",
+      "text": "Revienta las burbujas que dicen... du.",
       "file": "assets/audio/prompts/syllables.find.du.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.du",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, du?",
+      "text": "¿Qué dibujo empieza con... du?",
       "file": "assets/audio/prompts/syllables.starts_with.du.0.m4a"
     },
     {
       "promptId": "syllables.meet.sa",
       "index": 0,
-      "text": "La, ese, y la, a, juntas dicen, sa. ¡Toca, sa!",
+      "text": "Juntas dicen... sa. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.sa.0.m4a"
     },
     {
       "promptId": "syllables.meet.sa.choose",
       "index": 0,
-      "text": "¿Dónde dice, sa? ¡Tócala!",
+      "text": "¿Dónde dice... sa? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.sa.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.sa",
       "index": 0,
-      "text": "Escribe, sa, con tu dedo.",
+      "text": "Escribe... sa... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.sa.0.m4a"
     },
     {
       "promptId": "syllables.find.sa",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, sa.",
+      "text": "Revienta las burbujas que dicen... sa.",
       "file": "assets/audio/prompts/syllables.find.sa.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.sa",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, sa?",
+      "text": "¿Qué dibujo empieza con... sa?",
       "file": "assets/audio/prompts/syllables.starts_with.sa.0.m4a"
     },
     {
       "promptId": "syllables.meet.se",
       "index": 0,
-      "text": "La, ese, y la, e, juntas dicen, se. ¡Toca, se!",
+      "text": "Juntas dicen... se. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.se.0.m4a"
     },
     {
       "promptId": "syllables.meet.se.choose",
       "index": 0,
-      "text": "¿Dónde dice, se? ¡Tócala!",
+      "text": "¿Dónde dice... se? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.se.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.se",
       "index": 0,
-      "text": "Escribe, se, con tu dedo.",
+      "text": "Escribe... se... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.se.0.m4a"
     },
     {
       "promptId": "syllables.find.se",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, se.",
+      "text": "Revienta las burbujas que dicen... se.",
       "file": "assets/audio/prompts/syllables.find.se.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.se",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, se?",
+      "text": "¿Qué dibujo empieza con... se?",
       "file": "assets/audio/prompts/syllables.starts_with.se.0.m4a"
     },
     {
       "promptId": "syllables.meet.si",
       "index": 0,
-      "text": "La, ese, y la, i, juntas dicen, si. ¡Toca, si!",
+      "text": "Juntas dicen... si. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.si.0.m4a"
     },
     {
       "promptId": "syllables.meet.si.choose",
       "index": 0,
-      "text": "¿Dónde dice, si? ¡Tócala!",
+      "text": "¿Dónde dice... si? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.si.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.si",
       "index": 0,
-      "text": "Escribe, si, con tu dedo.",
+      "text": "Escribe... si... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.si.0.m4a"
     },
     {
       "promptId": "syllables.find.si",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, si.",
+      "text": "Revienta las burbujas que dicen... si.",
       "file": "assets/audio/prompts/syllables.find.si.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.si",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, si?",
+      "text": "¿Qué dibujo empieza con... si?",
       "file": "assets/audio/prompts/syllables.starts_with.si.0.m4a"
     },
     {
       "promptId": "syllables.meet.so",
       "index": 0,
-      "text": "La, ese, y la, o, juntas dicen, so. ¡Toca, so!",
+      "text": "Juntas dicen... so. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.so.0.m4a"
     },
     {
       "promptId": "syllables.meet.so.choose",
       "index": 0,
-      "text": "¿Dónde dice, so? ¡Tócala!",
+      "text": "¿Dónde dice... so? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.so.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.so",
       "index": 0,
-      "text": "Escribe, so, con tu dedo.",
+      "text": "Escribe... so... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.so.0.m4a"
     },
     {
       "promptId": "syllables.find.so",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, so.",
+      "text": "Revienta las burbujas que dicen... so.",
       "file": "assets/audio/prompts/syllables.find.so.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.so",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, so?",
+      "text": "¿Qué dibujo empieza con... so?",
       "file": "assets/audio/prompts/syllables.starts_with.so.0.m4a"
     },
     {
       "promptId": "syllables.meet.su",
       "index": 0,
-      "text": "La, ese, y la, u, juntas dicen, su. ¡Toca, su!",
+      "text": "Juntas dicen... su. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.su.0.m4a"
     },
     {
       "promptId": "syllables.meet.su.choose",
       "index": 0,
-      "text": "¿Dónde dice, su? ¡Tócala!",
+      "text": "¿Dónde dice... su? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.su.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.su",
       "index": 0,
-      "text": "Escribe, su, con tu dedo.",
+      "text": "Escribe... su... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.su.0.m4a"
     },
     {
       "promptId": "syllables.find.su",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, su.",
+      "text": "Revienta las burbujas que dicen... su.",
       "file": "assets/audio/prompts/syllables.find.su.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.su",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, su?",
+      "text": "¿Qué dibujo empieza con... su?",
       "file": "assets/audio/prompts/syllables.starts_with.su.0.m4a"
     },
     {
       "promptId": "syllables.ends_with.da",
       "index": 0,
-      "text": "¿Qué dibujo termina con, da?",
+      "text": "¿Qué dibujo termina en... da?",
       "file": "assets/audio/prompts/syllables.ends_with.da.0.m4a"
     },
     {
       "promptId": "syllables.ends_with.do",
       "index": 0,
-      "text": "¿Qué dibujo termina con, do?",
+      "text": "¿Qué dibujo termina en... do?",
       "file": "assets/audio/prompts/syllables.ends_with.do.0.m4a"
     },
     {
       "promptId": "syllables.ends_with.sa",
       "index": 0,
-      "text": "¿Qué dibujo termina con, sa?",
+      "text": "¿Qué dibujo termina en... sa?",
       "file": "assets/audio/prompts/syllables.ends_with.sa.0.m4a"
     },
     {
       "promptId": "syllables.ends_with.so",
       "index": 0,
-      "text": "¿Qué dibujo termina con, so?",
+      "text": "¿Qué dibujo termina en... so?",
       "file": "assets/audio/prompts/syllables.ends_with.so.0.m4a"
     },
     {
@@ -2507,12 +2492,6 @@
       "index": 0,
       "text": "De... do.",
       "file": "assets/audio/prompts/listening.clap.dedo.0.m4a"
-    },
-    {
-      "promptId": "listening.clap.dinosaurio",
-      "index": 0,
-      "text": "Di... no... sau... rio.",
-      "file": "assets/audio/prompts/listening.clap.dinosaurio.0.m4a"
     },
     {
       "promptId": "listening.clap.dominó",
@@ -2537,12 +2516,6 @@
       "index": 0,
       "text": "Si... lla.",
       "file": "assets/audio/prompts/listening.clap.silla.0.m4a"
-    },
-    {
-      "promptId": "listening.clap.submarino",
-      "index": 0,
-      "text": "Sub... ma... ri... no.",
-      "file": "assets/audio/prompts/listening.clap.submarino.0.m4a"
     },
     {
       "promptId": "listening.clap.sol",
@@ -2754,205 +2727,205 @@
     {
       "promptId": "letter.meet.t",
       "index": 0,
-      "text": "Esta es la, te. ¡La, te de taza! ¡Tócala!",
+      "text": "Esta es la... te. ¡La... te de taza! ¡Tócala!",
       "file": "assets/audio/prompts/letter.meet.t.0.m4a"
     },
     {
       "promptId": "letter.meet.t.upper",
       "index": 0,
-      "text": "Toca la, te mayúscula.",
+      "text": "Toca la... te mayúscula.",
       "file": "assets/audio/prompts/letter.meet.t.upper.0.m4a"
     },
     {
       "promptId": "letter.meet.t.lower",
       "index": 0,
-      "text": "Toca la, te minúscula.",
+      "text": "Toca la... te minúscula.",
       "file": "assets/audio/prompts/letter.meet.t.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.t.lower",
       "index": 0,
-      "text": "Repasa la, te minúscula con tu dedo.",
+      "text": "Repasa la... te minúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.t.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.t.upper",
       "index": 0,
-      "text": "Repasa la, te mayúscula con tu dedo.",
+      "text": "Repasa la... te mayúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.t.upper.0.m4a"
     },
     {
       "promptId": "letter.find.t",
       "index": 0,
-      "text": "Revienta las burbujas que tienen la, te.",
+      "text": "Revienta las burbujas que tienen la... te.",
       "file": "assets/audio/prompts/letter.find.t.0.m4a"
     },
     {
       "promptId": "syllables.meet.ta",
       "index": 0,
-      "text": "La, te, y la, a, juntas dicen, ta. ¡Toca, ta!",
+      "text": "Juntas dicen... ta. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.ta.0.m4a"
     },
     {
       "promptId": "syllables.meet.ta.choose",
       "index": 0,
-      "text": "¿Dónde dice, ta? ¡Tócala!",
+      "text": "¿Dónde dice... ta? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.ta.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.ta",
       "index": 0,
-      "text": "Escribe, ta, con tu dedo.",
+      "text": "Escribe... ta... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.ta.0.m4a"
     },
     {
       "promptId": "syllables.find.ta",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, ta.",
+      "text": "Revienta las burbujas que dicen... ta.",
       "file": "assets/audio/prompts/syllables.find.ta.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.ta",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, ta?",
+      "text": "¿Qué dibujo empieza con... ta?",
       "file": "assets/audio/prompts/syllables.starts_with.ta.0.m4a"
     },
     {
       "promptId": "syllables.meet.te",
       "index": 0,
-      "text": "La, te, y la, e, juntas dicen, te. ¡Toca, te!",
+      "text": "Juntas dicen... te. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.te.0.m4a"
     },
     {
       "promptId": "syllables.meet.te.choose",
       "index": 0,
-      "text": "¿Dónde dice, te? ¡Tócala!",
+      "text": "¿Dónde dice... te? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.te.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.te",
       "index": 0,
-      "text": "Escribe, te, con tu dedo.",
+      "text": "Escribe... te... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.te.0.m4a"
     },
     {
       "promptId": "syllables.find.te",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, te.",
+      "text": "Revienta las burbujas que dicen... te.",
       "file": "assets/audio/prompts/syllables.find.te.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.te",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, te?",
+      "text": "¿Qué dibujo empieza con... te?",
       "file": "assets/audio/prompts/syllables.starts_with.te.0.m4a"
     },
     {
       "promptId": "syllables.meet.ti",
       "index": 0,
-      "text": "La, te, y la, i, juntas dicen, ti. ¡Toca, ti!",
+      "text": "Juntas dicen... ti. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.ti.0.m4a"
     },
     {
       "promptId": "syllables.meet.ti.choose",
       "index": 0,
-      "text": "¿Dónde dice, ti? ¡Tócala!",
+      "text": "¿Dónde dice... ti? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.ti.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.ti",
       "index": 0,
-      "text": "Escribe, ti, con tu dedo.",
+      "text": "Escribe... ti... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.ti.0.m4a"
     },
     {
       "promptId": "syllables.find.ti",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, ti.",
+      "text": "Revienta las burbujas que dicen... ti.",
       "file": "assets/audio/prompts/syllables.find.ti.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.ti",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, ti?",
+      "text": "¿Qué dibujo empieza con... ti?",
       "file": "assets/audio/prompts/syllables.starts_with.ti.0.m4a"
     },
     {
       "promptId": "syllables.meet.to",
       "index": 0,
-      "text": "La, te, y la, o, juntas dicen, to. ¡Toca, to!",
+      "text": "Juntas dicen... to. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.to.0.m4a"
     },
     {
       "promptId": "syllables.meet.to.choose",
       "index": 0,
-      "text": "¿Dónde dice, to? ¡Tócala!",
+      "text": "¿Dónde dice... to? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.to.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.to",
       "index": 0,
-      "text": "Escribe, to, con tu dedo.",
+      "text": "Escribe... to... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.to.0.m4a"
     },
     {
       "promptId": "syllables.find.to",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, to.",
+      "text": "Revienta las burbujas que dicen... to.",
       "file": "assets/audio/prompts/syllables.find.to.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.to",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, to?",
+      "text": "¿Qué dibujo empieza con... to?",
       "file": "assets/audio/prompts/syllables.starts_with.to.0.m4a"
     },
     {
       "promptId": "syllables.meet.tu",
       "index": 0,
-      "text": "La, te, y la, u, juntas dicen, tu. ¡Toca, tu!",
+      "text": "Juntas dicen... tu. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.tu.0.m4a"
     },
     {
       "promptId": "syllables.meet.tu.choose",
       "index": 0,
-      "text": "¿Dónde dice, tu? ¡Tócala!",
+      "text": "¿Dónde dice... tu? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.tu.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.tu",
       "index": 0,
-      "text": "Escribe, tu, con tu dedo.",
+      "text": "Escribe... tu... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.tu.0.m4a"
     },
     {
       "promptId": "syllables.find.tu",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, tu.",
+      "text": "Revienta las burbujas que dicen... tu.",
       "file": "assets/audio/prompts/syllables.find.tu.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.tu",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, tu?",
+      "text": "¿Qué dibujo empieza con... tu?",
       "file": "assets/audio/prompts/syllables.starts_with.tu.0.m4a"
     },
     {
       "promptId": "syllables.ends_with.ta",
       "index": 0,
-      "text": "¿Qué dibujo termina con, ta?",
+      "text": "¿Qué dibujo termina en... ta?",
       "file": "assets/audio/prompts/syllables.ends_with.ta.0.m4a"
     },
     {
       "promptId": "syllables.ends_with.te",
       "index": 0,
-      "text": "¿Qué dibujo termina con, te?",
+      "text": "¿Qué dibujo termina en... te?",
       "file": "assets/audio/prompts/syllables.ends_with.te.0.m4a"
     },
     {
       "promptId": "syllables.ends_with.to",
       "index": 0,
-      "text": "¿Qué dibujo termina con, to?",
+      "text": "¿Qué dibujo termina en... to?",
       "file": "assets/audio/prompts/syllables.ends_with.to.0.m4a"
     },
     {
@@ -3108,469 +3081,469 @@
     {
       "promptId": "letter.meet.n",
       "index": 0,
-      "text": "Esta es la, ene. ¡La, ene de nido! ¡Tócala!",
+      "text": "Esta es la... ene. ¡La... ene de nido! ¡Tócala!",
       "file": "assets/audio/prompts/letter.meet.n.0.m4a"
     },
     {
       "promptId": "letter.meet.n.upper",
       "index": 0,
-      "text": "Toca la, ene mayúscula.",
+      "text": "Toca la... ene mayúscula.",
       "file": "assets/audio/prompts/letter.meet.n.upper.0.m4a"
     },
     {
       "promptId": "letter.meet.n.lower",
       "index": 0,
-      "text": "Toca la, ene minúscula.",
+      "text": "Toca la... ene minúscula.",
       "file": "assets/audio/prompts/letter.meet.n.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.n.lower",
       "index": 0,
-      "text": "Repasa la, ene minúscula con tu dedo.",
+      "text": "Repasa la... ene minúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.n.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.n.upper",
       "index": 0,
-      "text": "Repasa la, ene mayúscula con tu dedo.",
+      "text": "Repasa la... ene mayúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.n.upper.0.m4a"
     },
     {
       "promptId": "letter.find.n",
       "index": 0,
-      "text": "Revienta las burbujas que tienen la, ene.",
+      "text": "Revienta las burbujas que tienen la... ene.",
       "file": "assets/audio/prompts/letter.find.n.0.m4a"
     },
     {
       "promptId": "syllables.meet.na",
       "index": 0,
-      "text": "La, ene, y la, a, juntas dicen, na. ¡Toca, na!",
+      "text": "Juntas dicen... na. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.na.0.m4a"
     },
     {
       "promptId": "syllables.meet.na.choose",
       "index": 0,
-      "text": "¿Dónde dice, na? ¡Tócala!",
+      "text": "¿Dónde dice... na? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.na.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.na",
       "index": 0,
-      "text": "Escribe, na, con tu dedo.",
+      "text": "Escribe... na... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.na.0.m4a"
     },
     {
       "promptId": "syllables.find.na",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, na.",
+      "text": "Revienta las burbujas que dicen... na.",
       "file": "assets/audio/prompts/syllables.find.na.0.m4a"
     },
     {
       "promptId": "syllables.meet.ne",
       "index": 0,
-      "text": "La, ene, y la, e, juntas dicen, ne. ¡Toca, ne!",
+      "text": "Juntas dicen... ne. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.ne.0.m4a"
     },
     {
       "promptId": "syllables.meet.ne.choose",
       "index": 0,
-      "text": "¿Dónde dice, ne? ¡Tócala!",
+      "text": "¿Dónde dice... ne? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.ne.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.ne",
       "index": 0,
-      "text": "Escribe, ne, con tu dedo.",
+      "text": "Escribe... ne... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.ne.0.m4a"
     },
     {
       "promptId": "syllables.find.ne",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, ne.",
+      "text": "Revienta las burbujas que dicen... ne.",
       "file": "assets/audio/prompts/syllables.find.ne.0.m4a"
     },
     {
       "promptId": "syllables.meet.ni",
       "index": 0,
-      "text": "La, ene, y la, i, juntas dicen, ni. ¡Toca, ni!",
+      "text": "Juntas dicen... ni. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.ni.0.m4a"
     },
     {
       "promptId": "syllables.meet.ni.choose",
       "index": 0,
-      "text": "¿Dónde dice, ni? ¡Tócala!",
+      "text": "¿Dónde dice... ni? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.ni.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.ni",
       "index": 0,
-      "text": "Escribe, ni, con tu dedo.",
+      "text": "Escribe... ni... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.ni.0.m4a"
     },
     {
       "promptId": "syllables.find.ni",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, ni.",
+      "text": "Revienta las burbujas que dicen... ni.",
       "file": "assets/audio/prompts/syllables.find.ni.0.m4a"
     },
     {
       "promptId": "syllables.meet.no",
       "index": 0,
-      "text": "La, ene, y la, o, juntas dicen, no. ¡Toca, no!",
+      "text": "Juntas dicen... no. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.no.0.m4a"
     },
     {
       "promptId": "syllables.meet.no.choose",
       "index": 0,
-      "text": "¿Dónde dice, no? ¡Tócala!",
+      "text": "¿Dónde dice... no? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.no.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.no",
       "index": 0,
-      "text": "Escribe, no, con tu dedo.",
+      "text": "Escribe... no... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.no.0.m4a"
     },
     {
       "promptId": "syllables.find.no",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, no.",
+      "text": "Revienta las burbujas que dicen... no.",
       "file": "assets/audio/prompts/syllables.find.no.0.m4a"
     },
     {
       "promptId": "syllables.meet.nu",
       "index": 0,
-      "text": "La, ene, y la, u, juntas dicen, nu. ¡Toca, nu!",
+      "text": "Juntas dicen... nu. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.nu.0.m4a"
     },
     {
       "promptId": "syllables.meet.nu.choose",
       "index": 0,
-      "text": "¿Dónde dice, nu? ¡Tócala!",
+      "text": "¿Dónde dice... nu? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.nu.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.nu",
       "index": 0,
-      "text": "Escribe, nu, con tu dedo.",
+      "text": "Escribe... nu... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.nu.0.m4a"
     },
     {
       "promptId": "syllables.find.nu",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, nu.",
+      "text": "Revienta las burbujas que dicen... nu.",
       "file": "assets/audio/prompts/syllables.find.nu.0.m4a"
     },
     {
       "promptId": "letter.meet.ñ",
       "index": 0,
-      "text": "Esta es la, eñe. ¡La, eñe de ñandú! ¡Tócala!",
+      "text": "Esta es la... eñe. ¡La... eñe de ñandú! ¡Tócala!",
       "file": "assets/audio/prompts/letter.meet.ñ.0.m4a"
     },
     {
       "promptId": "letter.meet.ñ.upper",
       "index": 0,
-      "text": "Toca la, eñe mayúscula.",
+      "text": "Toca la... eñe mayúscula.",
       "file": "assets/audio/prompts/letter.meet.ñ.upper.0.m4a"
     },
     {
       "promptId": "letter.meet.ñ.lower",
       "index": 0,
-      "text": "Toca la, eñe minúscula.",
+      "text": "Toca la... eñe minúscula.",
       "file": "assets/audio/prompts/letter.meet.ñ.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.ñ.lower",
       "index": 0,
-      "text": "Repasa la, eñe minúscula con tu dedo.",
+      "text": "Repasa la... eñe minúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.ñ.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.ñ.upper",
       "index": 0,
-      "text": "Repasa la, eñe mayúscula con tu dedo.",
+      "text": "Repasa la... eñe mayúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.ñ.upper.0.m4a"
     },
     {
       "promptId": "letter.find.ñ",
       "index": 0,
-      "text": "Revienta las burbujas que tienen la, eñe.",
+      "text": "Revienta las burbujas que tienen la... eñe.",
       "file": "assets/audio/prompts/letter.find.ñ.0.m4a"
     },
     {
       "promptId": "syllables.meet.ña",
       "index": 0,
-      "text": "La, eñe, y la, a, juntas dicen, ña. ¡Toca, ña!",
+      "text": "Juntas dicen... ña. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.ña.0.m4a"
     },
     {
       "promptId": "syllables.meet.ña.choose",
       "index": 0,
-      "text": "¿Dónde dice, ña? ¡Tócala!",
+      "text": "¿Dónde dice... ña? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.ña.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.ña",
       "index": 0,
-      "text": "Escribe, ña, con tu dedo.",
+      "text": "Escribe... ña... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.ña.0.m4a"
     },
     {
       "promptId": "syllables.find.ña",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, ña.",
+      "text": "Revienta las burbujas que dicen... ña.",
       "file": "assets/audio/prompts/syllables.find.ña.0.m4a"
     },
     {
       "promptId": "syllables.meet.ñe",
       "index": 0,
-      "text": "La, eñe, y la, e, juntas dicen, ñe. ¡Toca, ñe!",
+      "text": "Juntas dicen... ñe. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.ñe.0.m4a"
     },
     {
       "promptId": "syllables.meet.ñe.choose",
       "index": 0,
-      "text": "¿Dónde dice, ñe? ¡Tócala!",
+      "text": "¿Dónde dice... ñe? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.ñe.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.ñe",
       "index": 0,
-      "text": "Escribe, ñe, con tu dedo.",
+      "text": "Escribe... ñe... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.ñe.0.m4a"
     },
     {
       "promptId": "syllables.find.ñe",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, ñe.",
+      "text": "Revienta las burbujas que dicen... ñe.",
       "file": "assets/audio/prompts/syllables.find.ñe.0.m4a"
     },
     {
       "promptId": "syllables.meet.ñi",
       "index": 0,
-      "text": "La, eñe, y la, i, juntas dicen, ñi. ¡Toca, ñi!",
+      "text": "Juntas dicen... ñi. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.ñi.0.m4a"
     },
     {
       "promptId": "syllables.meet.ñi.choose",
       "index": 0,
-      "text": "¿Dónde dice, ñi? ¡Tócala!",
+      "text": "¿Dónde dice... ñi? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.ñi.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.ñi",
       "index": 0,
-      "text": "Escribe, ñi, con tu dedo.",
+      "text": "Escribe... ñi... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.ñi.0.m4a"
     },
     {
       "promptId": "syllables.find.ñi",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, ñi.",
+      "text": "Revienta las burbujas que dicen... ñi.",
       "file": "assets/audio/prompts/syllables.find.ñi.0.m4a"
     },
     {
       "promptId": "syllables.meet.ño",
       "index": 0,
-      "text": "La, eñe, y la, o, juntas dicen, ño. ¡Toca, ño!",
+      "text": "Juntas dicen... ño. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.ño.0.m4a"
     },
     {
       "promptId": "syllables.meet.ño.choose",
       "index": 0,
-      "text": "¿Dónde dice, ño? ¡Tócala!",
+      "text": "¿Dónde dice... ño? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.ño.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.ño",
       "index": 0,
-      "text": "Escribe, ño, con tu dedo.",
+      "text": "Escribe... ño... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.ño.0.m4a"
     },
     {
       "promptId": "syllables.find.ño",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, ño.",
+      "text": "Revienta las burbujas que dicen... ño.",
       "file": "assets/audio/prompts/syllables.find.ño.0.m4a"
     },
     {
       "promptId": "syllables.meet.ñu",
       "index": 0,
-      "text": "La, eñe, y la, u, juntas dicen, ñu. ¡Toca, ñu!",
+      "text": "Juntas dicen... ñu. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.ñu.0.m4a"
     },
     {
       "promptId": "syllables.meet.ñu.choose",
       "index": 0,
-      "text": "¿Dónde dice, ñu? ¡Tócala!",
+      "text": "¿Dónde dice... ñu? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.ñu.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.ñu",
       "index": 0,
-      "text": "Escribe, ñu, con tu dedo.",
+      "text": "Escribe... ñu... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.ñu.0.m4a"
     },
     {
       "promptId": "syllables.find.ñu",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, ñu.",
+      "text": "Revienta las burbujas que dicen... ñu.",
       "file": "assets/audio/prompts/syllables.find.ñu.0.m4a"
     },
     {
       "promptId": "letter.meet.f",
       "index": 0,
-      "text": "Esta es la, efe. ¡La, efe de foca! ¡Tócala!",
+      "text": "Esta es la... efe. ¡La... efe de foca! ¡Tócala!",
       "file": "assets/audio/prompts/letter.meet.f.0.m4a"
     },
     {
       "promptId": "letter.meet.f.upper",
       "index": 0,
-      "text": "Toca la, efe mayúscula.",
+      "text": "Toca la... efe mayúscula.",
       "file": "assets/audio/prompts/letter.meet.f.upper.0.m4a"
     },
     {
       "promptId": "letter.meet.f.lower",
       "index": 0,
-      "text": "Toca la, efe minúscula.",
+      "text": "Toca la... efe minúscula.",
       "file": "assets/audio/prompts/letter.meet.f.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.f.lower",
       "index": 0,
-      "text": "Repasa la, efe minúscula con tu dedo.",
+      "text": "Repasa la... efe minúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.f.lower.0.m4a"
     },
     {
       "promptId": "letter.trace.f.upper",
       "index": 0,
-      "text": "Repasa la, efe mayúscula con tu dedo.",
+      "text": "Repasa la... efe mayúscula con tu dedo.",
       "file": "assets/audio/prompts/letter.trace.f.upper.0.m4a"
     },
     {
       "promptId": "letter.find.f",
       "index": 0,
-      "text": "Revienta las burbujas que tienen la, efe.",
+      "text": "Revienta las burbujas que tienen la... efe.",
       "file": "assets/audio/prompts/letter.find.f.0.m4a"
     },
     {
       "promptId": "syllables.meet.fa",
       "index": 0,
-      "text": "La, efe, y la, a, juntas dicen, fa. ¡Toca, fa!",
+      "text": "Juntas dicen... fa. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.fa.0.m4a"
     },
     {
       "promptId": "syllables.meet.fa.choose",
       "index": 0,
-      "text": "¿Dónde dice, fa? ¡Tócala!",
+      "text": "¿Dónde dice... fa? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.fa.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.fa",
       "index": 0,
-      "text": "Escribe, fa, con tu dedo.",
+      "text": "Escribe... fa... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.fa.0.m4a"
     },
     {
       "promptId": "syllables.find.fa",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, fa.",
+      "text": "Revienta las burbujas que dicen... fa.",
       "file": "assets/audio/prompts/syllables.find.fa.0.m4a"
     },
     {
       "promptId": "syllables.meet.fe",
       "index": 0,
-      "text": "La, efe, y la, e, juntas dicen, fe. ¡Toca, fe!",
+      "text": "Juntas dicen... fe. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.fe.0.m4a"
     },
     {
       "promptId": "syllables.meet.fe.choose",
       "index": 0,
-      "text": "¿Dónde dice, fe? ¡Tócala!",
+      "text": "¿Dónde dice... fe? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.fe.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.fe",
       "index": 0,
-      "text": "Escribe, fe, con tu dedo.",
+      "text": "Escribe... fe... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.fe.0.m4a"
     },
     {
       "promptId": "syllables.find.fe",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, fe.",
+      "text": "Revienta las burbujas que dicen... fe.",
       "file": "assets/audio/prompts/syllables.find.fe.0.m4a"
     },
     {
       "promptId": "syllables.meet.fi",
       "index": 0,
-      "text": "La, efe, y la, i, juntas dicen, fi. ¡Toca, fi!",
+      "text": "Juntas dicen... fi. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.fi.0.m4a"
     },
     {
       "promptId": "syllables.meet.fi.choose",
       "index": 0,
-      "text": "¿Dónde dice, fi? ¡Tócala!",
+      "text": "¿Dónde dice... fi? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.fi.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.fi",
       "index": 0,
-      "text": "Escribe, fi, con tu dedo.",
+      "text": "Escribe... fi... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.fi.0.m4a"
     },
     {
       "promptId": "syllables.find.fi",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, fi.",
+      "text": "Revienta las burbujas que dicen... fi.",
       "file": "assets/audio/prompts/syllables.find.fi.0.m4a"
     },
     {
       "promptId": "syllables.meet.fo",
       "index": 0,
-      "text": "La, efe, y la, o, juntas dicen, fo. ¡Toca, fo!",
+      "text": "Juntas dicen... fo. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.fo.0.m4a"
     },
     {
       "promptId": "syllables.meet.fo.choose",
       "index": 0,
-      "text": "¿Dónde dice, fo? ¡Tócala!",
+      "text": "¿Dónde dice... fo? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.fo.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.fo",
       "index": 0,
-      "text": "Escribe, fo, con tu dedo.",
+      "text": "Escribe... fo... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.fo.0.m4a"
     },
     {
       "promptId": "syllables.find.fo",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, fo.",
+      "text": "Revienta las burbujas que dicen... fo.",
       "file": "assets/audio/prompts/syllables.find.fo.0.m4a"
     },
     {
       "promptId": "syllables.meet.fu",
       "index": 0,
-      "text": "La, efe, y la, u, juntas dicen, fu. ¡Toca, fu!",
+      "text": "Juntas dicen... fu. ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.fu.0.m4a"
     },
     {
       "promptId": "syllables.meet.fu.choose",
       "index": 0,
-      "text": "¿Dónde dice, fu? ¡Tócala!",
+      "text": "¿Dónde dice... fu? ¡Tócala!",
       "file": "assets/audio/prompts/syllables.meet.fu.choose.0.m4a"
     },
     {
       "promptId": "syllables.trace.fu",
       "index": 0,
-      "text": "Escribe, fu, con tu dedo.",
+      "text": "Escribe... fu... con tu dedo.",
       "file": "assets/audio/prompts/syllables.trace.fu.0.m4a"
     },
     {
       "promptId": "syllables.find.fu",
       "index": 0,
-      "text": "Revienta las burbujas que dicen, fu.",
+      "text": "Revienta las burbujas que dicen... fu.",
       "file": "assets/audio/prompts/syllables.find.fu.0.m4a"
     },
     {
@@ -3578,12 +3551,6 @@
       "index": 0,
       "text": "Ni... do.",
       "file": "assets/audio/prompts/listening.clap.nido.0.m4a"
-    },
-    {
-      "promptId": "listening.clap.naranja",
-      "index": 0,
-      "text": "Na... ran... ja.",
-      "file": "assets/audio/prompts/listening.clap.naranja.0.m4a"
     },
     {
       "promptId": "listening.clap.nube",
@@ -3598,12 +3565,6 @@
       "file": "assets/audio/prompts/listening.clap.ñandú.0.m4a"
     },
     {
-      "promptId": "listening.clap.araña",
-      "index": 0,
-      "text": "A... ra... ña.",
-      "file": "assets/audio/prompts/listening.clap.araña.0.m4a"
-    },
-    {
       "promptId": "listening.clap.niño",
       "index": 0,
       "text": "Ni... ño.",
@@ -3614,12 +3575,6 @@
       "index": 0,
       "text": "Fo... ca.",
       "file": "assets/audio/prompts/listening.clap.foca.0.m4a"
-    },
-    {
-      "promptId": "listening.clap.faro",
-      "index": 0,
-      "text": "Fa... ro.",
-      "file": "assets/audio/prompts/listening.clap.faro.0.m4a"
     },
     {
       "promptId": "listening.clap.fideos",
@@ -3634,12 +3589,6 @@
       "file": "assets/audio/prompts/listening.clap.fuego.0.m4a"
     },
     {
-      "promptId": "listening.clap.jirafa",
-      "index": 0,
-      "text": "Ji... ra... fa.",
-      "file": "assets/audio/prompts/listening.clap.jirafa.0.m4a"
-    },
-    {
       "promptId": "listening.clap.café",
       "index": 0,
       "text": "Ca... fé.",
@@ -3650,12 +3599,6 @@
       "index": 0,
       "text": "Fo... to.",
       "file": "assets/audio/prompts/listening.clap.foto.0.m4a"
-    },
-    {
-      "promptId": "listening.clap.mofeta",
-      "index": 0,
-      "text": "Mo... fe... ta.",
-      "file": "assets/audio/prompts/listening.clap.mofeta.0.m4a"
     },
     {
       "promptId": "syllables.build_word.foto",
@@ -3680,12 +3623,6 @@
       "index": 0,
       "text": "Arma la palabra, mano.",
       "file": "assets/audio/prompts/syllables.build_word.mano.0.m4a"
-    },
-    {
-      "promptId": "syllables.build_word.mofeta",
-      "index": 0,
-      "text": "Arma la palabra, mofeta.",
-      "file": "assets/audio/prompts/syllables.build_word.mofeta.0.m4a"
     },
     {
       "promptId": "syllables.build_word.mono",
@@ -3726,325 +3663,325 @@
     {
       "promptId": "syllables.contains.da",
       "index": 0,
-      "text": "¿Qué dibujo tiene, da?",
+      "text": "¿Qué dibujo tiene... da?",
       "file": "assets/audio/prompts/syllables.contains.da.0.m4a"
     },
     {
       "promptId": "syllables.contains.de",
       "index": 0,
-      "text": "¿Qué dibujo tiene, de?",
+      "text": "¿Qué dibujo tiene... de?",
       "file": "assets/audio/prompts/syllables.contains.de.0.m4a"
     },
     {
       "promptId": "syllables.contains.di",
       "index": 0,
-      "text": "¿Qué dibujo tiene, di?",
+      "text": "¿Qué dibujo tiene... di?",
       "file": "assets/audio/prompts/syllables.contains.di.0.m4a"
     },
     {
       "promptId": "syllables.contains.do",
       "index": 0,
-      "text": "¿Qué dibujo tiene, do?",
+      "text": "¿Qué dibujo tiene... do?",
       "file": "assets/audio/prompts/syllables.contains.do.0.m4a"
     },
     {
       "promptId": "syllables.contains.du",
       "index": 0,
-      "text": "¿Qué dibujo tiene, du?",
+      "text": "¿Qué dibujo tiene... du?",
       "file": "assets/audio/prompts/syllables.contains.du.0.m4a"
     },
     {
       "promptId": "syllables.contains.fa",
       "index": 0,
-      "text": "¿Qué dibujo tiene, fa?",
+      "text": "¿Qué dibujo tiene... fa?",
       "file": "assets/audio/prompts/syllables.contains.fa.0.m4a"
     },
     {
       "promptId": "syllables.contains.fe",
       "index": 0,
-      "text": "¿Qué dibujo tiene, fe?",
+      "text": "¿Qué dibujo tiene... fe?",
       "file": "assets/audio/prompts/syllables.contains.fe.0.m4a"
     },
     {
       "promptId": "syllables.contains.fi",
       "index": 0,
-      "text": "¿Qué dibujo tiene, fi?",
+      "text": "¿Qué dibujo tiene... fi?",
       "file": "assets/audio/prompts/syllables.contains.fi.0.m4a"
     },
     {
       "promptId": "syllables.contains.fo",
       "index": 0,
-      "text": "¿Qué dibujo tiene, fo?",
+      "text": "¿Qué dibujo tiene... fo?",
       "file": "assets/audio/prompts/syllables.contains.fo.0.m4a"
     },
     {
       "promptId": "syllables.contains.la",
       "index": 0,
-      "text": "¿Qué dibujo tiene, la?",
+      "text": "¿Qué dibujo tiene... la?",
       "file": "assets/audio/prompts/syllables.contains.la.0.m4a"
     },
     {
       "promptId": "syllables.contains.le",
       "index": 0,
-      "text": "¿Qué dibujo tiene, le?",
+      "text": "¿Qué dibujo tiene... le?",
       "file": "assets/audio/prompts/syllables.contains.le.0.m4a"
     },
     {
       "promptId": "syllables.contains.li",
       "index": 0,
-      "text": "¿Qué dibujo tiene, li?",
+      "text": "¿Qué dibujo tiene... li?",
       "file": "assets/audio/prompts/syllables.contains.li.0.m4a"
     },
     {
       "promptId": "syllables.contains.lo",
       "index": 0,
-      "text": "¿Qué dibujo tiene, lo?",
+      "text": "¿Qué dibujo tiene... lo?",
       "file": "assets/audio/prompts/syllables.contains.lo.0.m4a"
     },
     {
       "promptId": "syllables.contains.lu",
       "index": 0,
-      "text": "¿Qué dibujo tiene, lu?",
+      "text": "¿Qué dibujo tiene... lu?",
       "file": "assets/audio/prompts/syllables.contains.lu.0.m4a"
     },
     {
       "promptId": "syllables.contains.ma",
       "index": 0,
-      "text": "¿Qué dibujo tiene, ma?",
+      "text": "¿Qué dibujo tiene... ma?",
       "file": "assets/audio/prompts/syllables.contains.ma.0.m4a"
     },
     {
       "promptId": "syllables.contains.me",
       "index": 0,
-      "text": "¿Qué dibujo tiene, me?",
+      "text": "¿Qué dibujo tiene... me?",
       "file": "assets/audio/prompts/syllables.contains.me.0.m4a"
     },
     {
       "promptId": "syllables.contains.mi",
       "index": 0,
-      "text": "¿Qué dibujo tiene, mi?",
+      "text": "¿Qué dibujo tiene... mi?",
       "file": "assets/audio/prompts/syllables.contains.mi.0.m4a"
     },
     {
       "promptId": "syllables.contains.mo",
       "index": 0,
-      "text": "¿Qué dibujo tiene, mo?",
+      "text": "¿Qué dibujo tiene... mo?",
       "file": "assets/audio/prompts/syllables.contains.mo.0.m4a"
     },
     {
       "promptId": "syllables.contains.mu",
       "index": 0,
-      "text": "¿Qué dibujo tiene, mu?",
+      "text": "¿Qué dibujo tiene... mu?",
       "file": "assets/audio/prompts/syllables.contains.mu.0.m4a"
     },
     {
       "promptId": "syllables.contains.na",
       "index": 0,
-      "text": "¿Qué dibujo tiene, na?",
+      "text": "¿Qué dibujo tiene... na?",
       "file": "assets/audio/prompts/syllables.contains.na.0.m4a"
     },
     {
       "promptId": "syllables.contains.ni",
       "index": 0,
-      "text": "¿Qué dibujo tiene, ni?",
+      "text": "¿Qué dibujo tiene... ni?",
       "file": "assets/audio/prompts/syllables.contains.ni.0.m4a"
     },
     {
       "promptId": "syllables.contains.no",
       "index": 0,
-      "text": "¿Qué dibujo tiene, no?",
+      "text": "¿Qué dibujo tiene... no?",
       "file": "assets/audio/prompts/syllables.contains.no.0.m4a"
     },
     {
       "promptId": "syllables.contains.nu",
       "index": 0,
-      "text": "¿Qué dibujo tiene, nu?",
+      "text": "¿Qué dibujo tiene... nu?",
       "file": "assets/audio/prompts/syllables.contains.nu.0.m4a"
     },
     {
       "promptId": "syllables.contains.pa",
       "index": 0,
-      "text": "¿Qué dibujo tiene, pa?",
+      "text": "¿Qué dibujo tiene... pa?",
       "file": "assets/audio/prompts/syllables.contains.pa.0.m4a"
     },
     {
       "promptId": "syllables.contains.pe",
       "index": 0,
-      "text": "¿Qué dibujo tiene, pe?",
+      "text": "¿Qué dibujo tiene... pe?",
       "file": "assets/audio/prompts/syllables.contains.pe.0.m4a"
     },
     {
       "promptId": "syllables.contains.pi",
       "index": 0,
-      "text": "¿Qué dibujo tiene, pi?",
+      "text": "¿Qué dibujo tiene... pi?",
       "file": "assets/audio/prompts/syllables.contains.pi.0.m4a"
     },
     {
       "promptId": "syllables.contains.po",
       "index": 0,
-      "text": "¿Qué dibujo tiene, po?",
+      "text": "¿Qué dibujo tiene... po?",
       "file": "assets/audio/prompts/syllables.contains.po.0.m4a"
     },
     {
       "promptId": "syllables.contains.pu",
       "index": 0,
-      "text": "¿Qué dibujo tiene, pu?",
+      "text": "¿Qué dibujo tiene... pu?",
       "file": "assets/audio/prompts/syllables.contains.pu.0.m4a"
     },
     {
       "promptId": "syllables.contains.sa",
       "index": 0,
-      "text": "¿Qué dibujo tiene, sa?",
+      "text": "¿Qué dibujo tiene... sa?",
       "file": "assets/audio/prompts/syllables.contains.sa.0.m4a"
     },
     {
       "promptId": "syllables.contains.si",
       "index": 0,
-      "text": "¿Qué dibujo tiene, si?",
+      "text": "¿Qué dibujo tiene... si?",
       "file": "assets/audio/prompts/syllables.contains.si.0.m4a"
     },
     {
       "promptId": "syllables.contains.so",
       "index": 0,
-      "text": "¿Qué dibujo tiene, so?",
+      "text": "¿Qué dibujo tiene... so?",
       "file": "assets/audio/prompts/syllables.contains.so.0.m4a"
     },
     {
       "promptId": "syllables.contains.ta",
       "index": 0,
-      "text": "¿Qué dibujo tiene, ta?",
+      "text": "¿Qué dibujo tiene... ta?",
       "file": "assets/audio/prompts/syllables.contains.ta.0.m4a"
     },
     {
       "promptId": "syllables.contains.te",
       "index": 0,
-      "text": "¿Qué dibujo tiene, te?",
+      "text": "¿Qué dibujo tiene... te?",
       "file": "assets/audio/prompts/syllables.contains.te.0.m4a"
     },
     {
       "promptId": "syllables.contains.ti",
       "index": 0,
-      "text": "¿Qué dibujo tiene, ti?",
+      "text": "¿Qué dibujo tiene... ti?",
       "file": "assets/audio/prompts/syllables.contains.ti.0.m4a"
     },
     {
       "promptId": "syllables.contains.to",
       "index": 0,
-      "text": "¿Qué dibujo tiene, to?",
+      "text": "¿Qué dibujo tiene... to?",
       "file": "assets/audio/prompts/syllables.contains.to.0.m4a"
     },
     {
       "promptId": "syllables.contains.tu",
       "index": 0,
-      "text": "¿Qué dibujo tiene, tu?",
+      "text": "¿Qué dibujo tiene... tu?",
       "file": "assets/audio/prompts/syllables.contains.tu.0.m4a"
     },
     {
       "promptId": "syllables.contains.ña",
       "index": 0,
-      "text": "¿Qué dibujo tiene, ña?",
+      "text": "¿Qué dibujo tiene... ña?",
       "file": "assets/audio/prompts/syllables.contains.ña.0.m4a"
     },
     {
       "promptId": "syllables.contains.ñe",
       "index": 0,
-      "text": "¿Qué dibujo tiene, ñe?",
+      "text": "¿Qué dibujo tiene... ñe?",
       "file": "assets/audio/prompts/syllables.contains.ñe.0.m4a"
     },
     {
       "promptId": "syllables.contains.ño",
       "index": 0,
-      "text": "¿Qué dibujo tiene, ño?",
+      "text": "¿Qué dibujo tiene... ño?",
       "file": "assets/audio/prompts/syllables.contains.ño.0.m4a"
     },
     {
       "promptId": "syllables.ends_with.du",
       "index": 0,
-      "text": "¿Qué dibujo termina con, du?",
+      "text": "¿Qué dibujo termina en... du?",
       "file": "assets/audio/prompts/syllables.ends_with.du.0.m4a"
     },
     {
       "promptId": "syllables.ends_with.fa",
       "index": 0,
-      "text": "¿Qué dibujo termina con, fa?",
+      "text": "¿Qué dibujo termina en... fa?",
       "file": "assets/audio/prompts/syllables.ends_with.fa.0.m4a"
     },
     {
       "promptId": "syllables.ends_with.fe",
       "index": 0,
-      "text": "¿Qué dibujo termina con, fe?",
+      "text": "¿Qué dibujo termina en... fe?",
       "file": "assets/audio/prompts/syllables.ends_with.fe.0.m4a"
     },
     {
       "promptId": "syllables.ends_with.na",
       "index": 0,
-      "text": "¿Qué dibujo termina con, na?",
+      "text": "¿Qué dibujo termina en... na?",
       "file": "assets/audio/prompts/syllables.ends_with.na.0.m4a"
     },
     {
       "promptId": "syllables.ends_with.no",
       "index": 0,
-      "text": "¿Qué dibujo termina con, no?",
+      "text": "¿Qué dibujo termina en... no?",
       "file": "assets/audio/prompts/syllables.ends_with.no.0.m4a"
     },
     {
       "promptId": "syllables.ends_with.ña",
       "index": 0,
-      "text": "¿Qué dibujo termina con, ña?",
+      "text": "¿Qué dibujo termina en... ña?",
       "file": "assets/audio/prompts/syllables.ends_with.ña.0.m4a"
     },
     {
       "promptId": "syllables.ends_with.ño",
       "index": 0,
-      "text": "¿Qué dibujo termina con, ño?",
+      "text": "¿Qué dibujo termina en... ño?",
       "file": "assets/audio/prompts/syllables.ends_with.ño.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.fa",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, fa?",
+      "text": "¿Qué dibujo empieza con... fa?",
       "file": "assets/audio/prompts/syllables.starts_with.fa.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.fi",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, fi?",
+      "text": "¿Qué dibujo empieza con... fi?",
       "file": "assets/audio/prompts/syllables.starts_with.fi.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.fo",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, fo?",
+      "text": "¿Qué dibujo empieza con... fo?",
       "file": "assets/audio/prompts/syllables.starts_with.fo.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.fu",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, fu?",
+      "text": "¿Qué dibujo empieza con... fu?",
       "file": "assets/audio/prompts/syllables.starts_with.fu.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.na",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, na?",
+      "text": "¿Qué dibujo empieza con... na?",
       "file": "assets/audio/prompts/syllables.starts_with.na.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.ni",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, ni?",
+      "text": "¿Qué dibujo empieza con... ni?",
       "file": "assets/audio/prompts/syllables.starts_with.ni.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.nu",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, nu?",
+      "text": "¿Qué dibujo empieza con... nu?",
       "file": "assets/audio/prompts/syllables.starts_with.nu.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.ña",
       "index": 0,
-      "text": "¿Qué dibujo empieza con, ña?",
+      "text": "¿Qué dibujo empieza con... ña?",
       "file": "assets/audio/prompts/syllables.starts_with.ña.0.m4a"
     },
     {
@@ -4102,13 +4039,6 @@
       "text": "jirafa",
       "file": "assets/audio/words/jirafa.m4a",
       "spokenAs": "Jirafa."
-    },
-    {
-      "promptId": "word.mofeta",
-      "index": 0,
-      "text": "mofeta",
-      "file": "assets/audio/words/mofeta.m4a",
-      "spokenAs": "Mofeta."
     },
     {
       "promptId": "word.naranja",
@@ -4255,6 +4185,31 @@
       "index": 0,
       "text": "¡Busca bien adentro! Toca el dibujo que tiene el sonido que te digo.",
       "file": "assets/audio/prompts/syllables.contains.intro.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.zorrillo",
+      "index": 0,
+      "text": "Zo... rri... llo.",
+      "file": "assets/audio/prompts/listening.clap.zorrillo.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.dominó",
+      "index": 0,
+      "text": "Arma la palabra, dominó.",
+      "file": "assets/audio/prompts/syllables.build_word.dominó.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.teléfono",
+      "index": 0,
+      "text": "Arma la palabra, teléfono.",
+      "file": "assets/audio/prompts/syllables.build_word.teléfono.0.m4a"
+    },
+    {
+      "promptId": "word.zorrillo",
+      "index": 0,
+      "text": "zorrillo",
+      "file": "assets/audio/words/zorrillo.m4a",
+      "spokenAs": "Zorrillo."
     }
   ]
 }

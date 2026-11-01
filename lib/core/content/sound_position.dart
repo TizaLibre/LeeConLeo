@@ -18,7 +18,7 @@ enum SoundPosition {
   };
 
   bool isSpelled(Word word, String sound) {
-    final written = [for (final syllable in word.syllables) _plain(syllable)];
+    final written = [for (final syllable in word.syllables) SpanishLetters.plain(syllable)];
     if (written.isEmpty) return false;
     return switch (this) {
       start => written.first.startsWith(sound),
@@ -32,9 +32,6 @@ enum SoundPosition {
     end => SoundPromptIds.endsWith(sound),
     inside => SoundPromptIds.contains(sound),
   };
-
-  static String _plain(String syllable) =>
-      syllable.toLowerCase().split('').map(SpanishLetters.withoutAccent).join();
 
   static List<Word> pictured(Iterable<Word> words) =>
       words.where((word) => word.image != null).toList();

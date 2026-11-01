@@ -81,6 +81,16 @@ void main() {
     expect(list.sounds, ['da']);
   });
 
+  test('a phrase whose text changed since it was recorded is listed again', () {
+    final list = RecordingList.missing(
+      bundle,
+      hasAudio: recorded,
+      recordedTexts: {'feedback.correct.0': '¡Muy bien!', 'reward.0': '¡Lo terminaste!'},
+    );
+
+    expect(list.phrases.map((phrase) => phrase['promptId']), ['feedback.correct', 'reward']);
+  });
+
   test('nothing to record gives an empty list', () {
     final complete = RecordingList.missing(
       const ContentBundle(words: [], stages: [], prompts: PromptLibrary({})),

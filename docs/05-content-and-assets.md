@@ -194,8 +194,12 @@ to record.
   `tool/voice/leo_reference.wav` is the clip every phrase copies, so new phrases keep Leo's voice.
 - A pull request that adds or changes a phrase or a word also adds its clips. On that branch, run
   `dart run tool/content.dart voice`: it writes `tool/voice/to_record.json` with every phrase and word that
-  has no recording yet, and the notebook records exactly that list. `--redo=word.ojo,syllable.pa` adds clips
-  that should be recorded again, including phrases whose text changed (their old clip is still on disk).
+  has no recording yet or whose text changed since it was recorded (compared with `manifest.json`), and the
+  notebook records exactly that list. `--redo=word.ojo,syllable.pa` adds clips that sound wrong and should be
+  recorded again. To fix a mispronounced word or phrase, the notebook's "try spellings" step plays variants
+  (`TRY`, `TRY_WORDS`, `TRY_PHRASES`) so the best one can be chosen before recording.
+- Phrases leave a pause ("...") before the syllable or letter they ask about, so the voice doesn't merge them
+  with the word before it ("termina en... ño", not "termina con, ño").
 
 ## Fonts
 

@@ -12,4 +12,6 @@ abstract final class SpanishLetters {
   static bool isFrontVowel(String letter) => frontVowels.contains(letter);
 
   static String withoutAccent(String letter) => _accentless[letter] ?? letter;
+
+  static String plain(String text) => text.toLowerCase().split('').map(withoutAccent).join();
 }
