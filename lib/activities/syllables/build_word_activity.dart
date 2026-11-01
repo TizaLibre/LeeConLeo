@@ -6,6 +6,7 @@ import '../../core/content/models/spoken_line.dart';
 import '../../core/content/models/word.dart';
 import '../../core/content/sound_clips.dart';
 import '../../core/content/syllable_prompt_ids.dart';
+import '../../utils/spanish/spanish_letters.dart';
 import '../common/activity_context.dart';
 import '../common/activity_item.dart';
 import '../common/activity_spec.dart';
@@ -52,7 +53,7 @@ class BuildWordActivity implements ActivitySpec {
           word,
           [
             ...word.syllables,
-            ...(context.step.sounds.where((sound) => !word.syllables.contains(sound)).toList()
+            ...(context.step.sounds.where((sound) => !word.sounds.contains(sound)).toList()
                   ..shuffle(random))
                 .take(extraTiles),
           ]..shuffle(random),
@@ -67,7 +68,8 @@ class BuildWordActivity implements ActivitySpec {
     options: tiles,
     optionNames: {
       word.text: SpokenLine(word.text, clip: word.audio),
-      for (final tile in tiles) tile: SpokenLine(tile, clip: SoundClips.of(tile)),
+      for (final tile in tiles)
+        tile: SpokenLine(tile, clip: SoundClips.of(SpanishLetters.plain(tile))),
     },
     syllables: word.syllables,
     image: word.image!,

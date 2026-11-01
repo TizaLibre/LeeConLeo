@@ -1,9 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
-<ellipse cx="200" cy="360" rx="90" ry="17.6" fill="#3B2A20" fill-opacity="0.15"/>
-<path d="M150 360 L150 130 Q150 60 200 60 Q250 60 250 130 L250 360" fill="#F6C9A3" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M168 140 L168 104 Q168 76 200 76 Q232 76 232 104 L232 140 Q200 150 168 140 Z" fill="#F29C8F" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M184 98 Q190 88 200 86" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M176 222 Q200 232 224 222" fill="none" stroke="#3B2A20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M180 236 Q200 244 220 236" fill="none" stroke="#3B2A20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M176 300 Q200 310 224 300" fill="none" stroke="#3B2A20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M96 412 L96 150 Q96 30 200 30 Q304 30 304 150 L304 412" fill="#F6C9A3" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M120 270 Q200 318 280 270" fill="none" stroke="#F29C8F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M128 254 L128 136 Q128 58 200 58 Q272 58 272 136 L272 254 Q200 290 128 254 Z" fill="#E8679A" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M124 268 Q200 306 276 268" fill="none" stroke="#3B2A20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M156 210 L156 130 Q156 96 180 84" fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="214" cy="84" r="8" fill="#FFFFFF"/>
+<path d="M150 352 Q200 368 250 352" fill="none" stroke="#3B2A20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M162 372 Q200 382 238 372" fill="none" stroke="#3B2A20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

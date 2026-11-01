@@ -2390,21 +2390,6 @@
       "audio": "words/mochila.m4a"
     },
     {
-      "text": "mofeta",
-      "syllables": [
-        "mo",
-        "fe",
-        "ta"
-      ],
-      "sounds": [
-        "mo",
-        "fe",
-        "ta"
-      ],
-      "image": "words/mofeta.svg",
-      "audio": "words/mofeta.m4a"
-    },
-    {
       "text": "molino",
       "syllables": [
         "mo",
@@ -4259,6 +4244,21 @@
       ]
     },
     {
+      "text": "zorrillo",
+      "syllables": [
+        "zo",
+        "rri",
+        "llo"
+      ],
+      "sounds": [
+        "so",
+        "rri",
+        "yo"
+      ],
+      "image": "words/zorrillo.svg",
+      "audio": "words/zorrillo.m4a"
+    },
+    {
       "text": "zorro",
       "syllables": [
         "zo",
@@ -4806,211 +4806,211 @@
       "¡Mira cuántas burbujas! Revienta las que tienen la letra que te digo."
     ],
     "letter.meet.a": [
-      "Esta es la, a. ¡La, a de abeja! ¡Tócala!"
+      "Esta es la... a. ¡La... a de abeja! ¡Tócala!"
     ],
     "letter.meet.a.upper": [
-      "Toca la, a mayúscula."
+      "Toca la... a mayúscula."
     ],
     "letter.meet.a.lower": [
-      "Toca la, a minúscula."
+      "Toca la... a minúscula."
     ],
     "letter.trace.a.lower": [
-      "Repasa la, a minúscula con tu dedo."
+      "Repasa la... a minúscula con tu dedo."
     ],
     "letter.trace.a.upper": [
-      "Repasa la, a mayúscula con tu dedo."
+      "Repasa la... a mayúscula con tu dedo."
     ],
     "letter.find.a": [
-      "Revienta las burbujas que tienen la, a."
+      "Revienta las burbujas que tienen la... a."
     ],
     "letter.meet.e": [
-      "Esta es la, e. ¡La, e de elefante! ¡Tócala!"
+      "Esta es la... e. ¡La... e de elefante! ¡Tócala!"
     ],
     "letter.meet.e.upper": [
-      "Toca la, e mayúscula."
+      "Toca la... e mayúscula."
     ],
     "letter.meet.e.lower": [
-      "Toca la, e minúscula."
+      "Toca la... e minúscula."
     ],
     "letter.trace.e.lower": [
-      "Repasa la, e minúscula con tu dedo."
+      "Repasa la... e minúscula con tu dedo."
     ],
     "letter.trace.e.upper": [
-      "Repasa la, e mayúscula con tu dedo."
+      "Repasa la... e mayúscula con tu dedo."
     ],
     "letter.find.e": [
-      "Revienta las burbujas que tienen la, e."
+      "Revienta las burbujas que tienen la... e."
     ],
     "letter.meet.i": [
-      "Esta es la, i. ¡La, i de iglú! ¡Tócala!"
+      "Esta es la... i. ¡La... i de iglú! ¡Tócala!"
     ],
     "letter.meet.i.upper": [
-      "Toca la, i mayúscula."
+      "Toca la... i mayúscula."
     ],
     "letter.meet.i.lower": [
-      "Toca la, i minúscula."
+      "Toca la... i minúscula."
     ],
     "letter.trace.i.lower": [
-      "Repasa la, i minúscula con tu dedo."
+      "Repasa la... i minúscula con tu dedo."
     ],
     "letter.trace.i.upper": [
-      "Repasa la, i mayúscula con tu dedo."
+      "Repasa la... i mayúscula con tu dedo."
     ],
     "letter.find.i": [
-      "Revienta las burbujas que tienen la, i."
+      "Revienta las burbujas que tienen la... i."
     ],
     "letter.meet.o": [
-      "Esta es la, o. ¡La, o de oso! ¡Tócala!"
+      "Esta es la... o. ¡La... o de oso! ¡Tócala!"
     ],
     "letter.meet.o.upper": [
-      "Toca la, o mayúscula."
+      "Toca la... o mayúscula."
     ],
     "letter.meet.o.lower": [
-      "Toca la, o minúscula."
+      "Toca la... o minúscula."
     ],
     "letter.trace.o.lower": [
-      "Repasa la, o minúscula con tu dedo."
+      "Repasa la... o minúscula con tu dedo."
     ],
     "letter.trace.o.upper": [
-      "Repasa la, o mayúscula con tu dedo."
+      "Repasa la... o mayúscula con tu dedo."
     ],
     "letter.find.o": [
-      "Revienta las burbujas que tienen la, o."
+      "Revienta las burbujas que tienen la... o."
     ],
     "letter.meet.u": [
-      "Esta es la, u. ¡La, u de uva! ¡Tócala!"
+      "Esta es la... u. ¡La... u de uva! ¡Tócala!"
     ],
     "letter.meet.u.upper": [
-      "Toca la, u mayúscula."
+      "Toca la... u mayúscula."
     ],
     "letter.meet.u.lower": [
-      "Toca la, u minúscula."
+      "Toca la... u minúscula."
     ],
     "letter.trace.u.lower": [
-      "Repasa la, u minúscula con tu dedo."
+      "Repasa la... u minúscula con tu dedo."
     ],
     "letter.trace.u.upper": [
-      "Repasa la, u mayúscula con tu dedo."
+      "Repasa la... u mayúscula con tu dedo."
     ],
     "letter.find.u": [
-      "Revienta las burbujas que tienen la, u."
+      "Revienta las burbujas que tienen la... u."
     ],
     "syllables.starts_with.intro": [
       "¡Escucha bien! Toca el dibujo que empieza con el sonido que te digo."
     ],
     "syllables.starts_with.a": [
-      "¿Qué dibujo empieza con, a?"
+      "¿Qué dibujo empieza con... a?"
     ],
     "syllables.starts_with.e": [
-      "¿Qué dibujo empieza con, e?"
+      "¿Qué dibujo empieza con... e?"
     ],
     "syllables.starts_with.i": [
-      "¿Qué dibujo empieza con, i?"
+      "¿Qué dibujo empieza con... i?"
     ],
     "syllables.starts_with.o": [
-      "¿Qué dibujo empieza con, o?"
+      "¿Qué dibujo empieza con... o?"
     ],
     "syllables.starts_with.u": [
-      "¿Qué dibujo empieza con, u?"
+      "¿Qué dibujo empieza con... u?"
     ],
     "letter.meet.m": [
-      "Esta es la, eme. ¡La, eme de mesa! ¡Tócala!"
+      "Esta es la... eme. ¡La... eme de mesa! ¡Tócala!"
     ],
     "letter.meet.m.upper": [
-      "Toca la, eme mayúscula."
+      "Toca la... eme mayúscula."
     ],
     "letter.meet.m.lower": [
-      "Toca la, eme minúscula."
+      "Toca la... eme minúscula."
     ],
     "letter.trace.m.lower": [
-      "Repasa la, eme minúscula con tu dedo."
+      "Repasa la... eme minúscula con tu dedo."
     ],
     "letter.trace.m.upper": [
-      "Repasa la, eme mayúscula con tu dedo."
+      "Repasa la... eme mayúscula con tu dedo."
     ],
     "letter.find.m": [
-      "Revienta las burbujas que tienen la, eme."
+      "Revienta las burbujas que tienen la... eme."
     ],
     "letter.meet.p": [
-      "Esta es la, pe. ¡La, pe de pelota! ¡Tócala!"
+      "Esta es la... pe. ¡La... pe de pelota! ¡Tócala!"
     ],
     "letter.meet.p.upper": [
-      "Toca la, pe mayúscula."
+      "Toca la... pe mayúscula."
     ],
     "letter.meet.p.lower": [
-      "Toca la, pe minúscula."
+      "Toca la... pe minúscula."
     ],
     "letter.trace.p.lower": [
-      "Repasa la, pe minúscula con tu dedo."
+      "Repasa la... pe minúscula con tu dedo."
     ],
     "letter.trace.p.upper": [
-      "Repasa la, pe mayúscula con tu dedo."
+      "Repasa la... pe mayúscula con tu dedo."
     ],
     "letter.find.p": [
-      "Revienta las burbujas que tienen la, pe."
+      "Revienta las burbujas que tienen la... pe."
     ],
     "letter.meet.l": [
-      "Esta es la, ele. ¡La, ele de luna! ¡Tócala!"
+      "Esta es la... ele. ¡La... ele de luna! ¡Tócala!"
     ],
     "letter.meet.l.upper": [
-      "Toca la, ele mayúscula."
+      "Toca la... ele mayúscula."
     ],
     "letter.meet.l.lower": [
-      "Toca la, ele minúscula."
+      "Toca la... ele minúscula."
     ],
     "letter.trace.l.lower": [
-      "Repasa la, ele minúscula con tu dedo."
+      "Repasa la... ele minúscula con tu dedo."
     ],
     "letter.trace.l.upper": [
-      "Repasa la, ele mayúscula con tu dedo."
+      "Repasa la... ele mayúscula con tu dedo."
     ],
     "letter.find.l": [
-      "Revienta las burbujas que tienen la, ele."
+      "Revienta las burbujas que tienen la... ele."
     ],
     "syllables.starts_with.ma": [
-      "¿Qué dibujo empieza con, ma?"
+      "¿Qué dibujo empieza con... ma?"
     ],
     "syllables.starts_with.me": [
-      "¿Qué dibujo empieza con, me?"
+      "¿Qué dibujo empieza con... me?"
     ],
     "syllables.starts_with.mi": [
-      "¿Qué dibujo empieza con, mi?"
+      "¿Qué dibujo empieza con... mi?"
     ],
     "syllables.starts_with.mo": [
-      "¿Qué dibujo empieza con, mo?"
+      "¿Qué dibujo empieza con... mo?"
     ],
     "syllables.starts_with.mu": [
-      "¿Qué dibujo empieza con, mu?"
+      "¿Qué dibujo empieza con... mu?"
     ],
     "syllables.starts_with.pa": [
-      "¿Qué dibujo empieza con, pa?"
+      "¿Qué dibujo empieza con... pa?"
     ],
     "syllables.starts_with.pe": [
-      "¿Qué dibujo empieza con, pe?"
+      "¿Qué dibujo empieza con... pe?"
     ],
     "syllables.starts_with.pi": [
-      "¿Qué dibujo empieza con, pi?"
+      "¿Qué dibujo empieza con... pi?"
     ],
     "syllables.starts_with.po": [
-      "¿Qué dibujo empieza con, po?"
+      "¿Qué dibujo empieza con... po?"
     ],
     "syllables.starts_with.pu": [
-      "¿Qué dibujo empieza con, pu?"
+      "¿Qué dibujo empieza con... pu?"
     ],
     "syllables.starts_with.la": [
-      "¿Qué dibujo empieza con, la?"
+      "¿Qué dibujo empieza con... la?"
     ],
     "syllables.starts_with.le": [
-      "¿Qué dibujo empieza con, le?"
+      "¿Qué dibujo empieza con... le?"
     ],
     "syllables.starts_with.li": [
-      "¿Qué dibujo empieza con, li?"
+      "¿Qué dibujo empieza con... li?"
     ],
     "syllables.starts_with.lo": [
-      "¿Qué dibujo empieza con, lo?"
+      "¿Qué dibujo empieza con... lo?"
     ],
     "syllables.starts_with.lu": [
-      "¿Qué dibujo empieza con, lu?"
+      "¿Qué dibujo empieza con... lu?"
     ],
     "syllables.meet.intro": [
       "¡Las letras se juntan para sonar! Escucha y toca."
@@ -5037,202 +5037,202 @@
       "¡Ahora armemos palabras! Mira el dibujo y lleva cada pedacito a su lugar."
     ],
     "syllables.meet.ma": [
-      "La, eme, y la, a, juntas dicen, ma. ¡Toca, ma!"
+      "Juntas dicen... ma. ¡Tócala!"
     ],
     "syllables.meet.ma.choose": [
-      "¿Dónde dice, ma? ¡Tócala!"
+      "¿Dónde dice... ma? ¡Tócala!"
     ],
     "syllables.trace.ma": [
-      "Escribe, ma, con tu dedo."
+      "Escribe... ma... con tu dedo."
     ],
     "syllables.find.ma": [
-      "Revienta las burbujas que dicen, ma."
+      "Revienta las burbujas que dicen... ma."
     ],
     "syllables.meet.me": [
-      "La, eme, y la, e, juntas dicen, me. ¡Toca, me!"
+      "Juntas dicen... me. ¡Tócala!"
     ],
     "syllables.meet.me.choose": [
-      "¿Dónde dice, me? ¡Tócala!"
+      "¿Dónde dice... me? ¡Tócala!"
     ],
     "syllables.trace.me": [
-      "Escribe, me, con tu dedo."
+      "Escribe... me... con tu dedo."
     ],
     "syllables.find.me": [
-      "Revienta las burbujas que dicen, me."
+      "Revienta las burbujas que dicen... me."
     ],
     "syllables.meet.mi": [
-      "La, eme, y la, i, juntas dicen, mi. ¡Toca, mi!"
+      "Juntas dicen... mi. ¡Tócala!"
     ],
     "syllables.meet.mi.choose": [
-      "¿Dónde dice, mi? ¡Tócala!"
+      "¿Dónde dice... mi? ¡Tócala!"
     ],
     "syllables.trace.mi": [
-      "Escribe, mi, con tu dedo."
+      "Escribe... mi... con tu dedo."
     ],
     "syllables.find.mi": [
-      "Revienta las burbujas que dicen, mi."
+      "Revienta las burbujas que dicen... mi."
     ],
     "syllables.meet.mo": [
-      "La, eme, y la, o, juntas dicen, mo. ¡Toca, mo!"
+      "Juntas dicen... mo. ¡Tócala!"
     ],
     "syllables.meet.mo.choose": [
-      "¿Dónde dice, mo? ¡Tócala!"
+      "¿Dónde dice... mo? ¡Tócala!"
     ],
     "syllables.trace.mo": [
-      "Escribe, mo, con tu dedo."
+      "Escribe... mo... con tu dedo."
     ],
     "syllables.find.mo": [
-      "Revienta las burbujas que dicen, mo."
+      "Revienta las burbujas que dicen... mo."
     ],
     "syllables.meet.mu": [
-      "La, eme, y la, u, juntas dicen, mu. ¡Toca, mu!"
+      "Juntas dicen... mu. ¡Tócala!"
     ],
     "syllables.meet.mu.choose": [
-      "¿Dónde dice, mu? ¡Tócala!"
+      "¿Dónde dice... mu? ¡Tócala!"
     ],
     "syllables.trace.mu": [
-      "Escribe, mu, con tu dedo."
+      "Escribe... mu... con tu dedo."
     ],
     "syllables.find.mu": [
-      "Revienta las burbujas que dicen, mu."
+      "Revienta las burbujas que dicen... mu."
     ],
     "syllables.meet.pa": [
-      "La, pe, y la, a, juntas dicen, pa. ¡Toca, pa!"
+      "Juntas dicen... pa. ¡Tócala!"
     ],
     "syllables.meet.pa.choose": [
-      "¿Dónde dice, pa? ¡Tócala!"
+      "¿Dónde dice... pa? ¡Tócala!"
     ],
     "syllables.trace.pa": [
-      "Escribe, pa, con tu dedo."
+      "Escribe... pa... con tu dedo."
     ],
     "syllables.find.pa": [
-      "Revienta las burbujas que dicen, pa."
+      "Revienta las burbujas que dicen... pa."
     ],
     "syllables.meet.pe": [
-      "La, pe, y la, e, juntas dicen, pe. ¡Toca, pe!"
+      "Juntas dicen... pe. ¡Tócala!"
     ],
     "syllables.meet.pe.choose": [
-      "¿Dónde dice, pe? ¡Tócala!"
+      "¿Dónde dice... pe? ¡Tócala!"
     ],
     "syllables.trace.pe": [
-      "Escribe, pe, con tu dedo."
+      "Escribe... pe... con tu dedo."
     ],
     "syllables.find.pe": [
-      "Revienta las burbujas que dicen, pe."
+      "Revienta las burbujas que dicen... pe."
     ],
     "syllables.meet.pi": [
-      "La, pe, y la, i, juntas dicen, pi. ¡Toca, pi!"
+      "Juntas dicen... pi. ¡Tócala!"
     ],
     "syllables.meet.pi.choose": [
-      "¿Dónde dice, pi? ¡Tócala!"
+      "¿Dónde dice... pi? ¡Tócala!"
     ],
     "syllables.trace.pi": [
-      "Escribe, pi, con tu dedo."
+      "Escribe... pi... con tu dedo."
     ],
     "syllables.find.pi": [
-      "Revienta las burbujas que dicen, pi."
+      "Revienta las burbujas que dicen... pi."
     ],
     "syllables.meet.po": [
-      "La, pe, y la, o, juntas dicen, po. ¡Toca, po!"
+      "Juntas dicen... po. ¡Tócala!"
     ],
     "syllables.meet.po.choose": [
-      "¿Dónde dice, po? ¡Tócala!"
+      "¿Dónde dice... po? ¡Tócala!"
     ],
     "syllables.trace.po": [
-      "Escribe, po, con tu dedo."
+      "Escribe... po... con tu dedo."
     ],
     "syllables.find.po": [
-      "Revienta las burbujas que dicen, po."
+      "Revienta las burbujas que dicen... po."
     ],
     "syllables.meet.pu": [
-      "La, pe, y la, u, juntas dicen, pu. ¡Toca, pu!"
+      "Juntas dicen... pu. ¡Tócala!"
     ],
     "syllables.meet.pu.choose": [
-      "¿Dónde dice, pu? ¡Tócala!"
+      "¿Dónde dice... pu? ¡Tócala!"
     ],
     "syllables.trace.pu": [
-      "Escribe, pu, con tu dedo."
+      "Escribe... pu... con tu dedo."
     ],
     "syllables.find.pu": [
-      "Revienta las burbujas que dicen, pu."
+      "Revienta las burbujas que dicen... pu."
     ],
     "syllables.meet.la": [
-      "La, ele, y la, a, juntas dicen, la. ¡Toca, la!"
+      "Juntas dicen... la. ¡Tócala!"
     ],
     "syllables.meet.la.choose": [
-      "¿Dónde dice, la? ¡Tócala!"
+      "¿Dónde dice... la? ¡Tócala!"
     ],
     "syllables.trace.la": [
-      "Escribe, la, con tu dedo."
+      "Escribe... la... con tu dedo."
     ],
     "syllables.find.la": [
-      "Revienta las burbujas que dicen, la."
+      "Revienta las burbujas que dicen... la."
     ],
     "syllables.meet.le": [
-      "La, ele, y la, e, juntas dicen, le. ¡Toca, le!"
+      "Juntas dicen... le. ¡Tócala!"
     ],
     "syllables.meet.le.choose": [
-      "¿Dónde dice, le? ¡Tócala!"
+      "¿Dónde dice... le? ¡Tócala!"
     ],
     "syllables.trace.le": [
-      "Escribe, le, con tu dedo."
+      "Escribe... le... con tu dedo."
     ],
     "syllables.find.le": [
-      "Revienta las burbujas que dicen, le."
+      "Revienta las burbujas que dicen... le."
     ],
     "syllables.meet.li": [
-      "La, ele, y la, i, juntas dicen, li. ¡Toca, li!"
+      "Juntas dicen... li. ¡Tócala!"
     ],
     "syllables.meet.li.choose": [
-      "¿Dónde dice, li? ¡Tócala!"
+      "¿Dónde dice... li? ¡Tócala!"
     ],
     "syllables.trace.li": [
-      "Escribe, li, con tu dedo."
+      "Escribe... li... con tu dedo."
     ],
     "syllables.find.li": [
-      "Revienta las burbujas que dicen, li."
+      "Revienta las burbujas que dicen... li."
     ],
     "syllables.meet.lo": [
-      "La, ele, y la, o, juntas dicen, lo. ¡Toca, lo!"
+      "Juntas dicen... lo. ¡Tócala!"
     ],
     "syllables.meet.lo.choose": [
-      "¿Dónde dice, lo? ¡Tócala!"
+      "¿Dónde dice... lo? ¡Tócala!"
     ],
     "syllables.trace.lo": [
-      "Escribe, lo, con tu dedo."
+      "Escribe... lo... con tu dedo."
     ],
     "syllables.find.lo": [
-      "Revienta las burbujas que dicen, lo."
+      "Revienta las burbujas que dicen... lo."
     ],
     "syllables.meet.lu": [
-      "La, ele, y la, u, juntas dicen, lu. ¡Toca, lu!"
+      "Juntas dicen... lu. ¡Tócala!"
     ],
     "syllables.meet.lu.choose": [
-      "¿Dónde dice, lu? ¡Tócala!"
+      "¿Dónde dice... lu? ¡Tócala!"
     ],
     "syllables.trace.lu": [
-      "Escribe, lu, con tu dedo."
+      "Escribe... lu... con tu dedo."
     ],
     "syllables.find.lu": [
-      "Revienta las burbujas que dicen, lu."
+      "Revienta las burbujas que dicen... lu."
     ],
     "syllables.ends_with.ma": [
-      "¿Qué dibujo termina con, ma?"
+      "¿Qué dibujo termina en... ma?"
     ],
     "syllables.ends_with.mo": [
-      "¿Qué dibujo termina con, mo?"
+      "¿Qué dibujo termina en... mo?"
     ],
     "syllables.ends_with.pa": [
-      "¿Qué dibujo termina con, pa?"
+      "¿Qué dibujo termina en... pa?"
     ],
     "syllables.ends_with.po": [
-      "¿Qué dibujo termina con, po?"
+      "¿Qué dibujo termina en... po?"
     ],
     "syllables.ends_with.la": [
-      "¿Qué dibujo termina con, la?"
+      "¿Qué dibujo termina en... la?"
     ],
     "syllables.ends_with.lo": [
-      "¿Qué dibujo termina con, lo?"
+      "¿Qué dibujo termina en... lo?"
     ],
     "syllables.build_word.mapa": [
       "Arma la palabra, mapa."
@@ -5274,19 +5274,16 @@
       "¡Escucha bien! Toca el dibujo que empieza con el sonido que te digo."
     ],
     "listening.clap.abeja": [
-      "A... be... ja."
+      "Aa... be... ja."
     ],
     "listening.clap.avión": [
-      "A... vión."
+      "Aa... vión."
     ],
     "listening.clap.cama": [
       "Ca... ma."
     ],
-    "listening.clap.caramelo": [
-      "Ca... ra... me... lo."
-    ],
     "listening.clap.elefante": [
-      "E... le... fan... te."
+      "Ee... le... fan... te."
     ],
     "listening.clap.escoba": [
       "Es... co... ba."
@@ -5298,13 +5295,13 @@
       "Hie... lo."
     ],
     "listening.clap.humo": [
-      "Hu... mo."
+      "Uu... mo."
     ],
     "listening.clap.iglú": [
-      "I... glú."
+      "Ii... glú."
     ],
     "listening.clap.imán": [
-      "I... mán."
+      "Ii... mán."
     ],
     "listening.clap.isla": [
       "Is... la."
@@ -5326,9 +5323,6 @@
     ],
     "listening.clap.lobo": [
       "Lo... bo."
-    ],
-    "listening.clap.loro": [
-      "Lo... ro."
     ],
     "listening.clap.luna": [
       "Lu... na."
@@ -5376,16 +5370,16 @@
       "Mu... ñe... ca."
     ],
     "listening.clap.ojo": [
-      "O... jo."
+      "Oo... jo."
     ],
     "listening.clap.ola": [
-      "O... la."
+      "Oo... la."
     ],
     "listening.clap.oso": [
-      "O... so."
+      "Oo... so."
     ],
     "listening.clap.oveja": [
-      "O... ve... ja."
+      "Oo... ve... ja."
     ],
     "listening.clap.pala": [
       "Pa... la."
@@ -5404,9 +5398,6 @@
     ],
     "listening.clap.pelota": [
       "Pe... lo... ta."
-    ],
-    "listening.clap.pera": [
-      "Pe... ra."
     ],
     "listening.clap.perro": [
       "Pe... rro."
@@ -5429,9 +5420,6 @@
     "listening.clap.pomelo": [
       "Po... me... lo."
     ],
-    "listening.clap.poroto": [
-      "Po... ro... to."
-    ],
     "listening.clap.pulpo": [
       "Pul... po."
     ],
@@ -5451,226 +5439,223 @@
       "Trom... po."
     ],
     "listening.clap.unicornio": [
-      "U... ni... cor... nio."
+      "Uu... ni... cor... nio."
     ],
     "listening.clap.uva": [
-      "U... va."
+      "Uu... va."
     ],
     "listening.clap.uña": [
-      "U... ña."
+      "Uu... ña."
     ],
     "listening.clap.vela": [
       "Ve... la."
     ],
     "listening.clap.árbol": [
-      "Ár... bol."
+      "Ár-bol."
     ],
     "letter.meet.d": [
-      "Esta es la, de. ¡La, de de dedo! ¡Tócala!"
+      "Esta es la... de. ¡La... de de dedo! ¡Tócala!"
     ],
     "letter.meet.d.upper": [
-      "Toca la, de mayúscula."
+      "Toca la... de mayúscula."
     ],
     "letter.meet.d.lower": [
-      "Toca la, de minúscula."
+      "Toca la... de minúscula."
     ],
     "letter.trace.d.lower": [
-      "Repasa la, de minúscula con tu dedo."
+      "Repasa la... de minúscula con tu dedo."
     ],
     "letter.trace.d.upper": [
-      "Repasa la, de mayúscula con tu dedo."
+      "Repasa la... de mayúscula con tu dedo."
     ],
     "letter.find.d": [
-      "Revienta las burbujas que tienen la, de."
+      "Revienta las burbujas que tienen la... de."
     ],
     "letter.meet.s": [
-      "Esta es la, ese. ¡La, ese de sol! ¡Tócala!"
+      "Esta es la... ese. ¡La... ese de sol! ¡Tócala!"
     ],
     "letter.meet.s.upper": [
-      "Toca la, ese mayúscula."
+      "Toca la... ese mayúscula."
     ],
     "letter.meet.s.lower": [
-      "Toca la, ese minúscula."
+      "Toca la... ese minúscula."
     ],
     "letter.trace.s.lower": [
-      "Repasa la, ese minúscula con tu dedo."
+      "Repasa la... ese minúscula con tu dedo."
     ],
     "letter.trace.s.upper": [
-      "Repasa la, ese mayúscula con tu dedo."
+      "Repasa la... ese mayúscula con tu dedo."
     ],
     "letter.find.s": [
-      "Revienta las burbujas que tienen la, ese."
+      "Revienta las burbujas que tienen la... ese."
     ],
     "syllables.meet.da": [
-      "La, de, y la, a, juntas dicen, da. ¡Toca, da!"
+      "Juntas dicen... da. ¡Tócala!"
     ],
     "syllables.meet.da.choose": [
-      "¿Dónde dice, da? ¡Tócala!"
+      "¿Dónde dice... da? ¡Tócala!"
     ],
     "syllables.trace.da": [
-      "Escribe, da, con tu dedo."
+      "Escribe... da... con tu dedo."
     ],
     "syllables.find.da": [
-      "Revienta las burbujas que dicen, da."
+      "Revienta las burbujas que dicen... da."
     ],
     "syllables.starts_with.da": [
-      "¿Qué dibujo empieza con, da?"
+      "¿Qué dibujo empieza con... da?"
     ],
     "syllables.meet.de": [
-      "La, de, y la, e, juntas dicen, de. ¡Toca, de!"
+      "Juntas dicen... de. ¡Tócala!"
     ],
     "syllables.meet.de.choose": [
-      "¿Dónde dice, de? ¡Tócala!"
+      "¿Dónde dice... de? ¡Tócala!"
     ],
     "syllables.trace.de": [
-      "Escribe, de, con tu dedo."
+      "Escribe... de... con tu dedo."
     ],
     "syllables.find.de": [
-      "Revienta las burbujas que dicen, de."
+      "Revienta las burbujas que dicen... de."
     ],
     "syllables.starts_with.de": [
-      "¿Qué dibujo empieza con, de?"
+      "¿Qué dibujo empieza con... de?"
     ],
     "syllables.meet.di": [
-      "La, de, y la, i, juntas dicen, di. ¡Toca, di!"
+      "Juntas dicen... di. ¡Tócala!"
     ],
     "syllables.meet.di.choose": [
-      "¿Dónde dice, di? ¡Tócala!"
+      "¿Dónde dice... di? ¡Tócala!"
     ],
     "syllables.trace.di": [
-      "Escribe, di, con tu dedo."
+      "Escribe... di... con tu dedo."
     ],
     "syllables.find.di": [
-      "Revienta las burbujas que dicen, di."
+      "Revienta las burbujas que dicen... di."
     ],
     "syllables.starts_with.di": [
-      "¿Qué dibujo empieza con, di?"
+      "¿Qué dibujo empieza con... di?"
     ],
     "syllables.meet.do": [
-      "La, de, y la, o, juntas dicen, do. ¡Toca, do!"
+      "Juntas dicen... do. ¡Tócala!"
     ],
     "syllables.meet.do.choose": [
-      "¿Dónde dice, do? ¡Tócala!"
+      "¿Dónde dice... do? ¡Tócala!"
     ],
     "syllables.trace.do": [
-      "Escribe, do, con tu dedo."
+      "Escribe... do... con tu dedo."
     ],
     "syllables.find.do": [
-      "Revienta las burbujas que dicen, do."
+      "Revienta las burbujas que dicen... do."
     ],
     "syllables.starts_with.do": [
-      "¿Qué dibujo empieza con, do?"
+      "¿Qué dibujo empieza con... do?"
     ],
     "syllables.meet.du": [
-      "La, de, y la, u, juntas dicen, du. ¡Toca, du!"
+      "Juntas dicen... du. ¡Tócala!"
     ],
     "syllables.meet.du.choose": [
-      "¿Dónde dice, du? ¡Tócala!"
+      "¿Dónde dice... du? ¡Tócala!"
     ],
     "syllables.trace.du": [
-      "Escribe, du, con tu dedo."
+      "Escribe... du... con tu dedo."
     ],
     "syllables.find.du": [
-      "Revienta las burbujas que dicen, du."
+      "Revienta las burbujas que dicen... du."
     ],
     "syllables.starts_with.du": [
-      "¿Qué dibujo empieza con, du?"
+      "¿Qué dibujo empieza con... du?"
     ],
     "syllables.meet.sa": [
-      "La, ese, y la, a, juntas dicen, sa. ¡Toca, sa!"
+      "Juntas dicen... sa. ¡Tócala!"
     ],
     "syllables.meet.sa.choose": [
-      "¿Dónde dice, sa? ¡Tócala!"
+      "¿Dónde dice... sa? ¡Tócala!"
     ],
     "syllables.trace.sa": [
-      "Escribe, sa, con tu dedo."
+      "Escribe... sa... con tu dedo."
     ],
     "syllables.find.sa": [
-      "Revienta las burbujas que dicen, sa."
+      "Revienta las burbujas que dicen... sa."
     ],
     "syllables.starts_with.sa": [
-      "¿Qué dibujo empieza con, sa?"
+      "¿Qué dibujo empieza con... sa?"
     ],
     "syllables.meet.se": [
-      "La, ese, y la, e, juntas dicen, se. ¡Toca, se!"
+      "Juntas dicen... se. ¡Tócala!"
     ],
     "syllables.meet.se.choose": [
-      "¿Dónde dice, se? ¡Tócala!"
+      "¿Dónde dice... se? ¡Tócala!"
     ],
     "syllables.trace.se": [
-      "Escribe, se, con tu dedo."
+      "Escribe... se... con tu dedo."
     ],
     "syllables.find.se": [
-      "Revienta las burbujas que dicen, se."
+      "Revienta las burbujas que dicen... se."
     ],
     "syllables.starts_with.se": [
-      "¿Qué dibujo empieza con, se?"
+      "¿Qué dibujo empieza con... se?"
     ],
     "syllables.meet.si": [
-      "La, ese, y la, i, juntas dicen, si. ¡Toca, si!"
+      "Juntas dicen... si. ¡Tócala!"
     ],
     "syllables.meet.si.choose": [
-      "¿Dónde dice, si? ¡Tócala!"
+      "¿Dónde dice... si? ¡Tócala!"
     ],
     "syllables.trace.si": [
-      "Escribe, si, con tu dedo."
+      "Escribe... si... con tu dedo."
     ],
     "syllables.find.si": [
-      "Revienta las burbujas que dicen, si."
+      "Revienta las burbujas que dicen... si."
     ],
     "syllables.starts_with.si": [
-      "¿Qué dibujo empieza con, si?"
+      "¿Qué dibujo empieza con... si?"
     ],
     "syllables.meet.so": [
-      "La, ese, y la, o, juntas dicen, so. ¡Toca, so!"
+      "Juntas dicen... so. ¡Tócala!"
     ],
     "syllables.meet.so.choose": [
-      "¿Dónde dice, so? ¡Tócala!"
+      "¿Dónde dice... so? ¡Tócala!"
     ],
     "syllables.trace.so": [
-      "Escribe, so, con tu dedo."
+      "Escribe... so... con tu dedo."
     ],
     "syllables.find.so": [
-      "Revienta las burbujas que dicen, so."
+      "Revienta las burbujas que dicen... so."
     ],
     "syllables.starts_with.so": [
-      "¿Qué dibujo empieza con, so?"
+      "¿Qué dibujo empieza con... so?"
     ],
     "syllables.meet.su": [
-      "La, ese, y la, u, juntas dicen, su. ¡Toca, su!"
+      "Juntas dicen... su. ¡Tócala!"
     ],
     "syllables.meet.su.choose": [
-      "¿Dónde dice, su? ¡Tócala!"
+      "¿Dónde dice... su? ¡Tócala!"
     ],
     "syllables.trace.su": [
-      "Escribe, su, con tu dedo."
+      "Escribe... su... con tu dedo."
     ],
     "syllables.find.su": [
-      "Revienta las burbujas que dicen, su."
+      "Revienta las burbujas que dicen... su."
     ],
     "syllables.starts_with.su": [
-      "¿Qué dibujo empieza con, su?"
+      "¿Qué dibujo empieza con... su?"
     ],
     "syllables.ends_with.da": [
-      "¿Qué dibujo termina con, da?"
+      "¿Qué dibujo termina en... da?"
     ],
     "syllables.ends_with.do": [
-      "¿Qué dibujo termina con, do?"
+      "¿Qué dibujo termina en... do?"
     ],
     "syllables.ends_with.sa": [
-      "¿Qué dibujo termina con, sa?"
+      "¿Qué dibujo termina en... sa?"
     ],
     "syllables.ends_with.so": [
-      "¿Qué dibujo termina con, so?"
+      "¿Qué dibujo termina en... so?"
     ],
     "listening.clap.dado": [
       "Da... do."
     ],
     "listening.clap.dedo": [
       "De... do."
-    ],
-    "listening.clap.dinosaurio": [
-      "Di... no... sau... rio."
     ],
     "listening.clap.dominó": [
       "Do... mi... nó."
@@ -5683,9 +5668,6 @@
     ],
     "listening.clap.silla": [
       "Si... lla."
-    ],
-    "listening.clap.submarino": [
-      "Sub... ma... ri... no."
     ],
     "listening.clap.sol": [
       "Sol."
@@ -5718,106 +5700,106 @@
       "Arma la palabra, sopa."
     ],
     "letter.meet.t": [
-      "Esta es la, te. ¡La, te de taza! ¡Tócala!"
+      "Esta es la... te. ¡La... te de taza! ¡Tócala!"
     ],
     "letter.meet.t.upper": [
-      "Toca la, te mayúscula."
+      "Toca la... te mayúscula."
     ],
     "letter.meet.t.lower": [
-      "Toca la, te minúscula."
+      "Toca la... te minúscula."
     ],
     "letter.trace.t.lower": [
-      "Repasa la, te minúscula con tu dedo."
+      "Repasa la... te minúscula con tu dedo."
     ],
     "letter.trace.t.upper": [
-      "Repasa la, te mayúscula con tu dedo."
+      "Repasa la... te mayúscula con tu dedo."
     ],
     "letter.find.t": [
-      "Revienta las burbujas que tienen la, te."
+      "Revienta las burbujas que tienen la... te."
     ],
     "syllables.meet.ta": [
-      "La, te, y la, a, juntas dicen, ta. ¡Toca, ta!"
+      "Juntas dicen... ta. ¡Tócala!"
     ],
     "syllables.meet.ta.choose": [
-      "¿Dónde dice, ta? ¡Tócala!"
+      "¿Dónde dice... ta? ¡Tócala!"
     ],
     "syllables.trace.ta": [
-      "Escribe, ta, con tu dedo."
+      "Escribe... ta... con tu dedo."
     ],
     "syllables.find.ta": [
-      "Revienta las burbujas que dicen, ta."
+      "Revienta las burbujas que dicen... ta."
     ],
     "syllables.starts_with.ta": [
-      "¿Qué dibujo empieza con, ta?"
+      "¿Qué dibujo empieza con... ta?"
     ],
     "syllables.meet.te": [
-      "La, te, y la, e, juntas dicen, te. ¡Toca, te!"
+      "Juntas dicen... te. ¡Tócala!"
     ],
     "syllables.meet.te.choose": [
-      "¿Dónde dice, te? ¡Tócala!"
+      "¿Dónde dice... te? ¡Tócala!"
     ],
     "syllables.trace.te": [
-      "Escribe, te, con tu dedo."
+      "Escribe... te... con tu dedo."
     ],
     "syllables.find.te": [
-      "Revienta las burbujas que dicen, te."
+      "Revienta las burbujas que dicen... te."
     ],
     "syllables.starts_with.te": [
-      "¿Qué dibujo empieza con, te?"
+      "¿Qué dibujo empieza con... te?"
     ],
     "syllables.meet.ti": [
-      "La, te, y la, i, juntas dicen, ti. ¡Toca, ti!"
+      "Juntas dicen... ti. ¡Tócala!"
     ],
     "syllables.meet.ti.choose": [
-      "¿Dónde dice, ti? ¡Tócala!"
+      "¿Dónde dice... ti? ¡Tócala!"
     ],
     "syllables.trace.ti": [
-      "Escribe, ti, con tu dedo."
+      "Escribe... ti... con tu dedo."
     ],
     "syllables.find.ti": [
-      "Revienta las burbujas que dicen, ti."
+      "Revienta las burbujas que dicen... ti."
     ],
     "syllables.starts_with.ti": [
-      "¿Qué dibujo empieza con, ti?"
+      "¿Qué dibujo empieza con... ti?"
     ],
     "syllables.meet.to": [
-      "La, te, y la, o, juntas dicen, to. ¡Toca, to!"
+      "Juntas dicen... to. ¡Tócala!"
     ],
     "syllables.meet.to.choose": [
-      "¿Dónde dice, to? ¡Tócala!"
+      "¿Dónde dice... to? ¡Tócala!"
     ],
     "syllables.trace.to": [
-      "Escribe, to, con tu dedo."
+      "Escribe... to... con tu dedo."
     ],
     "syllables.find.to": [
-      "Revienta las burbujas que dicen, to."
+      "Revienta las burbujas que dicen... to."
     ],
     "syllables.starts_with.to": [
-      "¿Qué dibujo empieza con, to?"
+      "¿Qué dibujo empieza con... to?"
     ],
     "syllables.meet.tu": [
-      "La, te, y la, u, juntas dicen, tu. ¡Toca, tu!"
+      "Juntas dicen... tu. ¡Tócala!"
     ],
     "syllables.meet.tu.choose": [
-      "¿Dónde dice, tu? ¡Tócala!"
+      "¿Dónde dice... tu? ¡Tócala!"
     ],
     "syllables.trace.tu": [
-      "Escribe, tu, con tu dedo."
+      "Escribe... tu... con tu dedo."
     ],
     "syllables.find.tu": [
-      "Revienta las burbujas que dicen, tu."
+      "Revienta las burbujas que dicen... tu."
     ],
     "syllables.starts_with.tu": [
-      "¿Qué dibujo empieza con, tu?"
+      "¿Qué dibujo empieza con... tu?"
     ],
     "syllables.ends_with.ta": [
-      "¿Qué dibujo termina con, ta?"
+      "¿Qué dibujo termina en... ta?"
     ],
     "syllables.ends_with.te": [
-      "¿Qué dibujo termina con, te?"
+      "¿Qué dibujo termina en... te?"
     ],
     "syllables.ends_with.to": [
-      "¿Qué dibujo termina con, to?"
+      "¿Qué dibujo termina en... to?"
     ],
     "listening.clap.taza": [
       "Ta... za."
@@ -5853,244 +5835,241 @@
       "Arma la palabra, topo."
     ],
     "letter.meet.n": [
-      "Esta es la, ene. ¡La, ene de nido! ¡Tócala!"
+      "Esta es la... ene. ¡La... ene de nido! ¡Tócala!"
     ],
     "letter.meet.n.upper": [
-      "Toca la, ene mayúscula."
+      "Toca la... ene mayúscula."
     ],
     "letter.meet.n.lower": [
-      "Toca la, ene minúscula."
+      "Toca la... ene minúscula."
     ],
     "letter.trace.n.lower": [
-      "Repasa la, ene minúscula con tu dedo."
+      "Repasa la... ene minúscula con tu dedo."
     ],
     "letter.trace.n.upper": [
-      "Repasa la, ene mayúscula con tu dedo."
+      "Repasa la... ene mayúscula con tu dedo."
     ],
     "letter.find.n": [
-      "Revienta las burbujas que tienen la, ene."
+      "Revienta las burbujas que tienen la... ene."
     ],
     "syllables.meet.na": [
-      "La, ene, y la, a, juntas dicen, na. ¡Toca, na!"
+      "Juntas dicen... na. ¡Tócala!"
     ],
     "syllables.meet.na.choose": [
-      "¿Dónde dice, na? ¡Tócala!"
+      "¿Dónde dice... na? ¡Tócala!"
     ],
     "syllables.trace.na": [
-      "Escribe, na, con tu dedo."
+      "Escribe... na... con tu dedo."
     ],
     "syllables.find.na": [
-      "Revienta las burbujas que dicen, na."
+      "Revienta las burbujas que dicen... na."
     ],
     "syllables.meet.ne": [
-      "La, ene, y la, e, juntas dicen, ne. ¡Toca, ne!"
+      "Juntas dicen... ne. ¡Tócala!"
     ],
     "syllables.meet.ne.choose": [
-      "¿Dónde dice, ne? ¡Tócala!"
+      "¿Dónde dice... ne? ¡Tócala!"
     ],
     "syllables.trace.ne": [
-      "Escribe, ne, con tu dedo."
+      "Escribe... ne... con tu dedo."
     ],
     "syllables.find.ne": [
-      "Revienta las burbujas que dicen, ne."
+      "Revienta las burbujas que dicen... ne."
     ],
     "syllables.meet.ni": [
-      "La, ene, y la, i, juntas dicen, ni. ¡Toca, ni!"
+      "Juntas dicen... ni. ¡Tócala!"
     ],
     "syllables.meet.ni.choose": [
-      "¿Dónde dice, ni? ¡Tócala!"
+      "¿Dónde dice... ni? ¡Tócala!"
     ],
     "syllables.trace.ni": [
-      "Escribe, ni, con tu dedo."
+      "Escribe... ni... con tu dedo."
     ],
     "syllables.find.ni": [
-      "Revienta las burbujas que dicen, ni."
+      "Revienta las burbujas que dicen... ni."
     ],
     "syllables.meet.no": [
-      "La, ene, y la, o, juntas dicen, no. ¡Toca, no!"
+      "Juntas dicen... no. ¡Tócala!"
     ],
     "syllables.meet.no.choose": [
-      "¿Dónde dice, no? ¡Tócala!"
+      "¿Dónde dice... no? ¡Tócala!"
     ],
     "syllables.trace.no": [
-      "Escribe, no, con tu dedo."
+      "Escribe... no... con tu dedo."
     ],
     "syllables.find.no": [
-      "Revienta las burbujas que dicen, no."
+      "Revienta las burbujas que dicen... no."
     ],
     "syllables.meet.nu": [
-      "La, ene, y la, u, juntas dicen, nu. ¡Toca, nu!"
+      "Juntas dicen... nu. ¡Tócala!"
     ],
     "syllables.meet.nu.choose": [
-      "¿Dónde dice, nu? ¡Tócala!"
+      "¿Dónde dice... nu? ¡Tócala!"
     ],
     "syllables.trace.nu": [
-      "Escribe, nu, con tu dedo."
+      "Escribe... nu... con tu dedo."
     ],
     "syllables.find.nu": [
-      "Revienta las burbujas que dicen, nu."
+      "Revienta las burbujas que dicen... nu."
     ],
     "letter.meet.ñ": [
-      "Esta es la, eñe. ¡La, eñe de ñandú! ¡Tócala!"
+      "Esta es la... eñe. ¡La... eñe de ñandú! ¡Tócala!"
     ],
     "letter.meet.ñ.upper": [
-      "Toca la, eñe mayúscula."
+      "Toca la... eñe mayúscula."
     ],
     "letter.meet.ñ.lower": [
-      "Toca la, eñe minúscula."
+      "Toca la... eñe minúscula."
     ],
     "letter.trace.ñ.lower": [
-      "Repasa la, eñe minúscula con tu dedo."
+      "Repasa la... eñe minúscula con tu dedo."
     ],
     "letter.trace.ñ.upper": [
-      "Repasa la, eñe mayúscula con tu dedo."
+      "Repasa la... eñe mayúscula con tu dedo."
     ],
     "letter.find.ñ": [
-      "Revienta las burbujas que tienen la, eñe."
+      "Revienta las burbujas que tienen la... eñe."
     ],
     "syllables.meet.ña": [
-      "La, eñe, y la, a, juntas dicen, ña. ¡Toca, ña!"
+      "Juntas dicen... ña. ¡Tócala!"
     ],
     "syllables.meet.ña.choose": [
-      "¿Dónde dice, ña? ¡Tócala!"
+      "¿Dónde dice... ña? ¡Tócala!"
     ],
     "syllables.trace.ña": [
-      "Escribe, ña, con tu dedo."
+      "Escribe... ña... con tu dedo."
     ],
     "syllables.find.ña": [
-      "Revienta las burbujas que dicen, ña."
+      "Revienta las burbujas que dicen... ña."
     ],
     "syllables.meet.ñe": [
-      "La, eñe, y la, e, juntas dicen, ñe. ¡Toca, ñe!"
+      "Juntas dicen... ñe. ¡Tócala!"
     ],
     "syllables.meet.ñe.choose": [
-      "¿Dónde dice, ñe? ¡Tócala!"
+      "¿Dónde dice... ñe? ¡Tócala!"
     ],
     "syllables.trace.ñe": [
-      "Escribe, ñe, con tu dedo."
+      "Escribe... ñe... con tu dedo."
     ],
     "syllables.find.ñe": [
-      "Revienta las burbujas que dicen, ñe."
+      "Revienta las burbujas que dicen... ñe."
     ],
     "syllables.meet.ñi": [
-      "La, eñe, y la, i, juntas dicen, ñi. ¡Toca, ñi!"
+      "Juntas dicen... ñi. ¡Tócala!"
     ],
     "syllables.meet.ñi.choose": [
-      "¿Dónde dice, ñi? ¡Tócala!"
+      "¿Dónde dice... ñi? ¡Tócala!"
     ],
     "syllables.trace.ñi": [
-      "Escribe, ñi, con tu dedo."
+      "Escribe... ñi... con tu dedo."
     ],
     "syllables.find.ñi": [
-      "Revienta las burbujas que dicen, ñi."
+      "Revienta las burbujas que dicen... ñi."
     ],
     "syllables.meet.ño": [
-      "La, eñe, y la, o, juntas dicen, ño. ¡Toca, ño!"
+      "Juntas dicen... ño. ¡Tócala!"
     ],
     "syllables.meet.ño.choose": [
-      "¿Dónde dice, ño? ¡Tócala!"
+      "¿Dónde dice... ño? ¡Tócala!"
     ],
     "syllables.trace.ño": [
-      "Escribe, ño, con tu dedo."
+      "Escribe... ño... con tu dedo."
     ],
     "syllables.find.ño": [
-      "Revienta las burbujas que dicen, ño."
+      "Revienta las burbujas que dicen... ño."
     ],
     "syllables.meet.ñu": [
-      "La, eñe, y la, u, juntas dicen, ñu. ¡Toca, ñu!"
+      "Juntas dicen... ñu. ¡Tócala!"
     ],
     "syllables.meet.ñu.choose": [
-      "¿Dónde dice, ñu? ¡Tócala!"
+      "¿Dónde dice... ñu? ¡Tócala!"
     ],
     "syllables.trace.ñu": [
-      "Escribe, ñu, con tu dedo."
+      "Escribe... ñu... con tu dedo."
     ],
     "syllables.find.ñu": [
-      "Revienta las burbujas que dicen, ñu."
+      "Revienta las burbujas que dicen... ñu."
     ],
     "letter.meet.f": [
-      "Esta es la, efe. ¡La, efe de foca! ¡Tócala!"
+      "Esta es la... efe. ¡La... efe de foca! ¡Tócala!"
     ],
     "letter.meet.f.upper": [
-      "Toca la, efe mayúscula."
+      "Toca la... efe mayúscula."
     ],
     "letter.meet.f.lower": [
-      "Toca la, efe minúscula."
+      "Toca la... efe minúscula."
     ],
     "letter.trace.f.lower": [
-      "Repasa la, efe minúscula con tu dedo."
+      "Repasa la... efe minúscula con tu dedo."
     ],
     "letter.trace.f.upper": [
-      "Repasa la, efe mayúscula con tu dedo."
+      "Repasa la... efe mayúscula con tu dedo."
     ],
     "letter.find.f": [
-      "Revienta las burbujas que tienen la, efe."
+      "Revienta las burbujas que tienen la... efe."
     ],
     "syllables.meet.fa": [
-      "La, efe, y la, a, juntas dicen, fa. ¡Toca, fa!"
+      "Juntas dicen... fa. ¡Tócala!"
     ],
     "syllables.meet.fa.choose": [
-      "¿Dónde dice, fa? ¡Tócala!"
+      "¿Dónde dice... fa? ¡Tócala!"
     ],
     "syllables.trace.fa": [
-      "Escribe, fa, con tu dedo."
+      "Escribe... fa... con tu dedo."
     ],
     "syllables.find.fa": [
-      "Revienta las burbujas que dicen, fa."
+      "Revienta las burbujas que dicen... fa."
     ],
     "syllables.meet.fe": [
-      "La, efe, y la, e, juntas dicen, fe. ¡Toca, fe!"
+      "Juntas dicen... fe. ¡Tócala!"
     ],
     "syllables.meet.fe.choose": [
-      "¿Dónde dice, fe? ¡Tócala!"
+      "¿Dónde dice... fe? ¡Tócala!"
     ],
     "syllables.trace.fe": [
-      "Escribe, fe, con tu dedo."
+      "Escribe... fe... con tu dedo."
     ],
     "syllables.find.fe": [
-      "Revienta las burbujas que dicen, fe."
+      "Revienta las burbujas que dicen... fe."
     ],
     "syllables.meet.fi": [
-      "La, efe, y la, i, juntas dicen, fi. ¡Toca, fi!"
+      "Juntas dicen... fi. ¡Tócala!"
     ],
     "syllables.meet.fi.choose": [
-      "¿Dónde dice, fi? ¡Tócala!"
+      "¿Dónde dice... fi? ¡Tócala!"
     ],
     "syllables.trace.fi": [
-      "Escribe, fi, con tu dedo."
+      "Escribe... fi... con tu dedo."
     ],
     "syllables.find.fi": [
-      "Revienta las burbujas que dicen, fi."
+      "Revienta las burbujas que dicen... fi."
     ],
     "syllables.meet.fo": [
-      "La, efe, y la, o, juntas dicen, fo. ¡Toca, fo!"
+      "Juntas dicen... fo. ¡Tócala!"
     ],
     "syllables.meet.fo.choose": [
-      "¿Dónde dice, fo? ¡Tócala!"
+      "¿Dónde dice... fo? ¡Tócala!"
     ],
     "syllables.trace.fo": [
-      "Escribe, fo, con tu dedo."
+      "Escribe... fo... con tu dedo."
     ],
     "syllables.find.fo": [
-      "Revienta las burbujas que dicen, fo."
+      "Revienta las burbujas que dicen... fo."
     ],
     "syllables.meet.fu": [
-      "La, efe, y la, u, juntas dicen, fu. ¡Toca, fu!"
+      "Juntas dicen... fu. ¡Tócala!"
     ],
     "syllables.meet.fu.choose": [
-      "¿Dónde dice, fu? ¡Tócala!"
+      "¿Dónde dice... fu? ¡Tócala!"
     ],
     "syllables.trace.fu": [
-      "Escribe, fu, con tu dedo."
+      "Escribe... fu... con tu dedo."
     ],
     "syllables.find.fu": [
-      "Revienta las burbujas que dicen, fu."
+      "Revienta las burbujas que dicen... fu."
     ],
     "listening.clap.nido": [
       "Ni... do."
-    ],
-    "listening.clap.naranja": [
-      "Na... ran... ja."
     ],
     "listening.clap.nube": [
       "Nu... be."
@@ -6098,17 +6077,11 @@
     "listening.clap.ñandú": [
       "Ñan... dú."
     ],
-    "listening.clap.araña": [
-      "A... ra... ña."
-    ],
     "listening.clap.niño": [
       "Ni... ño."
     ],
     "listening.clap.foca": [
       "Fo... ca."
-    ],
-    "listening.clap.faro": [
-      "Fa... ro."
     ],
     "listening.clap.fideos": [
       "Fi... de... os."
@@ -6116,17 +6089,11 @@
     "listening.clap.fuego": [
       "Fue... go."
     ],
-    "listening.clap.jirafa": [
-      "Ji... ra... fa."
-    ],
     "listening.clap.café": [
       "Ca... fé."
     ],
     "listening.clap.foto": [
       "Fo... to."
-    ],
-    "listening.clap.mofeta": [
-      "Mo... fe... ta."
     ],
     "syllables.build_word.foto": [
       "Arma la palabra, foto."
@@ -6139,9 +6106,6 @@
     ],
     "syllables.build_word.mano": [
       "Arma la palabra, mano."
-    ],
-    "syllables.build_word.mofeta": [
-      "Arma la palabra, mofeta."
     ],
     "syllables.build_word.mono": [
       "Arma la palabra, mono."
@@ -6162,166 +6126,175 @@
       "Arma la palabra, uña."
     ],
     "syllables.contains.da": [
-      "¿Qué dibujo tiene, da?"
+      "¿Qué dibujo tiene... da?"
     ],
     "syllables.contains.de": [
-      "¿Qué dibujo tiene, de?"
+      "¿Qué dibujo tiene... de?"
     ],
     "syllables.contains.di": [
-      "¿Qué dibujo tiene, di?"
+      "¿Qué dibujo tiene... di?"
     ],
     "syllables.contains.do": [
-      "¿Qué dibujo tiene, do?"
+      "¿Qué dibujo tiene... do?"
     ],
     "syllables.contains.du": [
-      "¿Qué dibujo tiene, du?"
+      "¿Qué dibujo tiene... du?"
     ],
     "syllables.contains.fa": [
-      "¿Qué dibujo tiene, fa?"
+      "¿Qué dibujo tiene... fa?"
     ],
     "syllables.contains.fe": [
-      "¿Qué dibujo tiene, fe?"
+      "¿Qué dibujo tiene... fe?"
     ],
     "syllables.contains.fi": [
-      "¿Qué dibujo tiene, fi?"
+      "¿Qué dibujo tiene... fi?"
     ],
     "syllables.contains.fo": [
-      "¿Qué dibujo tiene, fo?"
+      "¿Qué dibujo tiene... fo?"
     ],
     "syllables.contains.la": [
-      "¿Qué dibujo tiene, la?"
+      "¿Qué dibujo tiene... la?"
     ],
     "syllables.contains.le": [
-      "¿Qué dibujo tiene, le?"
+      "¿Qué dibujo tiene... le?"
     ],
     "syllables.contains.li": [
-      "¿Qué dibujo tiene, li?"
+      "¿Qué dibujo tiene... li?"
     ],
     "syllables.contains.lo": [
-      "¿Qué dibujo tiene, lo?"
+      "¿Qué dibujo tiene... lo?"
     ],
     "syllables.contains.lu": [
-      "¿Qué dibujo tiene, lu?"
+      "¿Qué dibujo tiene... lu?"
     ],
     "syllables.contains.ma": [
-      "¿Qué dibujo tiene, ma?"
+      "¿Qué dibujo tiene... ma?"
     ],
     "syllables.contains.me": [
-      "¿Qué dibujo tiene, me?"
+      "¿Qué dibujo tiene... me?"
     ],
     "syllables.contains.mi": [
-      "¿Qué dibujo tiene, mi?"
+      "¿Qué dibujo tiene... mi?"
     ],
     "syllables.contains.mo": [
-      "¿Qué dibujo tiene, mo?"
+      "¿Qué dibujo tiene... mo?"
     ],
     "syllables.contains.mu": [
-      "¿Qué dibujo tiene, mu?"
+      "¿Qué dibujo tiene... mu?"
     ],
     "syllables.contains.na": [
-      "¿Qué dibujo tiene, na?"
+      "¿Qué dibujo tiene... na?"
     ],
     "syllables.contains.ni": [
-      "¿Qué dibujo tiene, ni?"
+      "¿Qué dibujo tiene... ni?"
     ],
     "syllables.contains.no": [
-      "¿Qué dibujo tiene, no?"
+      "¿Qué dibujo tiene... no?"
     ],
     "syllables.contains.nu": [
-      "¿Qué dibujo tiene, nu?"
+      "¿Qué dibujo tiene... nu?"
     ],
     "syllables.contains.pa": [
-      "¿Qué dibujo tiene, pa?"
+      "¿Qué dibujo tiene... pa?"
     ],
     "syllables.contains.pe": [
-      "¿Qué dibujo tiene, pe?"
+      "¿Qué dibujo tiene... pe?"
     ],
     "syllables.contains.pi": [
-      "¿Qué dibujo tiene, pi?"
+      "¿Qué dibujo tiene... pi?"
     ],
     "syllables.contains.po": [
-      "¿Qué dibujo tiene, po?"
+      "¿Qué dibujo tiene... po?"
     ],
     "syllables.contains.pu": [
-      "¿Qué dibujo tiene, pu?"
+      "¿Qué dibujo tiene... pu?"
     ],
     "syllables.contains.sa": [
-      "¿Qué dibujo tiene, sa?"
+      "¿Qué dibujo tiene... sa?"
     ],
     "syllables.contains.si": [
-      "¿Qué dibujo tiene, si?"
+      "¿Qué dibujo tiene... si?"
     ],
     "syllables.contains.so": [
-      "¿Qué dibujo tiene, so?"
+      "¿Qué dibujo tiene... so?"
     ],
     "syllables.contains.ta": [
-      "¿Qué dibujo tiene, ta?"
+      "¿Qué dibujo tiene... ta?"
     ],
     "syllables.contains.te": [
-      "¿Qué dibujo tiene, te?"
+      "¿Qué dibujo tiene... te?"
     ],
     "syllables.contains.ti": [
-      "¿Qué dibujo tiene, ti?"
+      "¿Qué dibujo tiene... ti?"
     ],
     "syllables.contains.to": [
-      "¿Qué dibujo tiene, to?"
+      "¿Qué dibujo tiene... to?"
     ],
     "syllables.contains.tu": [
-      "¿Qué dibujo tiene, tu?"
+      "¿Qué dibujo tiene... tu?"
     ],
     "syllables.contains.ña": [
-      "¿Qué dibujo tiene, ña?"
+      "¿Qué dibujo tiene... ña?"
     ],
     "syllables.contains.ñe": [
-      "¿Qué dibujo tiene, ñe?"
+      "¿Qué dibujo tiene... ñe?"
     ],
     "syllables.contains.ño": [
-      "¿Qué dibujo tiene, ño?"
+      "¿Qué dibujo tiene... ño?"
     ],
     "syllables.ends_with.du": [
-      "¿Qué dibujo termina con, du?"
+      "¿Qué dibujo termina en... du?"
     ],
     "syllables.ends_with.fa": [
-      "¿Qué dibujo termina con, fa?"
+      "¿Qué dibujo termina en... fa?"
     ],
     "syllables.ends_with.fe": [
-      "¿Qué dibujo termina con, fe?"
+      "¿Qué dibujo termina en... fe?"
     ],
     "syllables.ends_with.na": [
-      "¿Qué dibujo termina con, na?"
+      "¿Qué dibujo termina en... na?"
     ],
     "syllables.ends_with.no": [
-      "¿Qué dibujo termina con, no?"
+      "¿Qué dibujo termina en... no?"
     ],
     "syllables.ends_with.ña": [
-      "¿Qué dibujo termina con, ña?"
+      "¿Qué dibujo termina en... ña?"
     ],
     "syllables.ends_with.ño": [
-      "¿Qué dibujo termina con, ño?"
+      "¿Qué dibujo termina en... ño?"
     ],
     "syllables.starts_with.fa": [
-      "¿Qué dibujo empieza con, fa?"
+      "¿Qué dibujo empieza con... fa?"
     ],
     "syllables.starts_with.fi": [
-      "¿Qué dibujo empieza con, fi?"
+      "¿Qué dibujo empieza con... fi?"
     ],
     "syllables.starts_with.fo": [
-      "¿Qué dibujo empieza con, fo?"
+      "¿Qué dibujo empieza con... fo?"
     ],
     "syllables.starts_with.fu": [
-      "¿Qué dibujo empieza con, fu?"
+      "¿Qué dibujo empieza con... fu?"
     ],
     "syllables.starts_with.na": [
-      "¿Qué dibujo empieza con, na?"
+      "¿Qué dibujo empieza con... na?"
     ],
     "syllables.starts_with.ni": [
-      "¿Qué dibujo empieza con, ni?"
+      "¿Qué dibujo empieza con... ni?"
     ],
     "syllables.starts_with.nu": [
-      "¿Qué dibujo empieza con, nu?"
+      "¿Qué dibujo empieza con... nu?"
     ],
     "syllables.starts_with.ña": [
-      "¿Qué dibujo empieza con, ña?"
+      "¿Qué dibujo empieza con... ña?"
+    ],
+    "listening.clap.zorrillo": [
+      "Zo... rri... llo."
+    ],
+    "syllables.build_word.dominó": [
+      "Arma la palabra, dominó."
+    ],
+    "syllables.build_word.teléfono": [
+      "Arma la palabra, teléfono."
     ]
   },
   "promptClips": {
@@ -6422,23 +6395,19 @@
     "letter.trace.ñ.lower.0": "prompts/letter.trace.ñ.lower.0.m4a",
     "letter.trace.ñ.upper.0": "prompts/letter.trace.ñ.upper.0.m4a",
     "listening.clap.abeja.0": "prompts/listening.clap.abeja.0.m4a",
-    "listening.clap.araña.0": "prompts/listening.clap.araña.0.m4a",
     "listening.clap.ask.0": "prompts/listening.clap.ask.0.m4a",
     "listening.clap.avión.0": "prompts/listening.clap.avión.0.m4a",
     "listening.clap.café.0": "prompts/listening.clap.café.0.m4a",
     "listening.clap.cama.0": "prompts/listening.clap.cama.0.m4a",
-    "listening.clap.caramelo.0": "prompts/listening.clap.caramelo.0.m4a",
     "listening.clap.cebra.0": "prompts/listening.clap.cebra.0.m4a",
     "listening.clap.dado.0": "prompts/listening.clap.dado.0.m4a",
     "listening.clap.dedo.0": "prompts/listening.clap.dedo.0.m4a",
-    "listening.clap.dinosaurio.0": "prompts/listening.clap.dinosaurio.0.m4a",
     "listening.clap.dominó.0": "prompts/listening.clap.dominó.0.m4a",
     "listening.clap.ducha.0": "prompts/listening.clap.ducha.0.m4a",
     "listening.clap.elefante.0": "prompts/listening.clap.elefante.0.m4a",
     "listening.clap.escoba.0": "prompts/listening.clap.escoba.0.m4a",
     "listening.clap.espada.0": "prompts/listening.clap.espada.0.m4a",
     "listening.clap.estrella.0": "prompts/listening.clap.estrella.0.m4a",
-    "listening.clap.faro.0": "prompts/listening.clap.faro.0.m4a",
     "listening.clap.fideos.0": "prompts/listening.clap.fideos.0.m4a",
     "listening.clap.foca.0": "prompts/listening.clap.foca.0.m4a",
     "listening.clap.foto.0": "prompts/listening.clap.foto.0.m4a",
@@ -6449,14 +6418,12 @@
     "listening.clap.imán.0": "prompts/listening.clap.imán.0.m4a",
     "listening.clap.intro.0": "prompts/listening.clap.intro.0.m4a",
     "listening.clap.isla.0": "prompts/listening.clap.isla.0.m4a",
-    "listening.clap.jirafa.0": "prompts/listening.clap.jirafa.0.m4a",
     "listening.clap.lana.0": "prompts/listening.clap.lana.0.m4a",
     "listening.clap.leche.0": "prompts/listening.clap.leche.0.m4a",
     "listening.clap.león.0": "prompts/listening.clap.león.0.m4a",
     "listening.clap.libro.0": "prompts/listening.clap.libro.0.m4a",
     "listening.clap.limón.0": "prompts/listening.clap.limón.0.m4a",
     "listening.clap.lobo.0": "prompts/listening.clap.lobo.0.m4a",
-    "listening.clap.loro.0": "prompts/listening.clap.loro.0.m4a",
     "listening.clap.luna.0": "prompts/listening.clap.luna.0.m4a",
     "listening.clap.lupa.0": "prompts/listening.clap.lupa.0.m4a",
     "listening.clap.lápiz.0": "prompts/listening.clap.lápiz.0.m4a",
@@ -6469,12 +6436,10 @@
     "listening.clap.micrófono.0": "prompts/listening.clap.micrófono.0.m4a",
     "listening.clap.miel.0": "prompts/listening.clap.miel.0.m4a",
     "listening.clap.mochila.0": "prompts/listening.clap.mochila.0.m4a",
-    "listening.clap.mofeta.0": "prompts/listening.clap.mofeta.0.m4a",
     "listening.clap.mono.0": "prompts/listening.clap.mono.0.m4a",
     "listening.clap.mula.0": "prompts/listening.clap.mula.0.m4a",
     "listening.clap.murciélago.0": "prompts/listening.clap.murciélago.0.m4a",
     "listening.clap.muñeca.0": "prompts/listening.clap.muñeca.0.m4a",
-    "listening.clap.naranja.0": "prompts/listening.clap.naranja.0.m4a",
     "listening.clap.nido.0": "prompts/listening.clap.nido.0.m4a",
     "listening.clap.niño.0": "prompts/listening.clap.niño.0.m4a",
     "listening.clap.nube.0": "prompts/listening.clap.nube.0.m4a",
@@ -6488,7 +6453,6 @@
     "listening.clap.papa.0": "prompts/listening.clap.papa.0.m4a",
     "listening.clap.pato.0": "prompts/listening.clap.pato.0.m4a",
     "listening.clap.pelota.0": "prompts/listening.clap.pelota.0.m4a",
-    "listening.clap.pera.0": "prompts/listening.clap.pera.0.m4a",
     "listening.clap.perro.0": "prompts/listening.clap.perro.0.m4a",
     "listening.clap.pila.0": "prompts/listening.clap.pila.0.m4a",
     "listening.clap.pino.0": "prompts/listening.clap.pino.0.m4a",
@@ -6496,7 +6460,6 @@
     "listening.clap.pluma.0": "prompts/listening.clap.pluma.0.m4a",
     "listening.clap.pollo.0": "prompts/listening.clap.pollo.0.m4a",
     "listening.clap.pomelo.0": "prompts/listening.clap.pomelo.0.m4a",
-    "listening.clap.poroto.0": "prompts/listening.clap.poroto.0.m4a",
     "listening.clap.pulpo.0": "prompts/listening.clap.pulpo.0.m4a",
     "listening.clap.puma.0": "prompts/listening.clap.puma.0.m4a",
     "listening.clap.remo.0": "prompts/listening.clap.remo.0.m4a",
@@ -6504,7 +6467,6 @@
     "listening.clap.silla.0": "prompts/listening.clap.silla.0.m4a",
     "listening.clap.sol.0": "prompts/listening.clap.sol.0.m4a",
     "listening.clap.sopa.0": "prompts/listening.clap.sopa.0.m4a",
-    "listening.clap.submarino.0": "prompts/listening.clap.submarino.0.m4a",
     "listening.clap.tambor.0": "prompts/listening.clap.tambor.0.m4a",
     "listening.clap.taza.0": "prompts/listening.clap.taza.0.m4a",
     "listening.clap.teléfono.0": "prompts/listening.clap.teléfono.0.m4a",
@@ -6517,6 +6479,7 @@
     "listening.clap.uva.0": "prompts/listening.clap.uva.0.m4a",
     "listening.clap.uña.0": "prompts/listening.clap.uña.0.m4a",
     "listening.clap.vela.0": "prompts/listening.clap.vela.0.m4a",
+    "listening.clap.zorrillo.0": "prompts/listening.clap.zorrillo.0.m4a",
     "listening.clap.árbol.0": "prompts/listening.clap.árbol.0.m4a",
     "listening.clap.ñandú.0": "prompts/listening.clap.ñandú.0.m4a",
     "listening.same_sound.intro.0": "prompts/listening.same_sound.intro.0.m4a",
@@ -6541,6 +6504,7 @@
     "syllables.blend.intro.0": "prompts/syllables.blend.intro.0.m4a",
     "syllables.build_word.dado.0": "prompts/syllables.build_word.dado.0.m4a",
     "syllables.build_word.dedo.0": "prompts/syllables.build_word.dedo.0.m4a",
+    "syllables.build_word.dominó.0": "prompts/syllables.build_word.dominó.0.m4a",
     "syllables.build_word.foto.0": "prompts/syllables.build_word.foto.0.m4a",
     "syllables.build_word.intro.0": "prompts/syllables.build_word.intro.0.m4a",
     "syllables.build_word.lana.0": "prompts/syllables.build_word.lana.0.m4a",
@@ -6550,7 +6514,6 @@
     "syllables.build_word.mapa.0": "prompts/syllables.build_word.mapa.0.m4a",
     "syllables.build_word.medusa.0": "prompts/syllables.build_word.medusa.0.m4a",
     "syllables.build_word.mesa.0": "prompts/syllables.build_word.mesa.0.m4a",
-    "syllables.build_word.mofeta.0": "prompts/syllables.build_word.mofeta.0.m4a",
     "syllables.build_word.mono.0": "prompts/syllables.build_word.mono.0.m4a",
     "syllables.build_word.mula.0": "prompts/syllables.build_word.mula.0.m4a",
     "syllables.build_word.nido.0": "prompts/syllables.build_word.nido.0.m4a",
@@ -6569,6 +6532,7 @@
     "syllables.build_word.puma.0": "prompts/syllables.build_word.puma.0.m4a",
     "syllables.build_word.sapo.0": "prompts/syllables.build_word.sapo.0.m4a",
     "syllables.build_word.sopa.0": "prompts/syllables.build_word.sopa.0.m4a",
+    "syllables.build_word.teléfono.0": "prompts/syllables.build_word.teléfono.0.m4a",
     "syllables.build_word.tomate.0": "prompts/syllables.build_word.tomate.0.m4a",
     "syllables.build_word.topo.0": "prompts/syllables.build_word.topo.0.m4a",
     "syllables.build_word.uña.0": "prompts/syllables.build_word.uña.0.m4a",

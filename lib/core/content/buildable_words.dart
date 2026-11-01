@@ -1,3 +1,4 @@
+import '../../utils/spanish/spanish_letters.dart';
 import 'models/content_bundle.dart';
 import 'models/path_step.dart';
 import 'models/word.dart';
@@ -18,12 +19,13 @@ abstract final class BuildableWords {
     return [
       for (final word in SoundPosition.pictured(content.words))
         if (_isSpelledAsSaid(word) &&
-            word.syllables.every(known.contains) &&
-            word.syllables.any(step.sounds.contains))
+            word.sounds.every(known.contains) &&
+            word.sounds.any(step.sounds.contains))
           word,
     ];
   }
 
   static bool _isSpelledAsSaid(Word word) =>
-      word.syllables.length >= 2 && word.syllables.join('-') == word.sounds.join('-');
+      word.syllables.length >= 2 &&
+      word.syllables.map(SpanishLetters.plain).join('-') == word.sounds.join('-');
 }

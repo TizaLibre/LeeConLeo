@@ -29,6 +29,7 @@ class VoiceCommand implements ContentCommand {
     final list = RecordingList.missing(
       reader.read(),
       hasAudio: (path) => File('${ContentPaths.audio}/$path').existsSync(),
+      recordedTexts: _recordedTexts(),
       redo: redo,
     );
     File(ContentPaths.toRecord)
@@ -41,5 +42,16 @@ class VoiceCommand implements ContentCommand {
                 '${list.words.length} words, ${list.sounds.length} sounds to record',
     );
     return 0;
+  }
+
+  static Map<String, String> _recordedTexts() {
+    final manifest = File(ContentPaths.manifest);
+    if (!manifest.existsSync()) return const {};
+    final clips =
+        (jsonDecode(manifest.readAsStringSync()) as Map<String, dynamic>)['clips'] as List;
+    return {
+      for (final clip in clips.cast<Map<String, dynamic>>())
+        '${clip['promptId']}.${clip['index']}': clip['text'] as String,
+    };
   }
 }

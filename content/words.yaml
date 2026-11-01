@@ -277,9 +277,6 @@
 - text: mochila
   image: words/mochila.svg
   audio: words/mochila.m4a
-- text: mofeta
-  image: words/mofeta.svg
-  audio: words/mofeta.m4a
 - text: molino
 - text: momia
 - text: mono
@@ -522,6 +519,9 @@
 - text: volcán
 - text: voleibol
 - text: zanahoria
+- text: zorrillo
+  image: words/zorrillo.svg
+  audio: words/zorrillo.m4a
 - text: zorro
 - text: árbol
   image: words/arbol.svg
