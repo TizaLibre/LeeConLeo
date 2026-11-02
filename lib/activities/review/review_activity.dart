@@ -39,7 +39,11 @@ class ReviewActivity implements ActivitySpec {
   List<ActivityItem> buildItems(ActivityContext context) {
     final random = context.random;
     final items = <ActivityItem>[];
-    final steps = Review.pickSteps(context.events, random, except: context.step.id);
+    final steps = Review.pickSteps(
+      context.events.where((event) => context.content.stepById(event.stepId) != null).toList(),
+      random,
+      except: context.step.id,
+    );
     for (final (round, stepId) in steps.indexed) {
       final step = context.content.stepById(stepId);
       if (step == null) continue;

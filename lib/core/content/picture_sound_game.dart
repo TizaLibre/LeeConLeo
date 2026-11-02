@@ -15,7 +15,10 @@ enum PictureSoundGame {
   final bool showsSound;
 
   bool matches(Word word, String sound) =>
-      position.matches(word, sound) && (!showsSound || position.isSpelled(word, sound));
+      position.matches(word, sound) && position.isSpelled(word, sound);
+
+  bool resembles(Word word, String sound) =>
+      position.matches(word, sound) || position.isSpelled(word, sound);
 
   String promptId(String sound) => position.promptId(sound);
 }

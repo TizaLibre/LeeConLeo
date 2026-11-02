@@ -79,32 +79,63 @@ void main() {
     expect(speaker.played, ['intro.m4a', 'intro.m4a']);
   });
 
-  test('keeps only the latest utterance requested while one plays', () async {
+  test('a new utterance cuts the one playing, so speech never trails behind the screen', () async {
     speaker.holds = true;
-    player.say(clips(['one']));
+    final first = player.say(clips(['split', 'correct']));
     await settle();
-    player.say(clips(['two']));
-    player.say(clips(['three']));
-
-    speaker.finish();
+    player.say(clips(['next question']));
     await settle();
     speaker.finish();
     await settle();
 
-    expect(speaker.played, ['one.m4a', 'three.m4a']);
+    expect(speaker.played, ['split.m4a', 'next question.m4a']);
+    expect(speaker.stops, 1);
+    await first;
   });
 
-  test('stop cuts the current utterance and a newer one still plays', () async {
+  test('a queued utterance waits for the current one to end', () async {
+    speaker.holds = true;
+    player.say(clips(['reward']));
+    await settle();
+    player.say(clips(['new sticker']), queued: true);
+    await settle();
+    expect(speaker.played, ['reward.m4a']);
+
+    speaker.finish();
+    await settle();
+    expect(speaker.played, ['reward.m4a', 'new sticker.m4a']);
+    expect(speaker.stops, 0);
+  });
+
+  test('say completes once its utterance has been spoken', () async {
+    speaker.holds = true;
+    var done = false;
+    player.say(clips(['split'])).then((_) => done = true);
+    await settle();
+    expect(done, isFalse);
+
+    speaker.finish();
+    await settle();
+    expect(done, isTrue);
+  });
+
+  test('each line is announced as it starts', () async {
+    final started = <String>[];
+    await player.say(
+      Utterance(clips(['ask', 'word']).lines, onLine: (line) => started.add(line.text)),
+    );
+
+    expect(started, ['ask', 'word']);
+  });
+
+  test('stop cuts the current utterance', () async {
     speaker.holds = true;
     player.say(clips(['reward', 'extra']));
     await settle();
-    player.say(clips(['home intro']));
     await player.stop();
     await settle();
-    speaker.finish();
-    await settle();
 
-    expect(speaker.played, ['reward.m4a', 'home intro.m4a']);
+    expect(speaker.played, ['reward.m4a']);
     expect(speaker.stops, 1);
   });
 }

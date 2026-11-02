@@ -113,7 +113,13 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
     final session = _session!;
     if (session.phase == SessionPhase.celebrating) {
       _celebrationTimer?.cancel();
-      _celebrationTimer = Timer(widget.celebrationDuration, session.next);
+      final feedback = session.feedbackDone;
+      _celebrationTimer = Timer(
+        widget.celebrationDuration,
+        () => feedback.then((_) {
+          if (mounted) session.next();
+        }),
+      );
     }
     if (session.phase == SessionPhase.finished) {
       _checkSticker(session.stepId);
@@ -124,9 +130,11 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
 
   bool get _isReview => widget.activityId == ActivityIds.review;
 
+  bool get _isPractice => widget.activityId == ActivityIds.writeWord;
+
   void _markPlayed() {
     final step = _step;
-    if (step == null || _isReview) return;
+    if (step == null || _isReview || _isPractice) return;
     final played = ref.read(playedGamesProvider.notifier);
     played.markPlayed((stepId: step.id, activityId: widget.activityId));
     final games = ref.read(activityRegistryProvider).available(step.activities);
@@ -150,7 +158,10 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
     if (_newSticker == null) return;
     ref
         .read(promptPlayerProvider)
-        .say(Utterance([content.prompts.line(ActivityScreen.newStickerPrompt, Random())]));
+        .say(
+          Utterance([content.prompts.line(ActivityScreen.newStickerPrompt, Random())]),
+          queued: true,
+        );
   }
 
   void _goHome() {
@@ -160,7 +171,7 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
 
   void _continue() {
     final step = _step;
-    if (step == null) return _goHome();
+    if (step == null || _isPractice) return _goHome();
     final registry = ref.read(activityRegistryProvider);
     ref.read(promptPlayerProvider).stop();
     context.go(_isReview ? StepRoutes.entry(registry, step) : StepRoutes.afterGame(registry, step));

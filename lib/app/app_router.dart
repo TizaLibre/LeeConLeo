@@ -14,7 +14,8 @@ GoRouter createAppRouter() => GoRouter(
     GoRoute(path: '/stickers', builder: (context, state) => const StickerAlbum()),
     GoRoute(
       path: '/step/:stepId',
-      builder: (context, state) => StepScreen(stepId: state.pathParameters['stepId']!),
+      builder: (context, state) =>
+          StepScreen(key: ValueKey(state.uri.path), stepId: state.pathParameters['stepId']!),
     ),
     GoRoute(
       path: '/play/:stepId/:activityId',

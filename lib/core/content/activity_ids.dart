@@ -15,6 +15,7 @@ abstract final class ActivityIds {
   static const contains = 'syllables.contains';
   static const blend = 'syllables.blend';
   static const buildWord = 'syllables.build_word';
+  static const writeWord = 'writing.word';
   static const review = 'review';
 
   static const all = {
@@ -34,6 +35,7 @@ abstract final class ActivityIds {
     contains,
     blend,
     buildWord,
+    writeWord,
     review,
   };
 }

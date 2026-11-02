@@ -23,6 +23,12 @@ class SoundKeyEncoder {
       if (digraph != null) {
         sound.write(digraph);
         i += 2;
+      } else if (i == 0 &&
+          letter == 'h' &&
+          next == 'i' &&
+          SpanishLetters.isVowel(letterAt(i + 2))) {
+        sound.write('y');
+        i += 2;
       } else if (letter == 'g' && next == 'u' && SpanishLetters.isFrontVowel(letterAt(i + 2))) {
         sound.write('g');
         i += 2;

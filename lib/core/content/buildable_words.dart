@@ -18,14 +18,14 @@ abstract final class BuildableWords {
     final known = knownSounds(content, step);
     return [
       for (final word in SoundPosition.pictured(content.words))
-        if (_isSpelledAsSaid(word) &&
+        if (isSpelledAsSaid(word) &&
             word.sounds.every(known.contains) &&
             word.sounds.any(step.sounds.contains))
           word,
     ];
   }
 
-  static bool _isSpelledAsSaid(Word word) =>
+  static bool isSpelledAsSaid(Word word) =>
       word.syllables.length >= 2 &&
       word.syllables.map(SpanishLetters.plain).join('-') == word.sounds.join('-');
 }

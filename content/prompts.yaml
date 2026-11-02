@@ -23,11 +23,11 @@ home.locked:
 step.intro:
   - ¿A qué quieres jugar? ¡Toca un dibujo!
 
+step.done:
+  - ¡Jugaste todos los juegos! Toca la flecha para seguir el camino.
+
 profiles.intro:
   - ¿Quién va a jugar? ¡Toca tu dibujo!
-
-profiles.empty:
-  - ¡Hola! Pídele a un adulto que te ayude a empezar.
 
 review.intro:
   - ¡Antes de jugar, un repaso rápido! ¿Te acuerdas de esto?
@@ -37,6 +37,18 @@ stickers.intro:
 
 stickers.new:
   - ¡Ganaste un sticker nuevo! Búscalo en tu álbum.
+
+home.finished:
+  - ¡Llegaste al final del camino! ¡Lo hiciste increíble! Muy pronto habrá letras nuevas. Mientras... toca el lápiz y escribe palabras.
+
+writing.locked:
+  - ¡Pronto vas a escribir palabras! Primero sigue jugando en el camino.
+
+writing.word.intro:
+  - ¡Vamos a escribir palabras! Escribe con tu dedo sobre las letras. Cuando termines... toca el botón verde.
+
+writing.word.ask:
+  - Escribe...
 
 spatial.up_down.intro:
   - ¡Hola! Soy Leo. Ayúdame a encontrar arriba y abajo.
@@ -537,10 +549,16 @@ syllables.build_word.pomelo:
   - Arma la palabra, pomelo.
 
 listening.clap.intro:
-  - ¡Vamos a aplaudir! Toca las manos una vez por cada pedacito de la palabra, y después toca el botón de listo.
+  - ¡Vamos a aplaudir! Leo dice una palabra... y tú das un aplauso por cada pedacito. Cuando termines... toca el botón verde.
 
 listening.clap.ask:
   - Aplaude los pedacitos de la palabra...
+
+listening.clap.show:
+  - ¡Mira cómo aplaudo!
+
+listening.clap.your_turn:
+  - ¡Ahora tú!
 
 listening.same_sound.intro:
   - ¡Escucha bien! Toca el dibujo que empieza con el sonido que te digo.

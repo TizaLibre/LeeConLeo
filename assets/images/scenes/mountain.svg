@@ -1,5 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800" width="400" height="800" preserveAspectRatio="xMidYMid slice">
 <rect x="0" y="0" width="400" height="800" fill="#B2D69A"/>
+<g transform="translate(-400 0)">
+<path d="M350 18 L470 250 L240 250 Z" fill="#A9B4C2" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M350 18 L470 250 L390 250 Z" fill="#8F9BAA"/>
+<path d="M350 18 L470 250 L240 250 Z" fill="none" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M350 18 L383 84 L368 76 L356 90 L344 76 L330 88 L318 84 Z" fill="#FFFFFF" stroke="#3B2A20" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
 <path d="M50 30 L160 250 L-70 250 Z" fill="#A9B4C2" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M50 30 L160 250 L90 250 Z" fill="#8F9BAA"/>
 <path d="M50 30 L160 250 L-70 250 Z" fill="none" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
@@ -8,7 +14,13 @@
 <path d="M350 18 L470 250 L390 250 Z" fill="#8F9BAA"/>
 <path d="M350 18 L470 250 L240 250 Z" fill="none" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M350 18 L383 84 L368 76 L356 90 L344 76 L330 88 L318 84 Z" fill="#FFFFFF" stroke="#3B2A20" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M0 222 C60 200, 120 244, 200 232 C280 220, 340 248, 400 226 L400 300 L0 300 Z" fill="#B2D69A"/>
+<g transform="translate(400 0)">
+<path d="M50 30 L160 250 L-70 250 Z" fill="#A9B4C2" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M50 30 L160 250 L90 250 Z" fill="#8F9BAA"/>
+<path d="M50 30 L160 250 L-70 250 Z" fill="none" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M50 30 L81 90 L66 82 L54 96 L41 82 L28 93 L16 90 Z" fill="#FFFFFF" stroke="#3B2A20" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<path d="M0 222 C60 200, 120 244, 200 232 C280 220, 340 248, 400 222 L400 300 L0 300 Z" fill="#B2D69A"/>
 <ellipse cx="300" cy="330" rx="80" ry="40" fill="#A2CA88"/>
 <ellipse cx="110" cy="470" rx="80" ry="42" fill="#A2CA88"/>
 <ellipse cx="290" cy="570" rx="70" ry="36" fill="#A2CA88"/>

@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:lee_con_leo/core/content/models/content_bundle.dart';
@@ -24,7 +25,11 @@ class YamlContentReader {
   ContentBundle read() => ContentBundle(
     words: [for (final entry in _readList(ContentPaths.words)) _toWord(entry)],
     stages: [for (final entry in _readList(ContentPaths.path)) PathStage.fromJson(entry)],
-    prompts: PromptLibrary.fromJson(_readMap(ContentPaths.prompts), clips: _promptClips()),
+    prompts: PromptLibrary.fromJson(
+      _readMap(ContentPaths.prompts),
+      clips: _promptClips(),
+      beats: _promptBeats(),
+    ),
     letters: {
       for (final file in _yamlFiles(ContentPaths.letters))
         _baseName(file): LetterShape.fromJson(_load(file.path) as Map<String, dynamic>),
@@ -51,6 +56,20 @@ class YamlContentReader {
   String _baseName(File file) {
     final name = file.uri.pathSegments.last;
     return name.substring(0, name.length - _yamlExtension.length);
+  }
+
+  Map<String, List<double>> _promptBeats() {
+    final manifest = File(ContentPaths.manifest);
+    if (!manifest.existsSync()) return const {};
+    final clips =
+        (jsonDecode(manifest.readAsStringSync()) as Map<String, dynamic>)['clips'] as List;
+    return {
+      for (final clip in clips.cast<Map<String, dynamic>>())
+        if (clip['beats'] case final List beats)
+          PromptLibrary.clipKey(clip['promptId'] as String, clip['index'] as int): [
+            for (final beat in beats) (beat as num).toDouble(),
+          ],
+    };
   }
 
   Map<String, String> _promptClips() {

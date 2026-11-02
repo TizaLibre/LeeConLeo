@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/foundation.dart';
@@ -48,8 +49,15 @@ class ActivitySession extends ChangeNotifier implements ItemController {
   int _index = 0;
   int _mistakes = 0;
   DateTime _itemShownAt = DateTime.fromMillisecondsSinceEpoch(0);
+  Future<void> _feedback = Future.value();
+  final _lines = StreamController<SpokenLine>.broadcast(sync: true);
 
   SessionPhase get phase => _phase;
+
+  Future<void> get feedbackDone => _feedback;
+
+  @override
+  Stream<SpokenLine> get linesSpoken => _lines.stream;
 
   ActivityItem get currentItem => _items[_index];
 
@@ -108,7 +116,7 @@ class ActivitySession extends ChangeNotifier implements ItemController {
     if (_phase == SessionPhase.intro) {
       start();
     } else if (_phase == SessionPhase.playing) {
-      _player.say(Utterance(_prompt));
+      _speak(_prompt);
     }
   }
 
@@ -116,7 +124,7 @@ class ActivitySession extends ChangeNotifier implements ItemController {
     _phase = SessionPhase.playing;
     _mistakes = 0;
     _itemShownAt = _clock();
-    _player.say(Utterance(_prompt));
+    _speak(_prompt);
     notifyListeners();
   }
 
@@ -137,12 +145,31 @@ class ActivitySession extends ChangeNotifier implements ItemController {
     );
   }
 
-  void _say(String promptId) => _player.say(Utterance([_line(promptId)]));
+  void _say(String promptId) => _speak([_line(promptId)]);
 
-  List<SpokenLine> get _prompt => [_line(currentItem.promptId), ?currentItem.promptTail];
+  Future<void> _speak(List<SpokenLine> lines) => _player.say(
+    Utterance(
+      lines,
+      onLine: (line) {
+        if (!_lines.isClosed) _lines.add(line);
+      },
+    ),
+  );
+
+  @override
+  void dispose() {
+    _lines.close();
+    super.dispose();
+  }
+
+  List<SpokenLine> get _prompt => [
+    _line(currentItem.promptId),
+    ?currentItem.promptTail,
+    if (showsDemo) ...currentItem.demoLines,
+  ];
 
   void _sayAfterAnswer(String answer, List<SpokenLine> lines) =>
-      _player.say(Utterance([?currentItem.optionNames[answer], ...lines]));
+      _feedback = _speak([?currentItem.optionNames[answer], ...lines]);
 
   SpokenLine _line(String promptId) => _prompts.line(promptId, _random);
 }

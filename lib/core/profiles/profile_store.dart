@@ -14,6 +14,8 @@ abstract interface class ProfileStore {
 
   Future<Profile> create({required String nickname, required String avatar});
 
+  Future<void> update(Profile profile);
+
   Future<void> delete(Profile profile);
 
   Future<ProfileData> open(Profile profile);

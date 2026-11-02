@@ -10,7 +10,7 @@ class StepButton extends StatelessWidget {
 
   final PathStep step;
   final StepStatus status;
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
 
   static const size = 96.0;
   static const lockedOpacity = 0.45;

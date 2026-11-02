@@ -198,6 +198,12 @@ to record.
   notebook records exactly that list. `--redo=word.ojo,syllable.pa` adds clips that sound wrong and should be
   recorded again. To fix a mispronounced word or phrase, the notebook's "try spellings" step plays variants
   (`TRY`, `TRY_WORDS`, `TRY_PHRASES`) so the best one can be chosen before recording.
+- After new clap clips (`listening.clap.<word>`) are added, `dart run tool/content.dart beats` (needs
+  `ffmpeg`) times where each syllable starts, from the pauses or, without one, the loudness dips, and saves
+  it as `beats` in `manifest.json`. Leo claps on those beats. Validation fails when a clap clip has no
+  beats or a different number of beats than syllables.
+- Sound effects (`assets/audio/sfx/`, such as the clap) are synthesized for this project and play on their
+  own player, so they never cut Leo's voice.
 - Phrases leave a pause ("...") before the syllable or letter they ask about, so the voice doesn't merge them
   with the word before it ("termina en... ño", not "termina con, ño").
 

@@ -30,6 +30,12 @@ class DriftProfileStore implements ProfileStore {
   }
 
   @override
+  Future<void> update(Profile profile) =>
+      (_database.update(_database.profiles)..where((row) => row.id.equals(profile.id))).write(
+        ProfilesCompanion(nickname: Value(profile.nickname), avatar: Value(profile.avatar)),
+      );
+
+  @override
   Future<void> delete(Profile profile) => _database.transaction(() async {
     await (_database.delete(
       _database.itemEvents,

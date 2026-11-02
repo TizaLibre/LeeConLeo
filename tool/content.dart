@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'src/commands/beats_command.dart';
 import 'src/commands/build_command.dart';
 import 'src/commands/content_command.dart';
 import 'src/commands/import_legacy_command.dart';
@@ -10,6 +11,7 @@ const _commands = <ContentCommand>[
   ValidateCommand(),
   BuildCommand(),
   VoiceCommand(),
+  BeatsCommand(),
   ImportLegacyCommand(),
 ];
 

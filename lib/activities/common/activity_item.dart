@@ -10,6 +10,7 @@ class ActivityItem {
     this.stepId,
     this.activityId,
     this.promptTail,
+    this.demoLines = const [],
   });
 
   final String id;
@@ -20,4 +21,5 @@ class ActivityItem {
   final String? stepId;
   final String? activityId;
   final SpokenLine? promptTail;
+  final List<SpokenLine> demoLines;
 }

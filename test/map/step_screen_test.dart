@@ -8,6 +8,9 @@ import 'package:lee_con_leo/app/widgets/pulse.dart';
 import 'package:lee_con_leo/core/audio/audio_providers.dart';
 import 'package:lee_con_leo/core/content/activity_ids.dart';
 import 'package:lee_con_leo/core/content/content_providers.dart';
+import 'package:lee_con_leo/core/content/models/content_bundle.dart';
+import 'package:lee_con_leo/core/content/models/path_stage.dart';
+import 'package:lee_con_leo/core/content/models/path_step.dart';
 import 'package:lee_con_leo/core/profiles/in_memory_profile_store.dart';
 import 'package:lee_con_leo/core/profiles/profile_providers.dart';
 import 'package:lee_con_leo/core/profiles/profile_store.dart';
@@ -21,7 +24,11 @@ void main() {
   late RecordingPromptPlayer player;
   late ProfileData data;
 
-  Future<void> pumpApp(WidgetTester tester, [void Function(ProfileData data)? seed]) async {
+  Future<void> pumpApp(
+    WidgetTester tester, [
+    void Function(ProfileData data)? seed,
+    ContentBundle content = testContent,
+  ]) async {
     tester.platformDispatcher.accessibilityFeaturesTestValue = const FakeAccessibilityFeatures(
       disableAnimations: true,
     );
@@ -33,7 +40,7 @@ void main() {
     await tester.pumpWidget(
       ProviderScope(
         overrides: [
-          contentProvider.overrideWith((ref) async => testContent),
+          contentProvider.overrideWith((ref) async => content),
           minimumSplashProvider.overrideWithValue(Duration.zero),
           promptPlayerProvider.overrideWithValue(player),
           profileStoreProvider.overrideWithValue(store),
@@ -137,5 +144,58 @@ void main() {
 
     expect(find.byType(StepScreen), findsOneWidget);
     expect(data.progress.completedSteps, contains('a'));
+    expect(player.spoken.last, 'step done');
+
+    await tester.tap(find.byKey(StepScreen.nextKey));
+    await tester.pumpAndSettle();
+    expect(tester.widget<ActivityScreen>(find.byType(ActivityScreen)).stepId, 'e');
+  });
+
+  testWidgets('the arrow opens the next step screen, and Leo speaks there', (tester) async {
+    const games = [ActivityIds.meet, ActivityIds.find];
+    final content = ContentBundle(
+      words: testContent.words,
+      prompts: testContent.prompts,
+      letters: testContent.letters,
+      stages: const [
+        PathStage(
+          stage: 2,
+          name: 'vocales',
+          steps: [
+            PathStep(id: 'a', grapheme: 'a', sounds: ['a'], activities: games),
+            PathStep(id: 'e', grapheme: 'e', sounds: ['e'], activities: games),
+          ],
+        ),
+      ],
+    );
+    await pumpApp(tester, (data) {
+      for (final step in ['a', 'e']) {
+        for (final game in games) {
+          data.progress.markPlayed((stepId: step, activityId: game));
+        }
+      }
+    }, content);
+
+    await tester.tap(find.byKey(const ValueKey('step-a')));
+    await tester.pumpAndSettle();
+    final spoken = player.spoken.length;
+    await tester.tap(find.byKey(StepScreen.nextKey));
+    await tester.pumpAndSettle();
+
+    expect(tester.widget<StepScreen>(find.byType(StepScreen)).stepId, 'e');
+    expect(player.spoken.length, greaterThan(spoken));
+    expect(player.spoken.last, 'step done');
+  });
+
+  testWidgets('the arrow only shows once every game of the step was played', (tester) async {
+    await pumpApp(tester, (data) {
+      finishSpatialSteps(data);
+      data.progress.markPlayed((stepId: 'a', activityId: ActivityIds.meet));
+    });
+
+    await tester.tap(find.byKey(const ValueKey('step-a')));
+    await tester.pumpAndSettle();
+
+    expect(find.byKey(StepScreen.nextKey), findsNothing);
   });
 }

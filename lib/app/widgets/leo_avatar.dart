@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-enum LeoPose { front, side, happy, thinking, cheering }
+enum LeoPose { front, side, happy, thinking, cheering, clapping }
 
 class LeoAvatar extends StatelessWidget {
   const LeoAvatar({super.key, this.size = 160, this.pose = LeoPose.front});

@@ -14,6 +14,8 @@ import '../fakes/test_content.dart';
 Word _word(String text, List<String> syllables, List<String> sounds) =>
     Word(text: text, syllables: syllables, sounds: sounds, image: 'words/$text.svg');
 
+final _hielo = _word('hielo', ['hie', 'lo'], ['ye', 'lo']);
+final _humo = _word('humo', ['hu', 'mo'], ['u', 'mo']);
 final _cebra = _word('cebra', ['ce', 'bra'], ['se', 'bra']);
 final _semilla = _word('semilla', ['se', 'mi', 'lla'], ['se', 'mi', 'ya']);
 final _taza = _word('taza', ['ta', 'za'], ['ta', 'sa']);
@@ -22,12 +24,21 @@ final _pina = _word('piña', ['pi', 'ña'], ['pi', 'ña']);
 final _dominoAccented = _word('dominó', ['do', 'mi', 'nó'], ['do', 'mi', 'no']);
 
 void main() {
-  test('written games need the syllable spelled as shown, listening games only its sound', () {
+  test('every game needs the word both said and written with the syllable', () {
     expect(PictureSoundGame.startsWith.matches(_cebra, 'se'), isFalse);
     expect(PictureSoundGame.startsWith.matches(_semilla, 'se'), isTrue);
-    expect(PictureSoundGame.sameSound.matches(_cebra, 'se'), isTrue);
+    expect(PictureSoundGame.sameSound.matches(_cebra, 'se'), isFalse);
+    expect(PictureSoundGame.sameSound.matches(_semilla, 'se'), isTrue);
+    expect(PictureSoundGame.sameSound.matches(_hielo, 'i'), isFalse);
+    expect(PictureSoundGame.sameSound.matches(_humo, 'u'), isFalse);
     expect(PictureSoundGame.endsWith.matches(_taza, 'sa'), isFalse);
     expect(PictureSoundGame.endsWith.matches(_mesa, 'sa'), isTrue);
+  });
+
+  test('a word that sounds or looks like the answer is never a wrong option', () {
+    expect(PictureSoundGame.sameSound.resembles(_cebra, 'se'), isTrue);
+    expect(PictureSoundGame.startsWith.resembles(_humo, 'hu'), isTrue);
+    expect(PictureSoundGame.startsWith.resembles(_mesa, 'se'), isFalse);
   });
 
   test('contains finds the syllable anywhere, ignoring accents', () {

@@ -15,6 +15,7 @@ import 'syllables/build_word_activity.dart';
 import 'syllables/syllable_find_activity.dart';
 import 'syllables/syllable_meet_activity.dart';
 import 'syllables/syllable_trace_activity.dart';
+import 'writing/write_word_activity.dart';
 
 final _games = <ActivitySpec>[
   DirectionActivity.upDown,
@@ -36,5 +37,5 @@ final _games = <ActivitySpec>[
 ];
 
 final activityRegistryProvider = Provider<ActivityRegistry>(
-  (ref) => ActivityRegistry([..._games, ReviewActivity(_games)]),
+  (ref) => ActivityRegistry([..._games, const WriteWordActivity(), ReviewActivity(_games)]),
 );

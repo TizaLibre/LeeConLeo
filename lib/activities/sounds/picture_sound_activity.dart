@@ -70,7 +70,7 @@ class PictureSoundActivity implements ActivitySpec {
     for (final (round, sound) in ordered.indexed) {
       final turn = asked[sound] = (asked[sound] ?? -1) + 1;
       final matches = targets[sound]!;
-      final others = pictures.where((word) => !position.matches(word, sound)).toList()
+      final others = pictures.where((word) => !game.resembles(word, sound)).toList()
         ..shuffle(random);
       items.add(
         _item(round, sound, matches[turn % matches.length], others.take(choices - 1), random),
