@@ -1615,7 +1615,7 @@
         "lo"
       ],
       "sounds": [
-        "ie",
+        "ye",
         "lo"
       ],
       "image": "words/hielo.svg",
@@ -1628,7 +1628,7 @@
         "na"
       ],
       "sounds": [
-        "ie",
+        "ye",
         "na"
       ]
     },
@@ -4751,11 +4751,11 @@
     "step.intro": [
       "¿A qué quieres jugar? ¡Toca un dibujo!"
     ],
+    "step.done": [
+      "¡Jugaste todos los juegos! Toca la flecha para seguir el camino."
+    ],
     "profiles.intro": [
       "¿Quién va a jugar? ¡Toca tu dibujo!"
-    ],
-    "profiles.empty": [
-      "¡Hola! Pídele a un adulto que te ayude a empezar."
     ],
     "review.intro": [
       "¡Antes de jugar, un repaso rápido! ¿Te acuerdas de esto?"
@@ -4765,6 +4765,18 @@
     ],
     "stickers.new": [
       "¡Ganaste un sticker nuevo! Búscalo en tu álbum."
+    ],
+    "home.finished": [
+      "¡Llegaste al final del camino! ¡Lo hiciste increíble! Muy pronto habrá letras nuevas. Mientras... toca el lápiz y escribe palabras."
+    ],
+    "writing.locked": [
+      "¡Pronto vas a escribir palabras! Primero sigue jugando en el camino."
+    ],
+    "writing.word.intro": [
+      "¡Vamos a escribir palabras! Escribe con tu dedo sobre las letras. Cuando termines... toca el botón verde."
+    ],
+    "writing.word.ask": [
+      "Escribe..."
     ],
     "spatial.up_down.intro": [
       "¡Hola! Soy Leo. Ayúdame a encontrar arriba y abajo."
@@ -5265,10 +5277,16 @@
       "Arma la palabra, pomelo."
     ],
     "listening.clap.intro": [
-      "¡Vamos a aplaudir! Toca las manos una vez por cada pedacito de la palabra, y después toca el botón de listo."
+      "¡Vamos a aplaudir! Leo dice una palabra... y tú das un aplauso por cada pedacito. Cuando termines... toca el botón verde."
     ],
     "listening.clap.ask": [
       "Aplaude los pedacitos de la palabra..."
+    ],
+    "listening.clap.show": [
+      "¡Mira cómo aplaudo!"
+    ],
+    "listening.clap.your_turn": [
+      "¡Ahora tú!"
     ],
     "listening.same_sound.intro": [
       "¡Escucha bien! Toca el dibujo que empieza con el sonido que te digo."
@@ -6305,6 +6323,7 @@
     "feedback.hint.0": "prompts/feedback.hint.0.m4a",
     "feedback.retry.0": "prompts/feedback.retry.0.m4a",
     "feedback.retry.1": "prompts/feedback.retry.1.m4a",
+    "home.finished.0": "prompts/home.finished.0.m4a",
     "home.intro.0": "prompts/home.intro.0.m4a",
     "home.locked.0": "prompts/home.locked.0.m4a",
     "letter.find.a.0": "prompts/letter.find.a.0.m4a",
@@ -6464,6 +6483,7 @@
     "listening.clap.puma.0": "prompts/listening.clap.puma.0.m4a",
     "listening.clap.remo.0": "prompts/listening.clap.remo.0.m4a",
     "listening.clap.sapo.0": "prompts/listening.clap.sapo.0.m4a",
+    "listening.clap.show.0": "prompts/listening.clap.show.0.m4a",
     "listening.clap.silla.0": "prompts/listening.clap.silla.0.m4a",
     "listening.clap.sol.0": "prompts/listening.clap.sol.0.m4a",
     "listening.clap.sopa.0": "prompts/listening.clap.sopa.0.m4a",
@@ -6479,11 +6499,11 @@
     "listening.clap.uva.0": "prompts/listening.clap.uva.0.m4a",
     "listening.clap.uña.0": "prompts/listening.clap.uña.0.m4a",
     "listening.clap.vela.0": "prompts/listening.clap.vela.0.m4a",
+    "listening.clap.your_turn.0": "prompts/listening.clap.your_turn.0.m4a",
     "listening.clap.zorrillo.0": "prompts/listening.clap.zorrillo.0.m4a",
     "listening.clap.árbol.0": "prompts/listening.clap.árbol.0.m4a",
     "listening.clap.ñandú.0": "prompts/listening.clap.ñandú.0.m4a",
     "listening.same_sound.intro.0": "prompts/listening.same_sound.intro.0.m4a",
-    "profiles.empty.0": "prompts/profiles.empty.0.m4a",
     "profiles.intro.0": "prompts/profiles.intro.0.m4a",
     "review.intro.0": "prompts/review.intro.0.m4a",
     "reward.0": "prompts/reward.0.m4a",
@@ -6497,6 +6517,7 @@
     "spatial.up_down.down.0": "prompts/spatial.up_down.down.0.m4a",
     "spatial.up_down.intro.0": "prompts/spatial.up_down.intro.0.m4a",
     "spatial.up_down.up.0": "prompts/spatial.up_down.up.0.m4a",
+    "step.done.0": "prompts/step.done.0.m4a",
     "step.intro.0": "prompts/step.intro.0.m4a",
     "stickers.intro.0": "prompts/stickers.intro.0.m4a",
     "stickers.new.0": "prompts/stickers.new.0.m4a",
@@ -6823,7 +6844,380 @@
     "syllables.trace.ñe.0": "prompts/syllables.trace.ñe.0.m4a",
     "syllables.trace.ñi.0": "prompts/syllables.trace.ñi.0.m4a",
     "syllables.trace.ño.0": "prompts/syllables.trace.ño.0.m4a",
-    "syllables.trace.ñu.0": "prompts/syllables.trace.ñu.0.m4a"
+    "syllables.trace.ñu.0": "prompts/syllables.trace.ñu.0.m4a",
+    "writing.locked.0": "prompts/writing.locked.0.m4a",
+    "writing.word.ask.0": "prompts/writing.word.ask.0.m4a",
+    "writing.word.intro.0": "prompts/writing.word.intro.0.m4a"
+  },
+  "promptBeats": {
+    "listening.clap.abeja.0": [
+      0.04,
+      0.8,
+      1.56
+    ],
+    "listening.clap.avión.0": [
+      0.04,
+      0.8
+    ],
+    "listening.clap.cama.0": [
+      0.01,
+      0.34
+    ],
+    "listening.clap.elefante.0": [
+      0.04,
+      0.81,
+      1.76,
+      2.48
+    ],
+    "listening.clap.escoba.0": [
+      0.0,
+      0.79,
+      1.6
+    ],
+    "listening.clap.estrella.0": [
+      0.0,
+      0.77,
+      1.45
+    ],
+    "listening.clap.hielo.0": [
+      0.03,
+      0.7
+    ],
+    "listening.clap.humo.0": [
+      0.04,
+      0.18
+    ],
+    "listening.clap.iglú.0": [
+      0.04,
+      0.74
+    ],
+    "listening.clap.imán.0": [
+      0.04,
+      0.81
+    ],
+    "listening.clap.isla.0": [
+      0.0,
+      0.74
+    ],
+    "listening.clap.lana.0": [
+      0.0,
+      0.77
+    ],
+    "listening.clap.leche.0": [
+      0.0,
+      0.84
+    ],
+    "listening.clap.león.0": [
+      0.0,
+      0.89
+    ],
+    "listening.clap.libro.0": [
+      0.0,
+      0.81
+    ],
+    "listening.clap.limón.0": [
+      0.0,
+      0.78
+    ],
+    "listening.clap.lobo.0": [
+      0.0,
+      0.83
+    ],
+    "listening.clap.luna.0": [
+      0.0,
+      0.75
+    ],
+    "listening.clap.lupa.0": [
+      0.0,
+      0.99
+    ],
+    "listening.clap.lápiz.0": [
+      0.0,
+      0.83
+    ],
+    "listening.clap.mano.0": [
+      0.0,
+      0.78
+    ],
+    "listening.clap.manzana.0": [
+      0.0,
+      1.03,
+      1.61
+    ],
+    "listening.clap.mapa.0": [
+      0.0,
+      1.0
+    ],
+    "listening.clap.melón.0": [
+      0.0,
+      0.84
+    ],
+    "listening.clap.mesa.0": [
+      0.0,
+      1.44
+    ],
+    "listening.clap.micrófono.0": [
+      0.0,
+      0.84,
+      1.75,
+      2.3
+    ],
+    "listening.clap.miel.0": [
+      0.0
+    ],
+    "listening.clap.mochila.0": [
+      0.0,
+      1.25,
+      2.28
+    ],
+    "listening.clap.mono.0": [
+      0.0,
+      0.78
+    ],
+    "listening.clap.mula.0": [
+      0.0,
+      0.79
+    ],
+    "listening.clap.murciélago.0": [
+      0.0,
+      1.23,
+      2.0,
+      2.91
+    ],
+    "listening.clap.muñeca.0": [
+      0.0,
+      0.77,
+      1.62
+    ],
+    "listening.clap.ojo.0": [
+      0.05,
+      1.09
+    ],
+    "listening.clap.ola.0": [
+      0.05,
+      0.9
+    ],
+    "listening.clap.oso.0": [
+      0.05,
+      1.25
+    ],
+    "listening.clap.oveja.0": [
+      0.05,
+      0.79,
+      1.53
+    ],
+    "listening.clap.pala.0": [
+      0.0,
+      0.72
+    ],
+    "listening.clap.paloma.0": [
+      0.0,
+      0.74,
+      1.45
+    ],
+    "listening.clap.palta.0": [
+      0.0,
+      1.29
+    ],
+    "listening.clap.papa.0": [
+      0.0,
+      0.76
+    ],
+    "listening.clap.pato.0": [
+      0.0,
+      0.8
+    ],
+    "listening.clap.pelota.0": [
+      0.0,
+      0.73,
+      1.58
+    ],
+    "listening.clap.perro.0": [
+      0.0,
+      0.75
+    ],
+    "listening.clap.pila.0": [
+      0.0,
+      0.74
+    ],
+    "listening.clap.pino.0": [
+      0.0,
+      0.73
+    ],
+    "listening.clap.piña.0": [
+      0.0,
+      0.74
+    ],
+    "listening.clap.pluma.0": [
+      0.0,
+      0.77
+    ],
+    "listening.clap.pollo.0": [
+      0.0,
+      0.71
+    ],
+    "listening.clap.pomelo.0": [
+      0.0,
+      0.73,
+      1.44
+    ],
+    "listening.clap.pulpo.0": [
+      0.0,
+      0.78
+    ],
+    "listening.clap.puma.0": [
+      0.0,
+      0.74
+    ],
+    "listening.clap.remo.0": [
+      0.02,
+      0.8
+    ],
+    "listening.clap.sapo.0": [
+      0.15,
+      1.32
+    ],
+    "listening.clap.sopa.0": [
+      0.14,
+      1.31
+    ],
+    "listening.clap.trompo.0": [
+      0.0,
+      0.81
+    ],
+    "listening.clap.unicornio.0": [
+      0.05,
+      0.84,
+      1.99,
+      2.63
+    ],
+    "listening.clap.uva.0": [
+      0.07,
+      0.84
+    ],
+    "listening.clap.uña.0": [
+      0.06,
+      0.83
+    ],
+    "listening.clap.vela.0": [
+      0.0,
+      0.84
+    ],
+    "listening.clap.árbol.0": [
+      0.05,
+      0.19
+    ],
+    "listening.clap.dado.0": [
+      0.03,
+      0.84
+    ],
+    "listening.clap.dedo.0": [
+      0.0,
+      0.88
+    ],
+    "listening.clap.dominó.0": [
+      0.0,
+      0.78,
+      1.47
+    ],
+    "listening.clap.ducha.0": [
+      0.0,
+      1.01
+    ],
+    "listening.clap.cebra.0": [
+      0.1,
+      0.76
+    ],
+    "listening.clap.silla.0": [
+      0.15,
+      0.84
+    ],
+    "listening.clap.sol.0": [
+      0.11
+    ],
+    "listening.clap.medusa.0": [
+      0.0,
+      0.91,
+      1.86
+    ],
+    "listening.clap.espada.0": [
+      0.0,
+      0.77,
+      1.45
+    ],
+    "listening.clap.taza.0": [
+      0.0,
+      0.79
+    ],
+    "listening.clap.tambor.0": [
+      0.0,
+      0.73
+    ],
+    "listening.clap.teléfono.0": [
+      0.0,
+      0.73,
+      1.71,
+      2.41
+    ],
+    "listening.clap.tigre.0": [
+      0.0,
+      0.76
+    ],
+    "listening.clap.tomate.0": [
+      0.0,
+      0.75,
+      1.71
+    ],
+    "listening.clap.topo.0": [
+      0.0,
+      0.8
+    ],
+    "listening.clap.tucán.0": [
+      0.0,
+      0.76
+    ],
+    "listening.clap.nido.0": [
+      0.0,
+      0.84
+    ],
+    "listening.clap.nube.0": [
+      0.0,
+      0.82
+    ],
+    "listening.clap.ñandú.0": [
+      0.0,
+      1.01
+    ],
+    "listening.clap.niño.0": [
+      0.0,
+      0.78
+    ],
+    "listening.clap.foca.0": [
+      0.0,
+      0.83
+    ],
+    "listening.clap.fideos.0": [
+      0.0,
+      0.78,
+      1.53
+    ],
+    "listening.clap.fuego.0": [
+      0.0,
+      0.73
+    ],
+    "listening.clap.café.0": [
+      0.01,
+      0.65
+    ],
+    "listening.clap.foto.0": [
+      0.0,
+      0.83
+    ],
+    "listening.clap.zorrillo.0": [
+      0.27,
+      1.07,
+      2.1
+    ]
   },
   "letters": {
     "a": {

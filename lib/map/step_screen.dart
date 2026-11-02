@@ -9,6 +9,7 @@ import '../activities/activity_providers.dart';
 import '../activities/common/widgets/letter_glyph.dart';
 import '../app/app_theme.dart';
 import '../app/startup_providers.dart';
+import '../app/step_routes.dart';
 import '../app/widgets/leo_avatar.dart';
 import '../app/widgets/loading_view.dart';
 import '../app/widgets/pulse.dart';
@@ -24,6 +25,8 @@ class StepScreen extends ConsumerStatefulWidget {
   const StepScreen({super.key, required this.stepId});
 
   static const introPrompt = 'step.intro';
+  static const donePrompt = 'step.done';
+  static const nextKey = ValueKey('step-next');
   static const mapKey = ValueKey('step-map');
   static const maxCard = 132.0;
   static const minCard = 72.0;
@@ -41,11 +44,29 @@ class _StepScreenState extends ConsumerState<StepScreen> {
   void initState() {
     super.initState();
     ref.read(startupProvider.future).then((content) {
-      if (!mounted) return;
-      ref
-          .read(promptPlayerProvider)
-          .say(Utterance([content.prompts.line(StepScreen.introPrompt, Random())]));
+      final step = content.stepById(widget.stepId);
+      if (!mounted || step == null) return;
+      final prompt = _unplayed(step).isEmpty ? StepScreen.donePrompt : StepScreen.introPrompt;
+      ref.read(promptPlayerProvider).say(Utterance([content.prompts.line(prompt, Random())]));
     });
+  }
+
+  List<String> _unplayed(PathStep step) {
+    final played = {
+      for (final game in ref.read(playedGamesProvider))
+        if (game.stepId == step.id) game.activityId,
+    };
+    return [
+      for (final game in ref.read(activityRegistryProvider).available(step.activities))
+        if (!played.contains(game)) game,
+    ];
+  }
+
+  String _nextRoute(ContentBundle content, PathStep step) {
+    final steps = content.steps.toList();
+    final index = steps.indexWhere((other) => other.id == step.id);
+    if (index < 0 || index == steps.length - 1) return '/';
+    return StepRoutes.entry(ref.read(activityRegistryProvider), steps[index + 1]);
   }
 
   void _go(String route) {
@@ -101,28 +122,25 @@ class _StepScreenState extends ConsumerState<StepScreen> {
             );
           },
         );
+        const leo = Padding(
+          padding: EdgeInsets.all(16),
+          child: LeoAvatar(size: 140, pose: LeoPose.happy),
+        );
+        final board = Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(80, 16, 80, 8),
+              child: SizedBox(height: StepScreen.headerHeight, child: _face(step)),
+            ),
+            Expanded(child: cards),
+          ],
+        );
         return Stack(
           children: [
             Flex(
               direction: isWide ? Axis.horizontal : Axis.vertical,
               crossAxisAlignment: isWide ? CrossAxisAlignment.end : CrossAxisAlignment.start,
-              children: [
-                Expanded(
-                  child: Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(80, 16, 80, 8),
-                        child: SizedBox(height: StepScreen.headerHeight, child: _face(step)),
-                      ),
-                      Expanded(child: cards),
-                    ],
-                  ),
-                ),
-                const Padding(
-                  padding: EdgeInsets.all(16),
-                  child: LeoAvatar(size: 140, pose: LeoPose.happy),
-                ),
-              ],
+              children: isWide ? [leo, Expanded(child: board)] : [Expanded(child: board), leo],
             ),
             Positioned(
               top: 8,
@@ -134,6 +152,22 @@ class _StepScreenState extends ConsumerState<StepScreen> {
                 icon: const Icon(Icons.map_rounded),
               ),
             ),
+            if (suggested == null)
+              Positioned(
+                right: 16,
+                bottom: 16,
+                child: Pulse(
+                  child: IconButton.filled(
+                    key: StepScreen.nextKey,
+                    style: IconButton.styleFrom(
+                      backgroundColor: Theme.of(context).colorScheme.tertiary,
+                    ),
+                    iconSize: 64,
+                    onPressed: () => _go(_nextRoute(content, step)),
+                    icon: const Icon(Icons.arrow_forward_rounded),
+                  ),
+                ),
+              ),
           ],
         );
       },

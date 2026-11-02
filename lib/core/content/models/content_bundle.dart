@@ -21,6 +21,7 @@ class ContentBundle {
     prompts: PromptLibrary.fromJson(
       json['prompts'] as Map<String, dynamic>,
       clips: (json['promptClips'] as Map<String, dynamic>? ?? const {}).cast<String, String>(),
+      beats: PromptLibrary.beatsFromJson(json['promptBeats'] as Map<String, dynamic>?),
     ),
     letters: {
       for (final MapEntry(key: grapheme, value: shape)
@@ -68,6 +69,7 @@ class ContentBundle {
     'stages': [for (final stage in stages) stage.toJson()],
     'prompts': prompts.toJson(),
     if (prompts.clips.isNotEmpty) 'promptClips': prompts.clips,
+    if (prompts.beats.isNotEmpty) 'promptBeats': prompts.beats,
     if (letters.isNotEmpty)
       'letters': {
         for (final MapEntry(key: grapheme, value: shape) in letters.entries)

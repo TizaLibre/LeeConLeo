@@ -10,6 +10,7 @@ import 'package:lee_con_leo/activities/listening/clap_view.dart';
 import 'package:lee_con_leo/activities/sounds/picture_sound_activity.dart';
 import 'package:lee_con_leo/activities/sounds/picture_sound_view.dart';
 import 'package:lee_con_leo/core/audio/audio_providers.dart';
+import 'package:lee_con_leo/core/audio/sound_effects.dart';
 import 'package:lee_con_leo/core/content/activity_ids.dart';
 import 'package:lee_con_leo/core/content/content_providers.dart';
 import 'package:lee_con_leo/core/content/models/content_bundle.dart';
@@ -21,6 +22,7 @@ import 'package:lee_con_leo/core/logging/in_memory_event_log.dart';
 import 'package:lee_con_leo/core/logging/logging_providers.dart';
 
 import '../../fakes/recording_prompt_player.dart';
+import '../../fakes/recording_sound_effects.dart';
 import '../../fakes/test_content.dart';
 
 Word _word(String text, List<String> syllables) => Word(
@@ -58,15 +60,25 @@ final _content = ContentBundle(
       ],
     ),
   ],
-  prompts: PromptLibrary({
-    ...testPrompts.phrases,
-    'listening.clap.intro': ['intro'],
-    'listening.clap.ask': ['clap'],
-    'listening.same_sound.intro': ['intro'],
-    'syllables.starts_with.o': ['starts o'],
-    for (final word in _words) 'listening.clap.${word.text}': [word.syllables.join('-')],
-  }),
+  prompts: PromptLibrary(
+    {
+      ...testPrompts.phrases,
+      'listening.clap.intro': ['intro'],
+      'listening.clap.ask': ['clap'],
+      'listening.clap.show': ['look'],
+      'listening.clap.your_turn': ['your turn'],
+      'listening.same_sound.intro': ['intro'],
+      'syllables.starts_with.o': ['starts o'],
+      for (final word in _words) 'listening.clap.${word.text}': [word.syllables.join('-')],
+    },
+    beats: {
+      for (final word in _words)
+        'listening.clap.${word.text}.0': [for (var i = 0; i < word.syllables.length; i++) i * 0.5],
+    },
+  ),
 );
+
+String _split(String text) => _words.firstWhere((word) => word.text == text).syllables.join('-');
 
 void main() {
   final step = _content.stepById('o')!;
@@ -91,6 +103,7 @@ void main() {
   group('game', () {
     late RecordingPromptPlayer player;
     late InMemoryEventLog log;
+    late RecordingSoundEffects effects;
 
     Future<void> play(WidgetTester tester, String activityId) async {
       tester.platformDispatcher.accessibilityFeaturesTestValue = const FakeAccessibilityFeatures(
@@ -99,12 +112,14 @@ void main() {
       addTearDown(tester.platformDispatcher.clearAccessibilityFeaturesTestValue);
       player = RecordingPromptPlayer();
       log = InMemoryEventLog();
+      effects = RecordingSoundEffects();
       await tester.pumpWidget(
         ProviderScope(
           overrides: [
             contentProvider.overrideWith((ref) async => _content),
             promptPlayerProvider.overrideWithValue(player),
             eventLogProvider.overrideWithValue(log),
+            soundEffectsProvider.overrideWithValue(effects),
           ],
           child: MaterialApp(
             home: ActivityScreen(
@@ -121,7 +136,7 @@ void main() {
       await tester.pumpAndSettle();
     }
 
-    String askedWord() => player.utterances.last.lines.last.text;
+    String askedWord() => player.utterances.last.lines[1].text;
 
     Future<void> clap(WidgetTester tester, int times) async {
       for (var i = 0; i < times; i++) {
@@ -139,7 +154,7 @@ void main() {
 
       for (var round = 0; round < 4; round++) {
         final word = askedWord();
-        expect(player.spoken.last, 'clap $word');
+        expect(player.spoken.last, startsWith('clap $word'));
         await clap(tester, syllablesOf(word));
         expect(
           player.utterances.last.lines.first.text,
@@ -163,10 +178,42 @@ void main() {
       await clap(tester, claps + 1);
       expect(find.byKey(const ValueKey('clap-dot-0')), findsNothing);
       expect(player.spoken.last, 'retry clap $word');
+      await tester.pump(const Duration(seconds: 3));
 
       await clap(tester, claps + 1);
       expect(find.byKey(ValueKey('clap-dot-${claps - 1}')), findsOneWidget);
       expect(find.byKey(ValueKey('clap-dot-$claps')), findsNothing);
+    });
+
+    testWidgets('on the first word Leo shows how, clapping silently on each syllable', (
+      tester,
+    ) async {
+      await play(tester, ActivityIds.clap);
+      final word = askedWord();
+      final claps = syllablesOf(word);
+
+      expect(player.spoken.last, 'clap $word look ${_split(word)} your turn');
+      expect(effects.played, isEmpty);
+      final example = player.utterances.last;
+      example.onLine!(example.lines[3]);
+      await tester.pump(const Duration(milliseconds: 10));
+      expect(find.byKey(const ValueKey('leo-clapping')), findsOneWidget);
+      await tester.pump(Duration(milliseconds: 500 * (claps - 1) + 10));
+      expect(find.byKey(ValueKey('clap-dot-${claps - 1}')), findsOneWidget);
+      await tester.pump(const Duration(seconds: 3));
+      expect(effects.played, isEmpty);
+      expect(find.byKey(const ValueKey('leo-clapping')), findsNothing);
+    });
+
+    testWidgets('each tap on the hands sounds a clap', (tester) async {
+      await play(tester, ActivityIds.clap);
+      await tester.pump(const Duration(seconds: 3));
+      effects.played.clear();
+
+      await tester.tap(find.byKey(ClapView.clapKey));
+      await tester.tap(find.byKey(ClapView.clapKey));
+
+      expect(effects.played, [SoundEffects.clap, SoundEffects.clap]);
     });
 
     testWidgets('same sound asks like starts with but shows no letters', (tester) async {

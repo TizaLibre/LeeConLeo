@@ -13,6 +13,7 @@ import 'package:lee_con_leo/core/logging/logging_providers.dart';
 import 'package:lee_con_leo/core/progress/in_memory_progress_store.dart';
 import 'package:lee_con_leo/core/progress/progress_providers.dart';
 import 'package:lee_con_leo/map/step_button.dart';
+import 'package:lee_con_leo/map/write_button.dart';
 
 import '../fakes/item_events.dart';
 import '../fakes/recording_prompt_player.dart';
@@ -55,6 +56,22 @@ void main() {
   testWidgets('Leo greets the child when the map opens', (tester) async {
     await pumpHome(tester);
     expect(player.spoken, ['home intro']);
+  });
+
+  testWidgets('at the end of the path Leo celebrates and the pencil calls', (tester) async {
+    await pumpHome(tester, completed: {for (final step in testContent.steps) step.id});
+
+    expect(player.spoken, ['home finished']);
+    expect(find.descendant(of: find.byType(WriteButton), matching: find.byType(Pulse)), findsOne);
+  });
+
+  testWidgets('before any word can be written, the pencil makes Leo explain', (tester) async {
+    await pumpHome(tester);
+    await tester.tap(find.byType(WriteButton));
+    await tester.pumpAndSettle();
+
+    expect(player.spoken.last, 'writing locked');
+    expect(find.byType(ActivityScreen), findsNothing);
   });
 
   testWidgets('Leo stands beside the next step to play', (tester) async {

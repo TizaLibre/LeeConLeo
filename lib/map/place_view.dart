@@ -79,7 +79,7 @@ class PlaceView extends StatelessWidget {
                 child: FittedBox(child: _stone(step)),
               ),
             if (leoHere != LeoHere.none) _leo(layout),
-            _label(road, size.width),
+            _label(context, road, size.width),
           ],
         );
       },
@@ -110,8 +110,17 @@ class PlaceView extends StatelessWidget {
     );
   }
 
-  Widget _label(Path road, double width) {
-    final slot = labelSlot(
+  Widget _label(BuildContext context, Path road, double width) {
+    final style = Theme.of(context).textTheme.titleMedium;
+    final name = TextPainter(
+      text: TextSpan(text: place.name, style: style),
+      textDirection: TextDirection.ltr,
+      textScaler: MediaQuery.textScalerOf(context),
+      maxLines: 1,
+    )..layout();
+    final needed = name.width + 2 * _PlaceLabel.padding;
+    name.dispose();
+    final beside = labelSlot(
       road: road,
       roadHalfWidth: RoutePainter.halfWidth,
       top: labelMargin,
@@ -120,6 +129,9 @@ class PlaceView extends StatelessWidget {
       margin: labelMargin,
       rightReserved: rightReserved,
     );
+    final slot = needed <= beside.maxWidth
+        ? beside
+        : LabelSlot(isLeft: true, maxWidth: width - 2 * labelMargin - rightReserved);
     return Positioned(
       left: slot.isLeft ? labelMargin : null,
       right: slot.isLeft ? null : labelMargin + rightReserved,
@@ -142,6 +154,8 @@ class PlaceView extends StatelessWidget {
 class _PlaceLabel extends StatelessWidget {
   const _PlaceLabel({super.key, required this.name});
 
+  static const padding = 12.0;
+
   final String name;
 
   @override
@@ -152,8 +166,11 @@ class _PlaceLabel extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
       ),
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-        child: Text(name, style: Theme.of(context).textTheme.titleMedium),
+        padding: const EdgeInsets.symmetric(horizontal: padding, vertical: 6),
+        child: FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(name, maxLines: 1, style: Theme.of(context).textTheme.titleMedium),
+        ),
       ),
     );
   }

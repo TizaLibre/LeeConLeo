@@ -24,6 +24,7 @@ import 'leo_position.dart';
 import 'place_view.dart';
 import 'review_due.dart';
 import 'step_status.dart';
+import 'write_button.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -83,6 +84,7 @@ Widget _home(WidgetRef ref, ContentBundle bundle) {
           ),
         ),
       ),
+      Positioned(right: 16, bottom: 16, child: WriteButton(bundle: bundle)),
     ],
   );
 }
@@ -92,6 +94,7 @@ class PathMap extends ConsumerStatefulWidget {
 
   static const introPrompt = 'home.intro';
   static const lockedPrompt = 'home.locked';
+  static const finishedPrompt = 'home.finished';
   static const zigzag = [0.5, 0.74, 0.5, 0.26];
 
   final ContentBundle bundle;
@@ -132,7 +135,13 @@ class _PathMapState extends ConsumerState<PathMap> {
 
   void _arrive() {
     if (!mounted) return;
-    if (ref.read(greetingProvider.notifier).takeTurn()) _say(PathMap.introPrompt);
+    final greets = ref.read(greetingProvider.notifier).takeTurn();
+    if (WriteButton.isPathFinished(widget.bundle, ref.read(completedStepsProvider)) &&
+        ref.read(finishCheerProvider.notifier).takeTurn()) {
+      _say(PathMap.finishedPrompt);
+    } else if (greets) {
+      _say(PathMap.introPrompt);
+    }
     final target = _leoTarget(
       _statuses(ref.read(completedStepsProvider), ref.read(masteredStepsProvider)),
     );

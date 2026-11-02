@@ -18,6 +18,7 @@ abstract final class GameIcons {
     ActivityIds.contains: 'games/contains.svg',
     ActivityIds.blend: 'games/blend.svg',
     ActivityIds.buildWord: 'games/build_word.svg',
+    ActivityIds.writeWord: 'games/write.svg',
   };
 
   static String? of(String activityId) => _icons[activityId];

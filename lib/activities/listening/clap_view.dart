@@ -1,15 +1,21 @@
+import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../app/app_theme.dart';
+import '../../app/widgets/leo_avatar.dart';
+import '../../core/audio/audio_providers.dart';
+import '../../core/audio/sound_effects.dart';
+import '../../core/content/models/spoken_line.dart';
 import '../common/item_controller.dart';
 import '../common/widgets/demo_overlay.dart';
 import '../common/widgets/leo_beside.dart';
 import 'clap_activity.dart';
 
-class ClapView extends StatefulWidget {
+class ClapView extends ConsumerStatefulWidget {
   const ClapView({super.key, required this.item, required this.controller});
 
   static const clapKey = ValueKey('clap');
@@ -17,26 +23,86 @@ class ClapView extends StatefulWidget {
   static const maxClaps = 6;
   static const pictureShare = 0.45;
   static const dotsShare = 0.15;
+  static const clapHold = Duration(milliseconds: 180);
+  static const leoDot = Color(0xFF3E8EDE);
 
   final ClapItem item;
   final ItemController controller;
 
   @override
-  State<ClapView> createState() => _ClapViewState();
+  ConsumerState<ClapView> createState() => _ClapViewState();
 }
 
-class _ClapViewState extends State<ClapView> {
+class _ClapViewState extends ConsumerState<ClapView> {
   int _claps = 0;
+  int _leoClaps = 0;
+  bool _isLeoClapping = false;
+  final List<Timer> _beats = [];
+  StreamSubscription<SpokenLine>? _lines;
+
+  @override
+  void initState() {
+    super.initState();
+    _lines = widget.controller.linesSpoken.listen(_follow);
+  }
 
   @override
   void didUpdateWidget(ClapView oldWidget) {
     super.didUpdateWidget(oldWidget);
-    if (oldWidget.item.id != widget.item.id) _claps = 0;
+    if (oldWidget.controller != widget.controller) {
+      _lines?.cancel();
+      _lines = widget.controller.linesSpoken.listen(_follow);
+    }
+    if (oldWidget.item.id != widget.item.id) {
+      _stopBeats();
+      _claps = 0;
+      _leoClaps = 0;
+      _isLeoClapping = false;
+    }
+  }
+
+  @override
+  void dispose() {
+    _lines?.cancel();
+    _stopBeats();
+    super.dispose();
+  }
+
+  void _stopBeats() {
+    for (final beat in _beats) {
+      beat.cancel();
+    }
+    _beats.clear();
+  }
+
+  void _follow(SpokenLine line) {
+    if (!mounted) return;
+    setState(() {
+      _leoClaps = 0;
+      _isLeoClapping = false;
+    });
+    for (final (index, beat) in line.beats.indexed) {
+      _beats.add(
+        Timer(Duration(milliseconds: (beat * 1000).round()), () {
+          setState(() {
+            _leoClaps = index + 1;
+            _isLeoClapping = true;
+          });
+          _beats.add(Timer(ClapView.clapHold, () => setState(() => _isLeoClapping = false)));
+        }),
+      );
+    }
   }
 
   void _clap() {
     if (widget.controller.isSolved || _claps >= ClapView.maxClaps) return;
-    setState(() => _claps++);
+    _stopBeats();
+    ref.read(soundEffectsProvider).play(SoundEffects.clap);
+    setState(() {
+      _claps++;
+      _leoClaps = 0;
+      _isLeoClapping = false;
+    });
   }
 
   void _done() {
@@ -49,6 +115,7 @@ class _ClapViewState extends State<ClapView> {
   Widget build(BuildContext context) {
     return LeoBeside(
       controller: widget.controller,
+      pose: _isLeoClapping ? LeoPose.clapping : null,
       child: LayoutBuilder(
         builder: (context, constraints) {
           final size = constraints.biggest;
@@ -98,7 +165,7 @@ class _ClapViewState extends State<ClapView> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        for (var i = 0; i < max(_claps, hinted); i++)
+        for (var i = 0; i < max(max(_claps, hinted), _leoClaps); i++)
           Padding(
             key: ValueKey('clap-dot-$i'),
             padding: EdgeInsets.symmetric(horizontal: size * 0.2),
@@ -108,7 +175,9 @@ class _ClapViewState extends State<ClapView> {
               height: size,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: i < _claps ? AppTheme.starGold : Colors.transparent,
+                color: i < _claps
+                    ? AppTheme.starGold
+                    : (i < _leoClaps ? ClapView.leoDot : Colors.transparent),
                 border: Border.all(color: AppTheme.outline, width: 4),
               ),
             ),
@@ -117,7 +186,13 @@ class _ClapViewState extends State<ClapView> {
     );
   }
 
-  Widget _clapButton() => Material(
+  Widget _clapButton() => AnimatedScale(
+    scale: _isLeoClapping ? 0.88 : 1,
+    duration: const Duration(milliseconds: 90),
+    child: _clapFace(),
+  );
+
+  Widget _clapFace() => Material(
     color: Colors.white,
     shape: const CircleBorder(side: BorderSide(color: AppTheme.outline, width: 6)),
     elevation: 4,

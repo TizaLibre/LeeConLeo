@@ -17,7 +17,6 @@ class ProfilePicker extends ConsumerStatefulWidget {
   const ProfilePicker({super.key, required this.bundle});
 
   static const introPrompt = 'profiles.intro';
-  static const emptyPrompt = 'profiles.empty';
   static const adultsKey = ValueKey('adults');
 
   final ContentBundle bundle;
@@ -32,11 +31,9 @@ class _ProfilePickerState extends ConsumerState<ProfilePicker> {
   @override
   void initState() {
     super.initState();
-    ref.read(profilesProvider.future).then((profiles) {
-      if (!mounted) return;
-      final prompt = profiles.isEmpty ? ProfilePicker.emptyPrompt : ProfilePicker.introPrompt;
-      ref.read(promptPlayerProvider).say(Utterance([widget.bundle.prompts.line(prompt, _random)]));
-    });
+    ref
+        .read(promptPlayerProvider)
+        .say(Utterance([widget.bundle.prompts.line(ProfilePicker.introPrompt, _random)]));
   }
 
   void _choose(Profile profile) {
@@ -49,11 +46,7 @@ class _ProfilePickerState extends ConsumerState<ProfilePicker> {
     final profiles = ref.watch(profilesProvider).value ?? const [];
     return Stack(
       children: [
-        Positioned(
-          left: 16,
-          bottom: 16,
-          child: LeoAvatar(size: 180, pose: profiles.isEmpty ? LeoPose.thinking : LeoPose.happy),
-        ),
+        Positioned(left: 16, bottom: 16, child: const LeoAvatar(size: 180, pose: LeoPose.happy)),
         Positioned(
           top: 8,
           right: 8,

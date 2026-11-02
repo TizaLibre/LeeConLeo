@@ -21,6 +21,12 @@ class InMemoryProfileStore implements ProfileStore {
   }
 
   @override
+  Future<void> update(Profile profile) async {
+    final index = _profiles.indexWhere((other) => other.id == profile.id);
+    if (index >= 0) _profiles[index] = profile;
+  }
+
+  @override
   Future<void> delete(Profile profile) async {
     _profiles.removeWhere((other) => other.id == profile.id);
     _data.remove(profile.id);

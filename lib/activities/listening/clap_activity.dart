@@ -1,8 +1,11 @@
+import 'dart:math';
+
 import 'package:flutter/widgets.dart';
 
 import '../../core/content/activity_ids.dart';
 import '../../core/content/clap_words.dart';
 import '../../core/content/listening_prompt_ids.dart';
+import '../../core/content/models/prompt_library.dart';
 import '../../core/content/models/spoken_line.dart';
 import '../../core/content/models/word.dart';
 import '../common/activity_context.dart';
@@ -18,6 +21,7 @@ class ClapItem extends ActivityItem {
     required super.promptId,
     required super.optionNames,
     required super.promptTail,
+    required super.demoLines,
     required this.image,
   }) : super(options: const []);
 
@@ -52,20 +56,25 @@ class ClapActivity implements ActivitySpec {
     ];
     return [
       for (final (round, word) in asked.indexed)
-        ClapItem(
-          id: '$round-${word.text}',
-          target: '${word.syllables.length}',
-          promptId: ListeningPromptIds.clapAsk,
-          promptTail: SpokenLine(word.text, clip: word.audio),
-          optionNames: {
-            '${word.syllables.length}': context.content.prompts.line(
-              ListeningPromptIds.clapSplit(word.text),
-              random,
-            ),
-          },
-          image: word.image!,
-        ),
+        _item(context.content.prompts, round, word, random),
     ];
+  }
+
+  static ClapItem _item(PromptLibrary prompts, int round, Word word, Random random) {
+    final split = prompts.line(ListeningPromptIds.clapSplit(word.text), random);
+    return ClapItem(
+      id: '$round-${word.text}',
+      target: '${word.syllables.length}',
+      promptId: ListeningPromptIds.clapAsk,
+      promptTail: SpokenLine(word.text, clip: word.audio),
+      optionNames: {'${word.syllables.length}': split},
+      demoLines: [
+        prompts.line(ListeningPromptIds.clapShow, random),
+        split,
+        prompts.line(ListeningPromptIds.clapYourTurn, random),
+      ],
+      image: word.image!,
+    );
   }
 
   static Word _take(List<Word> words, int turn) => words[turn % words.length];

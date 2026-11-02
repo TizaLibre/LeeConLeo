@@ -17,11 +17,12 @@ import 'package:lee_con_leo/core/logging/in_memory_event_log.dart';
 import 'package:lee_con_leo/core/logging/logging_providers.dart';
 
 import '../fakes/recording_prompt_player.dart';
+import '../fakes/recording_sound_effects.dart';
 
 const _minTarget = Size(64, 64);
 const _maxFeedback = Duration(milliseconds: 300);
 const _sizes = {'phone': Size(390, 800), 'tablet': Size(1180, 820)};
-const _answeredByDragging = {ActivityIds.trace, ActivityIds.syllableTrace};
+const _answeredByDragging = {ActivityIds.trace, ActivityIds.syllableTrace, ActivityIds.writeWord};
 
 final _content = ContentBundle.fromJson(
   jsonDecode(File('assets/content/bundle.json').readAsStringSync()) as Map<String, dynamic>,
@@ -34,7 +35,9 @@ void main() {
       .where((id) => id != ActivityIds.review);
 
   for (final game in games) {
-    final step = _content.steps.firstWhere((step) => step.activities.contains(game));
+    final step = game == ActivityIds.writeWord
+        ? _content.steps.last
+        : _content.steps.firstWhere((step) => step.activities.contains(game));
     for (final MapEntry(key: device, value: size) in _sizes.entries) {
       testWidgets('$game on a $device: big targets, spoken instructions, quick feedback', (
         tester,
@@ -96,6 +99,7 @@ Future<void> _open(
         contentProvider.overrideWith((ref) async => _content),
         promptPlayerProvider.overrideWithValue(player),
         eventLogProvider.overrideWithValue(InMemoryEventLog()),
+        soundEffectsProvider.overrideWithValue(RecordingSoundEffects()),
       ],
       child: MaterialApp(
         theme: AppTheme.light(),

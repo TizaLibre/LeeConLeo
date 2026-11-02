@@ -11,6 +11,7 @@ import 'package:lee_con_leo/core/progress/in_memory_progress_store.dart';
 import 'package:lee_con_leo/core/progress/progress_providers.dart';
 import 'package:lee_con_leo/map/home_screen.dart';
 import 'package:lee_con_leo/map/leo_position.dart';
+import 'package:lee_con_leo/map/label_slot.dart';
 import 'package:lee_con_leo/map/place_layout.dart';
 import 'package:lee_con_leo/map/place_view.dart';
 import 'package:lee_con_leo/map/route_painter.dart';
@@ -53,7 +54,7 @@ void main() {
   Finder placeOnScreen(int index) => find.byKey(ValueKey('place-$index'));
 
   for (final (name, size) in [('small phone', Size(360, 640)), ('tablet', Size(800, 1100))]) {
-    testWidgets('every place fits one screen of a $name', (tester) async {
+    testWidgets('every place fits one screen of a $name, its name on one line', (tester) async {
       await pumpMap(tester, size);
       final screen = Offset.zero & size;
 
@@ -80,9 +81,18 @@ void main() {
             .whereType<RoutePainter>()
             .single;
         final road = RoutePainter.through(painter.points);
-        final label = tester
-            .getRect(find.byKey(ValueKey('place-label-${place.name}')))
-            .inflate(RoutePainter.halfWidth);
+        final labelRect = tester.getRect(find.byKey(ValueKey('place-label-${place.name}')));
+        expect(labelRect.height, lessThanOrEqualTo(PlaceView.labelHeight), reason: place.name);
+        final beside = labelSlot(
+          road: road,
+          roadHalfWidth: RoutePainter.halfWidth,
+          top: PlaceView.labelMargin,
+          bottom: PlaceView.labelMargin + PlaceView.labelHeight,
+          width: size.width,
+          margin: PlaceView.labelMargin,
+        );
+        if (labelRect.width > beside.maxWidth) continue;
+        final label = labelRect.inflate(RoutePainter.halfWidth);
         for (final metric in road.computeMetrics()) {
           for (var distance = 0.0; distance <= metric.length; distance += 2) {
             final point = metric.getTangentForOffset(distance)!.position;
