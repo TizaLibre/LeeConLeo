@@ -10,16 +10,14 @@ import '../letters/trace_activity.dart';
 import '../letters/trace_view.dart';
 
 class SyllableTraceActivity implements ActivitySpec {
-  const SyllableTraceActivity({this.rounds = 3});
-
-  final int rounds;
+  const SyllableTraceActivity();
 
   @override
   String get id => ActivityIds.syllableTrace;
 
   @override
   List<ActivityItem> buildItems(ActivityContext context) {
-    final sounds = ([...context.step.sounds]..shuffle(context.random)).take(rounds);
+    final sounds = [...context.step.sounds]..shuffle(context.random);
     return [
       for (final (index, sound) in sounds.indexed)
         TraceItem(

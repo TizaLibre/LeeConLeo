@@ -163,6 +163,8 @@ void main() {
       'letter.meet.a': ['Esta es la a.'],
       'letter.meet.a.upper': ['Toca la a mayúscula.'],
       'letter.meet.a.lower': ['Toca la a minúscula.'],
+      'letter.meet.a.upper.show': ['Esta es la a mayúscula.'],
+      'letter.meet.a.lower.show': ['Y esta es la a minúscula.'],
       'letter.trace.a.lower': ['Repasa la a minúscula.'],
       'letter.trace.a.upper': ['Repasa la a mayúscula.'],
       'letter.find.a': ['Revienta las a.'],
@@ -176,7 +178,7 @@ void main() {
     test('flags missing prompts and stroke data', () {
       final issues = const LetterStepsRule().check(letterBundle()).map((i) => i.message).toList();
 
-      expect(issues, hasLength(7));
+      expect(issues, hasLength(9));
       expect(issues, contains(contains('"letter.find.a"')));
       expect(issues, contains(contains('no stroke data for "a"')));
     });

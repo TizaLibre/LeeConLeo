@@ -18,6 +18,8 @@ class WriteWordView extends StatefulWidget {
   static const clearKey = ValueKey('write-clear');
   static const doneKey = ValueKey('write-done');
   static const pictureShare = 0.22;
+  static const starsMargin = 8.0;
+  static const minStars = 40.0;
   static const buttonsHeight = 88.0;
   static const modelAlpha = 0.22;
   static const hintAlpha = 0.5;
@@ -162,7 +164,14 @@ class _WriteWordViewState extends State<WriteWordView> {
                   ),
                 ),
               ),
-              if (_stars case final stars?) Center(child: _starRow(stars)),
+              if (_stars case final stars?)
+                Positioned(
+                  left: 0,
+                  right: 0,
+                  top: WriteWordView.starsMargin,
+                  height: max(WriteWordView.minStars, bounds.top - 2 * WriteWordView.starsMargin),
+                  child: FittedBox(child: _starRow(stars)),
+                ),
             ],
           ),
         );

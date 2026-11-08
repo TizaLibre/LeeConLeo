@@ -72,7 +72,7 @@ void main() {
       ActivityContext(content: _content, step: _content.stepById('la')!, random: Random(1)),
     );
 
-    expect(items, hasLength(3));
+    expect(items, hasLength(5));
     for (final item in items.cast<WriteWordItem>()) {
       expect(item.stepId, WriteWordActivity.stepId);
       expect(item.promptTail!.clip, 'words/${item.target}.m4a');

@@ -22,11 +22,13 @@
 
 Each letter or syllable is one stone on the map. Tapping it opens the step screen:
 the letter or syllables on top, and one big card per game with an icon, in the order
-`path.yaml` lists them (listening, then letters, then syllables). Every card is open;
-the suggested next one pulses, and a star marks the ones already played. A step with a
-single game skips this screen and opens the game directly.
-Once every game of the step was played, Leo says so and a pulsing arrow in the bottom right corner takes the child
-to the next step (or back to the map after the last one).
+`path.yaml` lists them. The first card is always *Meet* (the letter, or the joined
+syllables), so the child sees and hears them before any other game; the other cards stay
+locked, and Leo says to play the glowing one first, until *Meet* has been played once.
+After that every card is open; the suggested next one pulses, and a star marks the ones
+already played. A step with a single game skips this screen and opens the game directly.
+Once every game of the step was played, Leo says so and a pulsing arrow in the bottom
+right corner takes the child back to the map, where Leo walks to the next stone.
 
 ## Common frame for every activity
 
@@ -61,17 +63,17 @@ map** button.
 
 | Activity | Mechanic |
 |---|---|
-| *Clap the syllables* | See a picture and hear its word, tap the clapping hands once per syllable (*ma-ri-po-sa* → 4), then the check. Each tap adds a dot and sounds a clap; a wrong count clears them, and the hint shows the right number of empty dots. On the first word, and as the hint, Leo shows how first ("¡Mira cómo aplaudo!"): he says the word split up and claps on each syllable (silently, so his voice stays clear), with a blue dot and the hands button bouncing, then says "¡Ahora tú!". When right, Leo says the word split up while clapping along. Words start with the step's sounds when there are enough, rotating 1–4 syllables |
+| *Clap the syllables* | See a picture and hear its word, tap the clapping hands once per syllable (*ma-ri-po-sa* → 4), then the check. Each tap adds a dot and sounds a clap; a wrong count clears them, and the hint shows the right number of empty dots. On the first word, and as the hint, Leo shows how first ("¡Mira cómo aplaudo!"): he says the word split up and claps on each syllable (silently, so his voice stays clear), with a blue dot and the hands button bouncing, then says "¡Ahora tú!". When right, Leo says the word split up while clapping along. Words start with the step's syllables, said and written that way (no *cebra* for *se*); when fewer than four do, words that contain them join (*luna*, *mano* for *na*), and only a step with none of its own uses any word. Rounds rotate 1–4 syllables |
 | *Rhymes* | Hear two words, tap the happy or sad face |
-| *Same sound* | Hear a sound, pick the picture that starts with it. *Starts with* without the written card, using the same questions. Like every picture game, a word only counts when it is both said and written with the sound (*humo* is not a *u* word, *cebra* is not a *se* word), and pictures that sound or look like the answer are never the wrong options |
+| *Same sound* | Hear a sound, pick the picture that starts with it. *Starts with* without the written card, using the same questions. Like every picture game, a word only counts when it is both said and written with the sound (*humo* is not a *u* word, *cebra* is not a *se* word), and pictures that sound or look like any syllable of the step are never the wrong options (no *cebra* or *zorrillo* among the s-family's wrong pictures) |
 | *Blend the sounds* | Leo says "Junta los pedacitos… ma… pa" while the written syllables appear one by one, and the child picks the picture among 3 (*mapa*). A wrong picture is named. Words follow the *Build the word* rule, so it runs on syllable steps from pa on, just before *Build the word* |
 
 ### Letter sequence (for each vowel and consonant)
 
 | Step | Mechanic |
 |---|---|
-| *Meet* | Leo says the letter's name, an example syllable and a word ("eme… **ma**… **ma**no"). Printed and school-cursive forms, upper and lower case |
-| *Trace* | Follow the strokes in the correct order with a finger: a glowing start point (children may not know numbers yet), arrows, and a path that fills in as the finger moves. Tolerance adapts to age. Finishing unlocks coloring the letter |
+| *Meet* | Leo says the letter's name and its key word, then presents each form while it lights up ("Esta es la… eme mayúscula", "Y esta es la… eme minúscula"). Only then he asks for each case in turn |
+| *Trace* | Follow the strokes in the correct order with a finger: a glowing start point (children may not know numbers yet), arrows, and a path that fills in as the finger moves. The path only fills where the finger really passes, also between fast touch updates, so a swipe can't skip a loop. Straying off the line pauses the fill, and it resumes as soon as the finger is back where it stopped, without lifting |
 | *Find* | Letters float as bubbles. Pop every target letter, avoiding lookalikes (b/d, p/q, m/n) |
 
 ### Syllable sequence (for each consonant, after its letter)
@@ -82,7 +84,7 @@ vowel, first in order (*ma me mi mo mu*), then mixed, then written.
 | Step | Mechanic |
 |---|---|
 | *Meet* | Leo joins the letters one syllable at a time ("La, eme, y la, a, juntas dicen, ma"), showing *m + a* above the written *ma*. Then three mixed rounds: "¿Dónde dice, mo?" among three syllables of the family. A wrong tap speaks that syllable |
-| *Trace* | Write three syllables of the family in joined cursive, as one stroke from the consonant into the vowel |
+| *Trace* | Write every syllable of the family (ma, me, mi, mo, mu) in joined cursive, as one stroke from the consonant into the vowel. Lifting the finger keeps the progress, so the child continues from where they stopped |
 | *Find* | Syllable bubbles, in lower case or capitalized (*mo*, *Mo*). Pop the target, among others of the same family (*ma*, *mu*) and of other families |
 | *Starts with*, *Ends with* | The listening games below, with the written syllable shown above the pictures |
 | *Build the word* | The word games below, from the second consonant on |
@@ -95,7 +97,7 @@ vowel, first in order (*ma me mi mo mu*), then mixed, then written.
 | *Ends with* | Same, with the ending |
 | *Contains* | Same, with the syllable anywhere in the word (*piña* has *ña*). Carries steps like *ñ*, whose syllables rarely start a word |
 | *Build the word* (new) | A picture and its spoken word. Drag or tap syllable tiles into the slots in order (*ma + pa*), among two extra syllables of the family. A wrong tile speaks that syllable. Words use only syllables already taught and at least one of the step's own |
-| *Write the word* (new) | Free practice from the pencil button on the map, open once a word can be written (from pa on). Leo says a word, its picture shows, and the child writes it freehand over the faint word in *letra ligada*, on lined paper. The ink is graded against the word: how much of it was covered and how much ink stayed on it, from 0 to 3 stars. No star wipes the ink for another try, and after two tries any writing passes. Answers are logged under `writing`, apart from the path steps. After the last step of the path, Leo celebrates and invites the child to keep writing |
+| *Write the word* (new) | Free practice from the pencil button on the map, open once a word can be written (from pa on). Leo says a word, its picture shows, and the child writes it freehand over the faint word in *letra ligada*, on lined paper. The ink is graded against the word: how much of it was covered and how much ink stayed on it, from 0 to 3 stars. No star wipes the ink for another try, and after two tries any writing passes. A set has five words, and the reward screen offers "otra vez" for another set, as long as the child wants. Answers are logged under `writing`, apart from the path steps. After the last step of the path, Leo celebrates and invites the child to keep writing |
 | *Circle it* | Circle the target syllable inside written words. Stage 5 and after |
 | *Read and match* (new) | Read a word and match it to one of 3 pictures. Stage 8 |
 | *Leo reads* (new) | Short sentence ("Mi mamá me mima") plus 3 pictures. Pick the one that matches. Stage 8 |
@@ -116,6 +118,9 @@ child reads while playing. It unlocks as a reward after each consonant group.
   its key word, or for a syllable step the first picture that starts with its syllable.
   The reward screen shows a new sticker when the step becomes mastered, and the album
   opens from the map.
+- **Review:** optional. Once a step is mastered, the album shows a review button: three
+  quick rounds from mastered steps, weighted to the ones with recent mistakes, with
+  "otra vez" for more. It never starts on its own.
 - **No punishment:** no lives lost, no timers in learning activities (the runner
   is the only timed game, and it's optional).
 

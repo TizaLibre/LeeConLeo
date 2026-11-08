@@ -9,7 +9,6 @@ import '../activities/activity_providers.dart';
 import '../activities/common/widgets/letter_glyph.dart';
 import '../app/app_theme.dart';
 import '../app/startup_providers.dart';
-import '../app/step_routes.dart';
 import '../app/widgets/leo_avatar.dart';
 import '../app/widgets/loading_view.dart';
 import '../app/widgets/pulse.dart';
@@ -20,12 +19,14 @@ import '../core/content/models/path_step.dart';
 import '../core/progress/progress_providers.dart';
 import '../utils/hex_color.dart';
 import 'game_icons.dart';
+import 'step_button.dart';
 
 class StepScreen extends ConsumerStatefulWidget {
   const StepScreen({super.key, required this.stepId});
 
   static const introPrompt = 'step.intro';
   static const donePrompt = 'step.done';
+  static const lockedPrompt = 'step.locked';
   static const nextKey = ValueKey('step-next');
   static const mapKey = ValueKey('step-map');
   static const maxCard = 132.0;
@@ -62,11 +63,12 @@ class _StepScreenState extends ConsumerState<StepScreen> {
     ];
   }
 
-  String _nextRoute(ContentBundle content, PathStep step) {
-    final steps = content.steps.toList();
-    final index = steps.indexWhere((other) => other.id == step.id);
-    if (index < 0 || index == steps.length - 1) return '/';
-    return StepRoutes.entry(ref.read(activityRegistryProvider), steps[index + 1]);
+  void _sayLocked() {
+    final content = ref.read(startupProvider).value;
+    if (content == null) return;
+    ref
+        .read(promptPlayerProvider)
+        .say(Utterance([content.prompts.line(StepScreen.lockedPrompt, Random())]));
   }
 
   void _go(String route) {
@@ -115,6 +117,7 @@ class _StepScreenState extends ConsumerState<StepScreen> {
                         side: side,
                         isPlayed: played.contains(game),
                         isSuggested: game == suggested,
+                        isLocked: game != games.first && !played.contains(games.first),
                       ),
                   ],
                 ),
@@ -163,7 +166,7 @@ class _StepScreenState extends ConsumerState<StepScreen> {
                       backgroundColor: Theme.of(context).colorScheme.tertiary,
                     ),
                     iconSize: 64,
-                    onPressed: () => _go(_nextRoute(content, step)),
+                    onPressed: () => _go('/'),
                     icon: const Icon(Icons.arrow_forward_rounded),
                   ),
                 ),
@@ -207,6 +210,7 @@ class _StepScreenState extends ConsumerState<StepScreen> {
     required double side,
     required bool isPlayed,
     required bool isSuggested,
+    required bool isLocked,
   }) {
     final colors = Theme.of(context).colorScheme;
     final card = SizedBox.square(
@@ -216,16 +220,19 @@ class _StepScreenState extends ConsumerState<StepScreen> {
         children: [
           Positioned.fill(
             child: Material(
-              color: colors.primaryContainer,
-              elevation: 3,
+              color: isLocked ? colors.surfaceContainerHighest : colors.primaryContainer,
+              elevation: isLocked ? 0 : 3,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(28),
                 side: const BorderSide(color: AppTheme.outline, width: 4),
               ),
               child: InkWell(
                 borderRadius: BorderRadius.circular(28),
-                onTap: () => _go('/play/${widget.stepId}/$game'),
-                child: _icon(game, side, colors.onPrimaryContainer),
+                onTap: isLocked ? _sayLocked : () => _go('/play/${widget.stepId}/$game'),
+                child: Opacity(
+                  opacity: isLocked ? StepButton.lockedOpacity : 1,
+                  child: _icon(game, side, colors.onPrimaryContainer),
+                ),
               ),
             ),
           ),
@@ -234,6 +241,12 @@ class _StepScreenState extends ConsumerState<StepScreen> {
               right: -6,
               bottom: -6,
               child: Icon(Icons.star_rounded, size: side / 3, color: AppTheme.starGold),
+            ),
+          if (isLocked)
+            Positioned(
+              right: -2,
+              bottom: -2,
+              child: Icon(Icons.lock_rounded, size: side / 4, color: colors.outline),
             ),
         ],
       ),

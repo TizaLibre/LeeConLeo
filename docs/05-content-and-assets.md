@@ -94,10 +94,16 @@ strokes:
   - [[20, 52], [21, 45], ..., [118, 77], [122, 78]]
 ```
 
-A lowercase syllable written in joined cursive: the letter strokes in one go, with the
-join from the consonant into the vowel (over the top of *a* and *o*). Only the dot
-of the *i* is a separate stroke. The files were built by placing the letter strokes
-at Playwrite Chile's letter positions, then checked over the font by eye.
+A lowercase syllable written in joined cursive, in one go: consonant, the font's own
+join, then the vowel. The *i* dot and the *ñ* tilde are separate strokes, after the main
+one. Where the join isn't fluid the child pauses: in *ta… tu* they write the *t*, put
+its bar, and then continue from the end of the *t* into the vowel (three strokes). A rough hand-drawn path in `tool/syllables/guides/<text>.yaml` (drawn over the font, e.g. for *f* and *fa*–*fu*) replaces the letter guide: the generator snaps it onto the font's centre line, so it keeps the drawn order and direction but takes the font's shape. A single-letter guide rewrites that letter's lower case. Inside the *f*, crossings are straightened over a wider radius so the tail flows into the upstroke, and its upper loop is smoothed and recentred on the ink. Where the path walks back over itself (the top of the *a*), the turn is pushed out to the end of the ink so it reaches the stem. Where two strokes cross, the path goes straight through instead of following the small sideways step that thinning leaves there. The files are generated from the font, not drawn:
+`flutter test tool/syllables/trace_syllables_test.dart` renders each syllable with
+Playwrite Chile's natural joins, thins it to its center line, and walks that line in
+writing order, using the single letters in `letters/` as the guide for where to start
+and which way to go (the *a* around its bowl, stems down and back up to their tips).
+Run it after changing a letter or adding a consonant, and check its preview images
+(`--dart-define=PREVIEW=<folder>`) by eye.
 
 A syllable step lists its syllables in `sounds` (`[ma, me, mi, mo, mu]`). *Starts with*,
 *Ends with* and *Contains* ask only the syllables some picture fits, so a step can use them

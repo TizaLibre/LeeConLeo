@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import '../../core/content/activity_ids.dart';
 import '../../core/content/letter_prompt_ids.dart';
 import '../../core/content/models/letter_shape.dart';
+import '../../core/content/models/spoken_line.dart';
 import '../common/activity_context.dart';
 import '../common/activity_item.dart';
 import '../common/activity_spec.dart';
@@ -16,11 +17,16 @@ class MeetItem extends ActivityItem {
     required super.promptId,
     required super.options,
     required this.grapheme,
+    super.extraLines,
     this.image,
+    this.caseLines = const {},
   });
 
   final String grapheme;
   final String? image;
+  final Map<LetterCase, SpokenLine> caseLines;
+
+  bool get isIntroduction => target == MeetActivity.bothCases;
 }
 
 class MeetActivity implements ActivitySpec {
@@ -35,13 +41,22 @@ class MeetActivity implements ActivitySpec {
   List<ActivityItem> buildItems(ActivityContext context) {
     final grapheme = context.step.grapheme!;
     final word = context.step.word;
+    final caseLines = {
+      for (final letterCase in LetterCase.values)
+        letterCase: context.content.prompts.line(
+          LetterPromptIds.meetShow(grapheme, letterCase),
+          context.random,
+        ),
+    };
     final cases = [...LetterCase.values]..shuffle(context.random);
     return [
       MeetItem(
         id: '0-$bothCases',
         target: bothCases,
         promptId: LetterPromptIds.meet(grapheme),
-        options: const [bothCases],
+        options: [for (final letterCase in LetterCase.values.reversed) letterCase.name],
+        extraLines: [caseLines[LetterCase.upper]!, caseLines[LetterCase.lower]!],
+        caseLines: caseLines,
         grapheme: grapheme,
         image: word == null ? null : context.content.wordByText(word)?.image,
       ),

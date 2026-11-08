@@ -100,6 +100,54 @@ void main() {
     }
   });
 
+  test('with few words starting with its syllables, clapping adds words that contain them', () {
+    final words = [
+      _word('nido', ['ni', 'do']),
+      _word('nube', ['nu', 'be']),
+      _word('niño', ['ni', 'ño']),
+      _word('luna', ['lu', 'na']),
+      _word('mano', ['ma', 'no']),
+      _word('miel', ['miel']),
+      Word(
+        text: 'cebra',
+        syllables: const ['ce', 'bra'],
+        sounds: const ['se', 'bra'],
+        image: 'words/oso.svg',
+        audio: 'words/cebra.m4a',
+      ),
+    ];
+    final content = ContentBundle(
+      words: words,
+      stages: const [
+        PathStage(
+          stage: 4,
+          name: 'lago',
+          steps: [
+            PathStep(
+              id: 'na',
+              sounds: ['na', 'ne', 'ni', 'no', 'nu', 'se'],
+              activities: [ActivityIds.clap],
+            ),
+          ],
+        ),
+      ],
+      prompts: PromptLibrary({
+        ...testPrompts.phrases,
+        for (final word in words) 'listening.clap.${word.text}': [word.text],
+      }),
+    );
+
+    for (var seed = 0; seed < 20; seed++) {
+      final asked = const ClapActivity(rounds: 8)
+          .buildItems(
+            ActivityContext(content: content, step: content.stepById('na')!, random: Random(seed)),
+          )
+          .map((item) => item.promptTail!.text);
+      expect(asked.toSet(), isNot(contains('miel')));
+      expect(asked.toSet(), isNot(contains('cebra')));
+    }
+  });
+
   group('game', () {
     late RecordingPromptPlayer player;
     late InMemoryEventLog log;

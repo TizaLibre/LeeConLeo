@@ -48,7 +48,8 @@ class PictureSoundStepsRule implements ValidationRule {
       if (!bundle.prompts.contains(prompt)) {
         yield ValidationIssue.error('step "${step.id}": missing prompt "$prompt"');
       }
-      if (pictured.where((word) => !game.resembles(word, sound)).length < distractors) {
+      if (pictured.where((word) => !step.sounds.any((s) => game.resembles(word, s))).length <
+          distractors) {
         yield ValidationIssue.error(
           'step "${step.id}": fewer than $distractors pictures that do not $label with "$sound"',
         );

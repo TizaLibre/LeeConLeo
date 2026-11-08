@@ -6,6 +6,7 @@ import 'package:flutter_riverpod/misc.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lee_con_leo/activities/common/activity_screen.dart';
 import 'package:lee_con_leo/activities/common/widgets/demo_overlay.dart';
+import 'package:lee_con_leo/activities/common/widgets/choice_button.dart';
 import 'package:lee_con_leo/activities/common/widgets/letter_glyph.dart';
 import 'package:lee_con_leo/activities/letters/find_activity.dart';
 import 'package:lee_con_leo/activities/letters/trace_path.dart';
@@ -75,12 +76,17 @@ void main() {
   ).read(completedStepsProvider);
 
   group(ActivityIds.meet, () {
-    const choices = {'meet a': 'letter', 'say upper': 'upper', 'say lower': 'lower'};
+    const choices = {
+      'meet a show upper show lower': 'upper',
+      'say upper': 'upper',
+      'say lower': 'lower',
+    };
 
     testWidgets('Leo shows the letter with its word, then both cases', (tester) async {
       await play(tester, ActivityIds.meet);
-      expect(player.spoken.last, 'meet a');
-      expect(find.widgetWithText(LetterGlyph, 'Aa'), findsOneWidget);
+      expect(player.spoken.last, 'meet a show upper show lower');
+      expect(find.widgetWithText(LetterGlyph, 'A'), findsOneWidget);
+      expect(find.widgetWithText(LetterGlyph, 'a'), findsOneWidget);
 
       for (var i = 0; i < 3; i++) {
         await tester.tap(find.byKey(ValueKey('choice-${choices[player.spoken.last]}')));
@@ -92,9 +98,26 @@ void main() {
       expect(log.events.skip(1).map((event) => event.target).toSet(), {'upper', 'lower'});
     });
 
+    testWidgets('each case lights up while Leo names it', (tester) async {
+      await play(tester, ActivityIds.meet);
+      bool lit(String option) =>
+          tester.widget<ChoiceButton>(find.byKey(ValueKey('choice-$option'))).isHighlighted;
+      final intro = player.utterances.last;
+
+      intro.onLine?.call(intro.lines[1]);
+      await tester.pump();
+      expect(lit('upper'), isTrue);
+      expect(lit('lower'), isFalse);
+
+      intro.onLine?.call(intro.lines[2]);
+      await tester.pump();
+      expect(lit('upper'), isFalse);
+      expect(lit('lower'), isTrue);
+    });
+
     testWidgets('picking the wrong case asks to try again', (tester) async {
       await play(tester, ActivityIds.meet);
-      await tester.tap(find.byKey(const ValueKey('choice-letter')));
+      await tester.tap(find.byKey(const ValueKey('choice-lower')));
       await celebrate(tester);
 
       final target = choices[player.spoken.last]!;
@@ -231,7 +254,11 @@ void main() {
     await tester.tap(find.byKey(const ValueKey('start')));
     await tester.pumpAndSettle();
 
-    const choices = {'meet a': 'letter', 'say upper': 'upper', 'say lower': 'lower'};
+    const choices = {
+      'meet a show upper show lower': 'upper',
+      'say upper': 'upper',
+      'say lower': 'lower',
+    };
     for (var i = 0; i < 3; i++) {
       await tester.tap(find.byKey(ValueKey('choice-${choices[player.spoken.last]}')));
       await tester.pump();

@@ -25,7 +25,7 @@ class WriteWordItem extends ActivityItem {
 }
 
 class WriteWordActivity implements ActivitySpec {
-  const WriteWordActivity({this.rounds = 3});
+  const WriteWordActivity({this.rounds = 5});
 
   static const askPrompt = 'writing.word.ask';
   static const stepId = 'writing';
