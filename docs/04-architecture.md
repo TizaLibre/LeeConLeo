@@ -87,6 +87,10 @@ and activity (about 430 files) goes away.
   profiles the app opens on a picture-only picker; with one it goes straight to the
   map. The child's avatar on the map hands over to someone else. Adding and deleting
   profiles sits behind the parental gate (a sum written in words).
+- **Problem reports:** *Reportar un problema* in the adult zone opens the adult's email
+  app (`url_launcher`, `mailto:`) with a draft carrying the app version, the device's
+  system and the last game played. Nothing is sent by the app itself, so it still needs
+  no internet permission.
 - **Observation mode (opt-in, behind the parental gate):** adds session markers
   and an observer note field, and **exports CSV** through the system share sheet.
 - **Event row:** `timestamp, profileNick, sessionId, stage, step, activity, itemId,
