@@ -1,16 +1,46 @@
+import 'dart:io';
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:package_info_plus/package_info_plus.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+import '../core/logging/logging_providers.dart';
+import 'problem_report.dart';
 
 final appVersionProvider = FutureProvider<String>(
   (ref) async => (await PackageInfo.fromPlatform()).version,
 );
+
+final mailLauncherProvider = Provider<Future<bool> Function(Uri)>((ref) => launchUrl);
+
+String get _platform =>
+    kIsWeb ? 'web' : '${Platform.operatingSystem} ${Platform.operatingSystemVersion}';
 
 class AboutView extends ConsumerWidget {
   const AboutView({super.key});
 
   static const contactEmail = 'tizalibre.contacto@gmail.com';
   static const licensesKey = ValueKey('licenses');
+  static const reportKey = ValueKey('report-problem');
+
+  Future<void> _report(BuildContext context, WidgetRef ref, String version) async {
+    final events = ref.read(eventLogProvider).events;
+    final uri = ProblemReport.mailto(
+      email: contactEmail,
+      version: version,
+      platform: _platform,
+      lastAnswer: events.isEmpty ? null : events.last,
+    );
+    final opened = await ref.read(mailLauncherProvider)(uri);
+    if (opened || !context.mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Text('No encontramos una app de correo. Escríbenos a $contactEmail.'),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -32,6 +62,16 @@ class AboutView extends ConsumerWidget {
         Text('Contacto', style: theme.titleLarge),
         const SizedBox(height: 8),
         SelectableText(contactEmail, style: theme.bodyLarge),
+        const SizedBox(height: 8),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: FilledButton.icon(
+            key: reportKey,
+            onPressed: () => _report(context, ref, version),
+            icon: const Icon(Icons.mail_outline_rounded),
+            label: const Text('Reportar un problema'),
+          ),
+        ),
         const SizedBox(height: 24),
         Text('Créditos', style: theme.titleLarge),
         const SizedBox(height: 8),

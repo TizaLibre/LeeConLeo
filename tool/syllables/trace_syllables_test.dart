@@ -20,7 +20,6 @@ const preview = String.fromEnvironment('PREVIEW');
 const fontSize = 420.0;
 const unit = 5.0;
 const margin = 100.0;
-const barsFirst = {'t'};
 const guides = 'tool/syllables/guides';
 
 typedef Pt = Point<double>;
@@ -269,14 +268,15 @@ class Skeleton {
     return result;
   }
 
-  List<List<Pt>> withTips(List<List<Pt>> strokes) {
+  List<List<Pt>> withTips(List<List<Pt>> strokes, {List<List<Pt>> marks = const []}) {
     final paths = [
       for (final s in strokes) [...s],
     ];
     bool covered(Pt q) => paths.any((path) => path.any((m) => m.distanceTo(q) < 6));
+    bool marked(Pt q) => marks.any((mark) => densify(mark, 4).any((m) => m.distanceTo(q) < 12));
     final tips = pixels.where((p) => neighbours(p).length == 1).toList();
     for (final tip in tips) {
-      if (covered(tip)) continue;
+      if (covered(tip) || marked(tip)) continue;
       final parent = <Pt, Pt>{};
       final queue = Queue.of([tip]);
       final seen = {tip};
@@ -421,29 +421,19 @@ Future<List<List<Pt>>> trace(String syllable, ContentBundle bundle) async {
         ];
       }(),
   ];
-  final pieces = <List<Pt>>[];
-  final early = <List<Pt>>[];
-  final late = <List<Pt>>[];
-  var guide = <Pt>[];
-  for (final (index, letter) in letters.indexed) {
+  final guide = <Pt>[];
+  for (final letter in letters) {
     final stroke = densify(letter.first, 4);
-    final from = guide.isNotEmpty ? guide.last : (pieces.isNotEmpty ? pieces.last.last : null);
-    if (from != null) guide.addAll(skeleton.route(from, stroke.first).skip(4));
+    if (guide.isNotEmpty) guide.addAll(skeleton.route(guide.last, stroke.first).skip(4));
     guide.addAll(stroke);
-    final extras = [for (final extra in letter.skip(1)) extra];
-    final isLast = index == letters.length - 1;
-    if (barsFirst.contains(syllable[index]) && !isLast) {
-      pieces.add(skeleton.follow(guide));
-      early.addAll(extras);
-      guide = [];
-    } else {
-      late.addAll(extras);
-    }
   }
-  pieces.add(skeleton.follow(guide));
-  pieces.first.insertAll(0, skeleton.branchBefore(pieces.first));
-  pieces.last.addAll(skeleton.branchBefore(pieces.last.reversed.toList()).reversed);
-  final traced = [for (final piece in skeleton.withTips(pieces)) skeleton.throughCrossings(piece)];
+  final extras = [for (final letter in letters) ...letter.skip(1)];
+  final main = skeleton.follow(guide);
+  main.insertAll(0, skeleton.branchBefore(main));
+  main.addAll(skeleton.branchBefore(main.reversed.toList()).reversed);
+  final traced = [
+    for (final piece in skeleton.withTips([main], marks: extras)) skeleton.throughCrossings(piece),
+  ];
   final marks = ink.components().where(
     (c) => !c.any((p) => traced.any((path) => path.any((w) => w.distanceTo(p) < 3))),
   );
@@ -458,12 +448,7 @@ Future<List<List<Pt>>> trace(String syllable, ContentBundle bundle) async {
     return simplify(skeleton.follow(densify(extra, 4)), 2.5);
   }
 
-  return [
-    simplify(traced.first, 2.5),
-    for (final extra in early) mark(extra),
-    for (final piece in traced.skip(1)) simplify(piece, 2.5),
-    for (final extra in late) mark(extra),
-  ];
+  return [simplify(traced.single, 2.5), for (final extra in extras) mark(extra)];
 }
 
 List<List<Pt>> readStrokes(String text) => [
