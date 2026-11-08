@@ -5,11 +5,13 @@ import '../../../app/widgets/leo_avatar.dart';
 import '../../../app/widgets/sticker_card.dart';
 
 class RewardView extends StatelessWidget {
-  const RewardView({super.key, required this.onDone, this.sticker});
+  const RewardView({super.key, required this.onDone, this.onAgain, this.sticker});
 
   static const newStickerKey = ValueKey('new-sticker');
+  static const againKey = ValueKey('again');
 
   final VoidCallback onDone;
+  final VoidCallback? onAgain;
   final String? sticker;
 
   @override
@@ -29,11 +31,25 @@ class RewardView extends StatelessWidget {
             ),
             const LeoAvatar(size: 200, pose: LeoPose.cheering),
             const SizedBox(height: 32),
-            IconButton.filled(
-              key: const ValueKey('done'),
-              iconSize: 72,
-              onPressed: onDone,
-              icon: const Icon(Icons.check_rounded),
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                if (onAgain case final onAgain?) ...[
+                  IconButton.filledTonal(
+                    key: againKey,
+                    iconSize: 72,
+                    onPressed: onAgain,
+                    icon: const Icon(Icons.replay_rounded),
+                  ),
+                  const SizedBox(width: 48),
+                ],
+                IconButton.filled(
+                  key: const ValueKey('done'),
+                  iconSize: 72,
+                  onPressed: onDone,
+                  icon: const Icon(Icons.check_rounded),
+                ),
+              ],
             ),
           ],
         ),

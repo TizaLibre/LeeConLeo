@@ -8,6 +8,7 @@ import '../../core/content/listening_prompt_ids.dart';
 import '../../core/content/models/prompt_library.dart';
 import '../../core/content/models/spoken_line.dart';
 import '../../core/content/models/word.dart';
+import '../../core/content/sound_position.dart';
 import '../common/activity_context.dart';
 import '../common/activity_item.dart';
 import '../common/activity_spec.dart';
@@ -42,8 +43,18 @@ class ClapActivity implements ActivitySpec {
   List<ActivityItem> buildItems(ActivityContext context) {
     final random = context.random;
     final words = ClapWords.all(context.content.words);
-    final ofStep = words.where((word) => context.step.sounds.any(word.startsWithSound)).toList();
-    final pool = ofStep.length >= rounds ? ofStep : words;
+    List<Word> having(SoundPosition position) => [
+      for (final word in words)
+        if (context.step.sounds.any(
+          (sound) => position.matches(word, sound) && position.isSpelled(word, sound),
+        ))
+          word,
+    ];
+    final starting = having(SoundPosition.start);
+    final containing = {...starting, ...having(SoundPosition.inside)}.toList();
+    final pool = starting.length >= rounds
+        ? starting
+        : (containing.isNotEmpty ? containing : words);
     if (pool.isEmpty) return const [];
     final byLength = <int, List<Word>>{};
     for (final word in [...pool]..shuffle(random)) {

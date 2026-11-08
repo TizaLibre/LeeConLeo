@@ -88,8 +88,8 @@ Rules that follow from this:
 - A step is finished once each of its games has been played to the end once, whatever
   the score, and that unlocks the next one. A mastered step shows a
   medal on its stone. The child can always replay earlier steps.
-- **Spaced review:** in each launch of the app, the first step a child opens starts
-  with 3 quick items from their other mastered steps, taken from those steps' own games
+- **Review:** optional, from a button in the stickers album once a step is mastered.
+  It plays 3 quick items from the mastered steps, taken from those steps' own games
   (tracing excluded). Steps with more mistakes among their last 10 tries come back more
   often. Review answers count towards the step they came from.
 - When a child fails the same step repeatedly (3 sessions below 50 %), the app

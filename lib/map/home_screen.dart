@@ -11,7 +11,6 @@ import '../app/step_routes.dart';
 import '../app/widgets/loading_view.dart';
 import '../core/audio/audio_providers.dart';
 import '../core/audio/utterance.dart';
-import '../core/content/activity_ids.dart';
 import '../core/content/models/content_bundle.dart';
 import '../core/content/models/path_stage.dart';
 import '../core/content/models/path_step.dart';
@@ -22,7 +21,6 @@ import '../profiles/profile_picker.dart';
 import 'greeting.dart';
 import 'leo_position.dart';
 import 'place_view.dart';
-import 'review_due.dart';
 import 'step_status.dart';
 import 'write_button.dart';
 
@@ -179,12 +177,6 @@ class _PathMapState extends ConsumerState<PathMap> {
     final activityId = ref.read(activityRegistryProvider).firstAvailable(step.activities);
     if (status == StepStatus.locked || activityId == null) {
       _say(PathMap.lockedPrompt);
-      return;
-    }
-    final mastered = ref.read(masteredStepsProvider).difference({step.id});
-    if (ref.read(reviewDueProvider) && mastered.isNotEmpty) {
-      ref.read(reviewDueProvider.notifier).markDone();
-      context.go('/play/${step.id}/${ActivityIds.review}');
       return;
     }
     context.go(StepRoutes.entry(ref.read(activityRegistryProvider), step));

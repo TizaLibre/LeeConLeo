@@ -176,7 +176,7 @@
     {
       "promptId": "letter.meet.a",
       "index": 0,
-      "text": "Esta es la... a. ¡La... a de abeja! ¡Tócala!",
+      "text": "Esta es la... a. ¡La... a de abeja!",
       "file": "assets/audio/prompts/letter.meet.a.0.m4a"
     },
     {
@@ -212,7 +212,7 @@
     {
       "promptId": "letter.meet.e",
       "index": 0,
-      "text": "Esta es la... e. ¡La... e de elefante! ¡Tócala!",
+      "text": "Esta es la... e. ¡La... e de elefante!",
       "file": "assets/audio/prompts/letter.meet.e.0.m4a"
     },
     {
@@ -248,7 +248,7 @@
     {
       "promptId": "letter.meet.i",
       "index": 0,
-      "text": "Esta es la... i. ¡La... i de iglú! ¡Tócala!",
+      "text": "Esta es la... i. ¡La... i de iglú!",
       "file": "assets/audio/prompts/letter.meet.i.0.m4a"
     },
     {
@@ -284,7 +284,7 @@
     {
       "promptId": "letter.meet.o",
       "index": 0,
-      "text": "Esta es la... o. ¡La... o de oso! ¡Tócala!",
+      "text": "Esta es la... o. ¡La... o de oso!",
       "file": "assets/audio/prompts/letter.meet.o.0.m4a"
     },
     {
@@ -320,7 +320,7 @@
     {
       "promptId": "letter.meet.u",
       "index": 0,
-      "text": "Esta es la... u. ¡La... u de uva! ¡Tócala!",
+      "text": "Esta es la... u. ¡La... u de uva!",
       "file": "assets/audio/prompts/letter.meet.u.0.m4a"
     },
     {
@@ -386,7 +386,7 @@
     {
       "promptId": "letter.meet.m",
       "index": 0,
-      "text": "Esta es la... eme. ¡La... eme de mesa! ¡Tócala!",
+      "text": "Esta es la... eme. ¡La... eme de mesa!",
       "file": "assets/audio/prompts/letter.meet.m.0.m4a"
     },
     {
@@ -422,7 +422,7 @@
     {
       "promptId": "letter.meet.p",
       "index": 0,
-      "text": "Esta es la... pe. ¡La... pe de pelota! ¡Tócala!",
+      "text": "Esta es la... pe. ¡La... pe de pelota!",
       "file": "assets/audio/prompts/letter.meet.p.0.m4a"
     },
     {
@@ -458,7 +458,7 @@
     {
       "promptId": "letter.meet.l",
       "index": 0,
-      "text": "Esta es la... ele. ¡La... ele de luna! ¡Tócala!",
+      "text": "Esta es la... ele. ¡La... ele de luna!",
       "file": "assets/audio/prompts/letter.meet.l.0.m4a"
     },
     {
@@ -1062,7 +1062,7 @@
     {
       "promptId": "syllables.find.intro",
       "index": 0,
-      "text": "¡Más burbujas! Revienta las que dicen lo que te digo.",
+      "text": "¡A reventar burbujas! Revienta las que dicen lo que te digo.",
       "file": "assets/audio/prompts/syllables.find.intro.0.m4a"
     },
     {
@@ -1668,13 +1668,13 @@
     {
       "promptId": "review.intro",
       "index": 0,
-      "text": "¡Antes de jugar, un repaso rápido! ¿Te acuerdas de esto?",
+      "text": "¡Vamos a repasar lo que ya sabes! ¿Te acuerdas de esto?",
       "file": "assets/audio/prompts/review.intro.0.m4a"
     },
     {
       "promptId": "stickers.intro",
       "index": 0,
-      "text": "¡Este es tu álbum de stickers! Cada vez que aprendes algo muy bien, ganas uno nuevo.",
+      "text": "¡Este es tu álbum de stickers! Cada vez que aprendes algo muy bien, ganas uno nuevo. Para repasar lo que ya sabes... toca las flechas.",
       "file": "assets/audio/prompts/stickers.intro.0.m4a"
     },
     {
@@ -1785,11 +1785,11 @@
     {
       "promptId": "listening.clap.humo",
       "index": 0,
-      "text": "Uu... mo.",
+      "text": "Uh... mo.",
       "file": "assets/audio/prompts/listening.clap.humo.0.m4a",
       "beats": [
-        0.04,
-        0.18
+        0.05,
+        0.81
       ]
     },
     {
@@ -2041,11 +2041,11 @@
     {
       "promptId": "listening.clap.ojo",
       "index": 0,
-      "text": "Oo... jo.",
+      "text": "Oo... ¡Jo!",
       "file": "assets/audio/prompts/listening.clap.ojo.0.m4a",
       "beats": [
-        0.05,
-        1.09
+        0.1,
+        1.23
       ]
     },
     {
@@ -2275,13 +2275,13 @@
     {
       "promptId": "listening.clap.unicornio",
       "index": 0,
-      "text": "Uu... ni... cor... nio.",
+      "text": "¡Uh!... ni... cor... nyo.",
       "file": "assets/audio/prompts/listening.clap.unicornio.0.m4a",
       "beats": [
         0.05,
-        0.84,
-        1.99,
-        2.63
+        0.68,
+        1.59,
+        2.0
       ]
     },
     {
@@ -2339,7 +2339,7 @@
     {
       "promptId": "letter.meet.d",
       "index": 0,
-      "text": "Esta es la... de. ¡La... de de dedo! ¡Tócala!",
+      "text": "Esta es la... de. ¡La... de de dedo!",
       "file": "assets/audio/prompts/letter.meet.d.0.m4a"
     },
     {
@@ -2375,7 +2375,7 @@
     {
       "promptId": "letter.meet.s",
       "index": 0,
-      "text": "Esta es la... ese. ¡La... ese de sol! ¡Tócala!",
+      "text": "Esta es la... ese. ¡La... ese de sol!",
       "file": "assets/audio/prompts/letter.meet.s.0.m4a"
     },
     {
@@ -3016,7 +3016,7 @@
     {
       "promptId": "letter.meet.t",
       "index": 0,
-      "text": "Esta es la... te. ¡La... te de taza! ¡Tócala!",
+      "text": "Esta es la... te. ¡La... te de taza!",
       "file": "assets/audio/prompts/letter.meet.t.0.m4a"
     },
     {
@@ -3401,7 +3401,7 @@
     {
       "promptId": "letter.meet.n",
       "index": 0,
-      "text": "Esta es la... ene. ¡La... ene de nido! ¡Tócala!",
+      "text": "Esta es la... ene. ¡La... ene de nido!",
       "file": "assets/audio/prompts/letter.meet.n.0.m4a"
     },
     {
@@ -3557,7 +3557,7 @@
     {
       "promptId": "letter.meet.ñ",
       "index": 0,
-      "text": "Esta es la... eñe. ¡La... eñe de ñandú! ¡Tócala!",
+      "text": "Esta es la... eñe. ¡La... eñe de ñandú!",
       "file": "assets/audio/prompts/letter.meet.ñ.0.m4a"
     },
     {
@@ -3569,7 +3569,7 @@
     {
       "promptId": "letter.meet.ñ.lower",
       "index": 0,
-      "text": "Toca la... eñe minúscula.",
+      "text": "¡Toca la... eñe minúscula!",
       "file": "assets/audio/prompts/letter.meet.ñ.lower.0.m4a"
     },
     {
@@ -3713,7 +3713,7 @@
     {
       "promptId": "letter.meet.f",
       "index": 0,
-      "text": "Esta es la... efe. ¡La... efe de foca! ¡Tócala!",
+      "text": "Esta es la... efe. ¡La... efe de foca!",
       "file": "assets/audio/prompts/letter.meet.f.0.m4a"
     },
     {
@@ -4600,7 +4600,7 @@
     {
       "promptId": "step.done",
       "index": 0,
-      "text": "¡Jugaste todos los juegos! Toca la flecha para seguir el camino.",
+      "text": "¡Jugaste todos los juegos! Toca la flecha para volver al camino.",
       "file": "assets/audio/prompts/step.done.0.m4a"
     },
     {
@@ -4614,6 +4614,180 @@
       "index": 0,
       "text": "¡Ahora tú!",
       "file": "assets/audio/prompts/listening.clap.your_turn.0.m4a"
+    },
+    {
+      "promptId": "step.locked",
+      "index": 0,
+      "text": "Todavía no. Primero juega con el dibujo que brilla.",
+      "file": "assets/audio/prompts/step.locked.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.a.upper.show",
+      "index": 0,
+      "text": "Esta es la... a mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.a.upper.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.a.lower.show",
+      "index": 0,
+      "text": "Y esta es la... a minúscula. ¡Toca una!",
+      "file": "assets/audio/prompts/letter.meet.a.lower.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.e.upper.show",
+      "index": 0,
+      "text": "Esta es la... e mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.e.upper.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.e.lower.show",
+      "index": 0,
+      "text": "Y esta es la... e minúscula. ¡Toca una!",
+      "file": "assets/audio/prompts/letter.meet.e.lower.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.i.upper.show",
+      "index": 0,
+      "text": "Esta es la... i mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.i.upper.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.i.lower.show",
+      "index": 0,
+      "text": "Y esta es la... i minúscula. ¡Toca una!",
+      "file": "assets/audio/prompts/letter.meet.i.lower.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.o.upper.show",
+      "index": 0,
+      "text": "Esta es la... o mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.o.upper.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.o.lower.show",
+      "index": 0,
+      "text": "Y esta es la... o minúscula. ¡Toca una!",
+      "file": "assets/audio/prompts/letter.meet.o.lower.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.u.upper.show",
+      "index": 0,
+      "text": "Esta es la... u mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.u.upper.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.u.lower.show",
+      "index": 0,
+      "text": "Y esta es la... u minúscula. ¡Toca una!",
+      "file": "assets/audio/prompts/letter.meet.u.lower.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.m.upper.show",
+      "index": 0,
+      "text": "Esta es la... eme mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.m.upper.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.m.lower.show",
+      "index": 0,
+      "text": "Y esta es la... eme minúscula. ¡Toca una!",
+      "file": "assets/audio/prompts/letter.meet.m.lower.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.p.upper.show",
+      "index": 0,
+      "text": "Esta es la... pe mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.p.upper.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.p.lower.show",
+      "index": 0,
+      "text": "Y esta es la... pe minúscula. ¡Toca una!",
+      "file": "assets/audio/prompts/letter.meet.p.lower.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.l.upper.show",
+      "index": 0,
+      "text": "Esta es la... ele mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.l.upper.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.l.lower.show",
+      "index": 0,
+      "text": "Y esta es la... ele minúscula. ¡Toca una!",
+      "file": "assets/audio/prompts/letter.meet.l.lower.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.d.upper.show",
+      "index": 0,
+      "text": "Esta es la... de mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.d.upper.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.d.lower.show",
+      "index": 0,
+      "text": "Y esta es la... de minúscula. ¡Toca una!",
+      "file": "assets/audio/prompts/letter.meet.d.lower.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.s.upper.show",
+      "index": 0,
+      "text": "Esta es la... ese mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.s.upper.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.s.lower.show",
+      "index": 0,
+      "text": "Y esta es la... ese minúscula. ¡Toca una!",
+      "file": "assets/audio/prompts/letter.meet.s.lower.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.t.upper.show",
+      "index": 0,
+      "text": "Esta es la... te mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.t.upper.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.t.lower.show",
+      "index": 0,
+      "text": "Y esta es la... te minúscula. ¡Toca una!",
+      "file": "assets/audio/prompts/letter.meet.t.lower.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.n.upper.show",
+      "index": 0,
+      "text": "Esta es la... ene mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.n.upper.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.n.lower.show",
+      "index": 0,
+      "text": "Y esta es la... ene minúscula. ¡Toca una!",
+      "file": "assets/audio/prompts/letter.meet.n.lower.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.ñ.upper.show",
+      "index": 0,
+      "text": "Esta es la... eñe mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.ñ.upper.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.ñ.lower.show",
+      "index": 0,
+      "text": "Y esta es la... eñe minúscula. ¡Toca una!",
+      "file": "assets/audio/prompts/letter.meet.ñ.lower.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.f.upper.show",
+      "index": 0,
+      "text": "Esta es la... efe mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.f.upper.show.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.f.lower.show",
+      "index": 0,
+      "text": "Y esta es la... efe minúscula. ¡Toca una!",
+      "file": "assets/audio/prompts/letter.meet.f.lower.show.0.m4a"
     }
   ]
 }

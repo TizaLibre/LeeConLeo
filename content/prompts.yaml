@@ -24,16 +24,19 @@ step.intro:
   - ¿A qué quieres jugar? ¡Toca un dibujo!
 
 step.done:
-  - ¡Jugaste todos los juegos! Toca la flecha para seguir el camino.
+  - ¡Jugaste todos los juegos! Toca la flecha para volver al camino.
+
+step.locked:
+  - Todavía no. Primero juega con el dibujo que brilla.
 
 profiles.intro:
   - ¿Quién va a jugar? ¡Toca tu dibujo!
 
 review.intro:
-  - ¡Antes de jugar, un repaso rápido! ¿Te acuerdas de esto?
+  - ¡Vamos a repasar lo que ya sabes! ¿Te acuerdas de esto?
 
 stickers.intro:
-  - ¡Este es tu álbum de stickers! Cada vez que aprendes algo muy bien, ganas uno nuevo.
+  - ¡Este es tu álbum de stickers! Cada vez que aprendes algo muy bien, ganas uno nuevo. Para repasar lo que ya sabes... toca las flechas.
 
 stickers.new:
   - ¡Ganaste un sticker nuevo! Búscalo en tu álbum.
@@ -90,13 +93,19 @@ letter.find.intro:
   - ¡Mira cuántas burbujas! Revienta las que tienen la letra que te digo.
 
 letter.meet.a:
-  - Esta es la... a. ¡La... a de abeja! ¡Tócala!
+  - Esta es la... a. ¡La... a de abeja!
 
 letter.meet.a.upper:
   - Toca la... a mayúscula.
 
 letter.meet.a.lower:
   - Toca la... a minúscula.
+
+letter.meet.a.upper.show:
+  - Esta es la... a mayúscula.
+
+letter.meet.a.lower.show:
+  - Y esta es la... a minúscula. ¡Toca una!
 
 letter.trace.a.lower:
   - Repasa la... a minúscula con tu dedo.
@@ -108,13 +117,19 @@ letter.find.a:
   - Revienta las burbujas que tienen la... a.
 
 letter.meet.e:
-  - Esta es la... e. ¡La... e de elefante! ¡Tócala!
+  - Esta es la... e. ¡La... e de elefante!
 
 letter.meet.e.upper:
   - Toca la... e mayúscula.
 
 letter.meet.e.lower:
   - Toca la... e minúscula.
+
+letter.meet.e.upper.show:
+  - Esta es la... e mayúscula.
+
+letter.meet.e.lower.show:
+  - Y esta es la... e minúscula. ¡Toca una!
 
 letter.trace.e.lower:
   - Repasa la... e minúscula con tu dedo.
@@ -126,13 +141,19 @@ letter.find.e:
   - Revienta las burbujas que tienen la... e.
 
 letter.meet.i:
-  - Esta es la... i. ¡La... i de iglú! ¡Tócala!
+  - Esta es la... i. ¡La... i de iglú!
 
 letter.meet.i.upper:
   - Toca la... i mayúscula.
 
 letter.meet.i.lower:
   - Toca la... i minúscula.
+
+letter.meet.i.upper.show:
+  - Esta es la... i mayúscula.
+
+letter.meet.i.lower.show:
+  - Y esta es la... i minúscula. ¡Toca una!
 
 letter.trace.i.lower:
   - Repasa la... i minúscula con tu dedo.
@@ -144,13 +165,19 @@ letter.find.i:
   - Revienta las burbujas que tienen la... i.
 
 letter.meet.o:
-  - Esta es la... o. ¡La... o de oso! ¡Tócala!
+  - Esta es la... o. ¡La... o de oso!
 
 letter.meet.o.upper:
   - Toca la... o mayúscula.
 
 letter.meet.o.lower:
   - Toca la... o minúscula.
+
+letter.meet.o.upper.show:
+  - Esta es la... o mayúscula.
+
+letter.meet.o.lower.show:
+  - Y esta es la... o minúscula. ¡Toca una!
 
 letter.trace.o.lower:
   - Repasa la... o minúscula con tu dedo.
@@ -162,13 +189,19 @@ letter.find.o:
   - Revienta las burbujas que tienen la... o.
 
 letter.meet.u:
-  - Esta es la... u. ¡La... u de uva! ¡Tócala!
+  - Esta es la... u. ¡La... u de uva!
 
 letter.meet.u.upper:
   - Toca la... u mayúscula.
 
 letter.meet.u.lower:
   - Toca la... u minúscula.
+
+letter.meet.u.upper.show:
+  - Esta es la... u mayúscula.
+
+letter.meet.u.lower.show:
+  - Y esta es la... u minúscula. ¡Toca una!
 
 letter.trace.u.lower:
   - Repasa la... u minúscula con tu dedo.
@@ -198,13 +231,19 @@ syllables.starts_with.u:
   - ¿Qué dibujo empieza con... u?
 
 letter.meet.m:
-  - Esta es la... eme. ¡La... eme de mesa! ¡Tócala!
+  - Esta es la... eme. ¡La... eme de mesa!
 
 letter.meet.m.upper:
   - Toca la... eme mayúscula.
 
 letter.meet.m.lower:
   - Toca la... eme minúscula.
+
+letter.meet.m.upper.show:
+  - Esta es la... eme mayúscula.
+
+letter.meet.m.lower.show:
+  - Y esta es la... eme minúscula. ¡Toca una!
 
 letter.trace.m.lower:
   - Repasa la... eme minúscula con tu dedo.
@@ -216,13 +255,19 @@ letter.find.m:
   - Revienta las burbujas que tienen la... eme.
 
 letter.meet.p:
-  - Esta es la... pe. ¡La... pe de pelota! ¡Tócala!
+  - Esta es la... pe. ¡La... pe de pelota!
 
 letter.meet.p.upper:
   - Toca la... pe mayúscula.
 
 letter.meet.p.lower:
   - Toca la... pe minúscula.
+
+letter.meet.p.upper.show:
+  - Esta es la... pe mayúscula.
+
+letter.meet.p.lower.show:
+  - Y esta es la... pe minúscula. ¡Toca una!
 
 letter.trace.p.lower:
   - Repasa la... pe minúscula con tu dedo.
@@ -234,13 +279,19 @@ letter.find.p:
   - Revienta las burbujas que tienen la... pe.
 
 letter.meet.l:
-  - Esta es la... ele. ¡La... ele de luna! ¡Tócala!
+  - Esta es la... ele. ¡La... ele de luna!
 
 letter.meet.l.upper:
   - Toca la... ele mayúscula.
 
 letter.meet.l.lower:
   - Toca la... ele minúscula.
+
+letter.meet.l.upper.show:
+  - Esta es la... ele mayúscula.
+
+letter.meet.l.lower.show:
+  - Y esta es la... ele minúscula. ¡Toca una!
 
 letter.trace.l.lower:
   - Repasa la... ele minúscula con tu dedo.
@@ -303,7 +354,7 @@ syllables.trace.intro:
   - ¡Ahora escribamos las letras juntas! Pon tu dedo en el punto que brilla y sigue el camino.
 
 syllables.find.intro:
-  - ¡Más burbujas! Revienta las que dicen lo que te digo.
+  - ¡A reventar burbujas! Revienta las que dicen lo que te digo.
 
 syllables.ends_with.intro:
   - ¡Escucha el final! Toca el dibujo que termina con el sonido que te digo.
@@ -586,7 +637,7 @@ listening.clap.hielo:
   - Hie... lo.
 
 listening.clap.humo:
-  - Uu... mo.
+  - Uh... mo.
 
 listening.clap.iglú:
   - Ii... glú.
@@ -662,7 +713,7 @@ listening.clap.muñeca:
   - Mu... ñe... ca.
 
 listening.clap.ojo:
-  - Oo... jo.
+  - Oo... ¡Jo!
 
 listening.clap.ola:
   - Oo... la.
@@ -733,7 +784,7 @@ listening.clap.trompo:
   - Trom... po.
 
 listening.clap.unicornio:
-  - Uu... ni... cor... nio.
+  - ¡Uh!... ni... cor... nyo.
 
 listening.clap.uva:
   - Uu... va.
@@ -748,13 +799,19 @@ listening.clap.árbol:
   - Ár-bol.
 
 letter.meet.d:
-  - Esta es la... de. ¡La... de de dedo! ¡Tócala!
+  - Esta es la... de. ¡La... de de dedo!
 
 letter.meet.d.upper:
   - Toca la... de mayúscula.
 
 letter.meet.d.lower:
   - Toca la... de minúscula.
+
+letter.meet.d.upper.show:
+  - Esta es la... de mayúscula.
+
+letter.meet.d.lower.show:
+  - Y esta es la... de minúscula. ¡Toca una!
 
 letter.trace.d.lower:
   - Repasa la... de minúscula con tu dedo.
@@ -766,13 +823,19 @@ letter.find.d:
   - Revienta las burbujas que tienen la... de.
 
 letter.meet.s:
-  - Esta es la... ese. ¡La... ese de sol! ¡Tócala!
+  - Esta es la... ese. ¡La... ese de sol!
 
 letter.meet.s.upper:
   - Toca la... ese mayúscula.
 
 letter.meet.s.lower:
   - Toca la... ese minúscula.
+
+letter.meet.s.upper.show:
+  - Esta es la... ese mayúscula.
+
+letter.meet.s.lower.show:
+  - Y esta es la... ese minúscula. ¡Toca una!
 
 letter.trace.s.lower:
   - Repasa la... ese minúscula con tu dedo.
@@ -996,13 +1059,19 @@ syllables.build_word.sopa:
   - Arma la palabra, sopa.
 
 letter.meet.t:
-  - Esta es la... te. ¡La... te de taza! ¡Tócala!
+  - Esta es la... te. ¡La... te de taza!
 
 letter.meet.t.upper:
   - Toca la... te mayúscula.
 
 letter.meet.t.lower:
   - Toca la... te minúscula.
+
+letter.meet.t.upper.show:
+  - Esta es la... te mayúscula.
+
+letter.meet.t.lower.show:
+  - Y esta es la... te minúscula. ¡Toca una!
 
 letter.trace.t.lower:
   - Repasa la... te minúscula con tu dedo.
@@ -1131,13 +1200,19 @@ syllables.build_word.topo:
   - Arma la palabra, topo.
 
 letter.meet.n:
-  - Esta es la... ene. ¡La... ene de nido! ¡Tócala!
+  - Esta es la... ene. ¡La... ene de nido!
 
 letter.meet.n.upper:
   - Toca la... ene mayúscula.
 
 letter.meet.n.lower:
   - Toca la... ene minúscula.
+
+letter.meet.n.upper.show:
+  - Esta es la... ene mayúscula.
+
+letter.meet.n.lower.show:
+  - Y esta es la... ene minúscula. ¡Toca una!
 
 letter.trace.n.lower:
   - Repasa la... ene minúscula con tu dedo.
@@ -1209,13 +1284,19 @@ syllables.find.nu:
   - Revienta las burbujas que dicen... nu.
 
 letter.meet.ñ:
-  - Esta es la... eñe. ¡La... eñe de ñandú! ¡Tócala!
+  - Esta es la... eñe. ¡La... eñe de ñandú!
 
 letter.meet.ñ.upper:
   - Toca la... eñe mayúscula.
 
 letter.meet.ñ.lower:
-  - Toca la... eñe minúscula.
+  - ¡Toca la... eñe minúscula!
+
+letter.meet.ñ.upper.show:
+  - Esta es la... eñe mayúscula.
+
+letter.meet.ñ.lower.show:
+  - Y esta es la... eñe minúscula. ¡Toca una!
 
 letter.trace.ñ.lower:
   - Repasa la... eñe minúscula con tu dedo.
@@ -1287,13 +1368,19 @@ syllables.find.ñu:
   - Revienta las burbujas que dicen... ñu.
 
 letter.meet.f:
-  - Esta es la... efe. ¡La... efe de foca! ¡Tócala!
+  - Esta es la... efe. ¡La... efe de foca!
 
 letter.meet.f.upper:
   - Toca la... efe mayúscula.
 
 letter.meet.f.lower:
   - Toca la... efe minúscula.
+
+letter.meet.f.upper.show:
+  - Esta es la... efe mayúscula.
+
+letter.meet.f.lower.show:
+  - Y esta es la... efe minúscula. ¡Toca una!
 
 letter.trace.f.lower:
   - Repasa la... efe minúscula con tu dedo.

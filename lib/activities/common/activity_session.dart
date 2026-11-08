@@ -165,6 +165,7 @@ class ActivitySession extends ChangeNotifier implements ItemController {
   List<SpokenLine> get _prompt => [
     _line(currentItem.promptId),
     ?currentItem.promptTail,
+    ...currentItem.extraLines,
     if (showsDemo) ...currentItem.demoLines,
   ];
 

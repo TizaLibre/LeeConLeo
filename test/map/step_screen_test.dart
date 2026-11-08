@@ -9,8 +9,6 @@ import 'package:lee_con_leo/core/audio/audio_providers.dart';
 import 'package:lee_con_leo/core/content/activity_ids.dart';
 import 'package:lee_con_leo/core/content/content_providers.dart';
 import 'package:lee_con_leo/core/content/models/content_bundle.dart';
-import 'package:lee_con_leo/core/content/models/path_stage.dart';
-import 'package:lee_con_leo/core/content/models/path_step.dart';
 import 'package:lee_con_leo/core/profiles/in_memory_profile_store.dart';
 import 'package:lee_con_leo/core/profiles/profile_providers.dart';
 import 'package:lee_con_leo/core/profiles/profile_store.dart';
@@ -148,43 +146,30 @@ void main() {
 
     await tester.tap(find.byKey(StepScreen.nextKey));
     await tester.pumpAndSettle();
-    expect(tester.widget<ActivityScreen>(find.byType(ActivityScreen)).stepId, 'e');
+    expect(find.byType(PathMap), findsOneWidget);
   });
 
-  testWidgets('the arrow opens the next step screen, and Leo speaks there', (tester) async {
-    const games = [ActivityIds.meet, ActivityIds.find];
-    final content = ContentBundle(
-      words: testContent.words,
-      prompts: testContent.prompts,
-      letters: testContent.letters,
-      stages: const [
-        PathStage(
-          stage: 2,
-          name: 'vocales',
-          steps: [
-            PathStep(id: 'a', grapheme: 'a', sounds: ['a'], activities: games),
-            PathStep(id: 'e', grapheme: 'e', sounds: ['e'], activities: games),
-          ],
-        ),
-      ],
-    );
-    await pumpApp(tester, (data) {
-      for (final step in ['a', 'e']) {
-        for (final game in games) {
-          data.progress.markPlayed((stepId: step, activityId: game));
-        }
-      }
-    }, content);
+  testWidgets('until the first game is played, the others are locked and Leo explains', (
+    tester,
+  ) async {
+    await pumpApp(tester, finishSpatialSteps);
 
     await tester.tap(find.byKey(const ValueKey('step-a')));
     await tester.pumpAndSettle();
-    final spoken = player.spoken.length;
-    await tester.tap(find.byKey(StepScreen.nextKey));
-    await tester.pumpAndSettle();
+    expect(pulses(tester, ActivityIds.meet), isTrue);
+    expect(
+      find.descendant(of: card(ActivityIds.trace), matching: find.byIcon(Icons.lock_rounded)),
+      findsOne,
+    );
 
-    expect(tester.widget<StepScreen>(find.byType(StepScreen)).stepId, 'e');
-    expect(player.spoken.length, greaterThan(spoken));
-    expect(player.spoken.last, 'step done');
+    await tester.tap(card(ActivityIds.trace));
+    await tester.pumpAndSettle();
+    expect(find.byType(StepScreen), findsOneWidget);
+    expect(player.spoken.last, 'step locked');
+
+    await tester.tap(card(ActivityIds.meet));
+    await tester.pumpAndSettle();
+    expect(tester.widget<ActivityScreen>(find.byType(ActivityScreen)).activityId, ActivityIds.meet);
   });
 
   testWidgets('the arrow only shows once every game of the step was played', (tester) async {

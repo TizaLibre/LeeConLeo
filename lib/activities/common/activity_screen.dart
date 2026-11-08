@@ -128,13 +128,12 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
     setState(() {});
   }
 
-  bool get _isReview => widget.activityId == ActivityIds.review;
-
-  bool get _isPractice => widget.activityId == ActivityIds.writeWord;
+  bool get _isPractice =>
+      widget.activityId == ActivityIds.writeWord || widget.activityId == ActivityIds.review;
 
   void _markPlayed() {
     final step = _step;
-    if (step == null || _isReview || _isPractice) return;
+    if (step == null || _isPractice) return;
     final played = ref.read(playedGamesProvider.notifier);
     played.markPlayed((stepId: step.id, activityId: widget.activityId));
     final games = ref.read(activityRegistryProvider).available(step.activities);
@@ -172,9 +171,22 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
   void _continue() {
     final step = _step;
     if (step == null || _isPractice) return _goHome();
-    final registry = ref.read(activityRegistryProvider);
     ref.read(promptPlayerProvider).stop();
-    context.go(_isReview ? StepRoutes.entry(registry, step) : StepRoutes.afterGame(registry, step));
+    context.go(StepRoutes.afterGame(ref.read(activityRegistryProvider), step));
+  }
+
+  void _again() {
+    final content = ref.read(contentProvider).value;
+    if (content == null) return;
+    ref.read(promptPlayerProvider).stop();
+    _celebrationTimer?.cancel();
+    _session?.dispose();
+    setState(() {
+      _session = null;
+      _newSticker = null;
+      _startSession(content);
+    });
+    _session?.begin();
   }
 
   @override
@@ -233,7 +245,11 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
     SessionPhase.intro => IntroView(onStart: session.begin),
     SessionPhase.playing ||
     SessionPhase.celebrating => _spec!.buildItemView(session.currentItem, session),
-    SessionPhase.finished => RewardView(onDone: _continue, sticker: _newSticker),
+    SessionPhase.finished => RewardView(
+      onDone: _continue,
+      onAgain: _isPractice ? _again : null,
+      sticker: _newSticker,
+    ),
   };
 
   int _completedItems(ActivitySession session) => switch (session.phase) {

@@ -14,6 +14,7 @@ import '../core/audio/utterance.dart';
 import '../core/content/models/content_bundle.dart';
 import '../core/progress/progress_providers.dart';
 import '../core/progress/stickers.dart';
+import 'review_button.dart';
 
 class StickerAlbum extends ConsumerStatefulWidget {
   const StickerAlbum({super.key});
@@ -102,6 +103,7 @@ class _StickerAlbumState extends ConsumerState<StickerAlbum> {
                       icon: const Icon(Icons.arrow_back_rounded),
                     ),
                   ),
+                  Positioned(top: 8, right: 8, child: ReviewButton(bundle: content)),
                 ],
               ),
             ),

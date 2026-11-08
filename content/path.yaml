@@ -22,27 +22,27 @@
       grapheme: a
       sounds: [a]
       word: abeja
-      activities: [listening.clap, listening.same_sound, letter.meet, letter.trace, letter.find, syllables.starts_with]
+      activities: [letter.meet, listening.clap, listening.same_sound, letter.trace, letter.find, syllables.starts_with]
     - id: e
       grapheme: e
       sounds: [e]
       word: elefante
-      activities: [listening.clap, listening.same_sound, letter.meet, letter.trace, letter.find, syllables.starts_with]
+      activities: [letter.meet, listening.clap, listening.same_sound, letter.trace, letter.find, syllables.starts_with]
     - id: i
       grapheme: i
       sounds: [i]
       word: iglú
-      activities: [listening.clap, listening.same_sound, letter.meet, letter.trace, letter.find, syllables.starts_with]
+      activities: [letter.meet, listening.clap, listening.same_sound, letter.trace, letter.find, syllables.starts_with]
     - id: o
       grapheme: o
       sounds: [o]
       word: oso
-      activities: [listening.clap, listening.same_sound, letter.meet, letter.trace, letter.find, syllables.starts_with]
+      activities: [letter.meet, listening.clap, listening.same_sound, letter.trace, letter.find, syllables.starts_with]
     - id: u
       grapheme: u
       sounds: [u]
       word: uva
-      activities: [listening.clap, listening.same_sound, letter.meet, letter.trace, letter.find, syllables.starts_with]
+      activities: [letter.meet, listening.clap, listening.same_sound, letter.trace, letter.find, syllables.starts_with]
 
 - stage: 4
   name: Primeras consonantes
@@ -55,21 +55,21 @@
       activities: [letter.meet, letter.trace, letter.find]
     - id: ma
       sounds: [ma, me, mi, mo, mu]
-      activities: [listening.clap, listening.same_sound, syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.contains]
+      activities: [syllables.meet, listening.clap, listening.same_sound, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.contains]
     - id: p
       grapheme: p
       word: pelota
       activities: [letter.meet, letter.trace, letter.find]
     - id: pa
       sounds: [pa, pe, pi, po, pu]
-      activities: [listening.clap, listening.same_sound, syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.contains, syllables.blend, syllables.build_word]
+      activities: [syllables.meet, listening.clap, listening.same_sound, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.contains, syllables.blend, syllables.build_word]
     - id: l
       grapheme: l
       word: luna
       activities: [letter.meet, letter.trace, letter.find]
     - id: la
       sounds: [la, le, li, lo, lu]
-      activities: [listening.clap, listening.same_sound, syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.contains, syllables.blend, syllables.build_word]
+      activities: [syllables.meet, listening.clap, listening.same_sound, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.contains, syllables.blend, syllables.build_word]
 - stage: 4
   name: La montaña
   scene: scenes/mountain.svg
@@ -81,21 +81,21 @@
       activities: [letter.meet, letter.trace, letter.find]
     - id: sa
       sounds: [sa, se, si, so, su]
-      activities: [listening.clap, listening.same_sound, syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.contains, syllables.blend, syllables.build_word]
+      activities: [syllables.meet, listening.clap, listening.same_sound, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.contains, syllables.blend, syllables.build_word]
     - id: t
       grapheme: t
       word: taza
       activities: [letter.meet, letter.trace, letter.find]
     - id: ta
       sounds: [ta, te, ti, to, tu]
-      activities: [listening.clap, listening.same_sound, syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.contains, syllables.blend, syllables.build_word]
+      activities: [syllables.meet, listening.clap, listening.same_sound, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.contains, syllables.blend, syllables.build_word]
     - id: d
       grapheme: d
       word: dedo
       activities: [letter.meet, letter.trace, letter.find]
     - id: da
       sounds: [da, de, di, do, du]
-      activities: [listening.clap, listening.same_sound, syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.contains, syllables.blend, syllables.build_word]
+      activities: [syllables.meet, listening.clap, listening.same_sound, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.contains, syllables.blend, syllables.build_word]
 - stage: 4
   name: El lago
   scene: scenes/lake.svg
@@ -107,18 +107,18 @@
       activities: [letter.meet, letter.trace, letter.find]
     - id: na
       sounds: [na, ne, ni, no, nu]
-      activities: [listening.clap, listening.same_sound, syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.contains, syllables.blend, syllables.build_word]
+      activities: [syllables.meet, listening.clap, listening.same_sound, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.contains, syllables.blend, syllables.build_word]
     - id: enye
       grapheme: ñ
       word: ñandú
       activities: [letter.meet, letter.trace, letter.find]
     - id: nya
       sounds: [ña, ñe, ñi, ño, ñu]
-      activities: [listening.clap, listening.same_sound, syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.contains, syllables.blend, syllables.build_word]
+      activities: [syllables.meet, listening.clap, syllables.trace, syllables.find, syllables.ends_with, syllables.contains, syllables.blend, syllables.build_word]
     - id: f
       grapheme: f
       word: foca
       activities: [letter.meet, letter.trace, letter.find]
     - id: fa
       sounds: [fa, fe, fi, fo, fu]
-      activities: [listening.clap, listening.same_sound, syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.contains, syllables.blend, syllables.build_word]
+      activities: [syllables.meet, listening.clap, listening.same_sound, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.contains, syllables.blend, syllables.build_word]

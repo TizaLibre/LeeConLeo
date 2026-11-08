@@ -20,6 +20,7 @@ import 'package:lee_con_leo/core/profiles/profile_store.dart';
 import 'package:lee_con_leo/core/progress/review.dart';
 import 'package:lee_con_leo/core/progress/stickers.dart';
 import 'package:lee_con_leo/map/home_screen.dart';
+import 'package:lee_con_leo/map/review_button.dart';
 import 'package:lee_con_leo/map/sticker_album.dart';
 
 import '../fakes/item_events.dart';
@@ -115,7 +116,9 @@ void main() {
     ActivityScreen screen(WidgetTester tester) =>
         tester.widget<ActivityScreen>(find.byType(ActivityScreen));
 
-    testWidgets('the first step of the day starts with a review of mastered steps', (tester) async {
+    testWidgets('a review is only played when the child taps its button in the album', (
+      tester,
+    ) async {
       await pumpApp(tester, (data) {
         data.progress.markCompleted('up-down');
         firstTries('up-down', correct: 10).forEach(data.events.record);
@@ -123,8 +126,15 @@ void main() {
 
       await tester.tap(find.byKey(const ValueKey('step-left-right')));
       await tester.pumpAndSettle();
-      expect(player.spoken.last, 'review intro');
+      expect(screen(tester).activityId, 'spatial.left_right');
+      await tester.tap(find.byKey(const ValueKey('home')));
+      await tester.pumpAndSettle();
 
+      await tester.tap(find.byKey(HomeScreen.albumKey));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(ReviewButton.buttonKey));
+      await tester.pumpAndSettle();
+      expect(player.spoken.last, 'review intro');
       final before = data.events.events.length;
       await answerAll(tester);
       final reviewed = data.events.events.skip(before);
@@ -133,18 +143,23 @@ void main() {
         ('up-down', 'spatial.up_down'),
       });
 
-      await tester.tap(find.byKey(const ValueKey('done')));
+      await tester.tap(find.byKey(RewardView.againKey));
       await tester.pumpAndSettle();
-      expect(
-        (screen(tester).stepId, screen(tester).activityId),
-        ('left-right', 'spatial.left_right'),
-      );
+      expect(screen(tester).activityId, 'review');
+      expect(find.byKey(const ValueKey('reward')), findsNothing);
 
       await tester.tap(find.byKey(const ValueKey('home')));
       await tester.pumpAndSettle();
-      await tester.tap(find.byKey(const ValueKey('step-left-right')));
+      expect(find.byType(PathMap), findsOneWidget);
+    });
+
+    testWidgets('without a mastered step there is nothing to review', (tester) async {
+      await pumpApp(tester, (data) => data.progress.markCompleted('up-down'));
+      await tester.tap(find.byKey(HomeScreen.albumKey));
       await tester.pumpAndSettle();
-      expect(screen(tester).activityId, 'spatial.left_right');
+
+      expect(find.byType(StickerAlbum), findsOneWidget);
+      expect(find.byKey(ReviewButton.buttonKey), findsNothing);
     });
 
     testWidgets('mastering a step earns its sticker, which shows in the album', (tester) async {

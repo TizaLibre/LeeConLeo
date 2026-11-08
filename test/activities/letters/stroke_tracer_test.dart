@@ -52,18 +52,28 @@ void main() {
     expect(letter.isComplete, isFalse);
   });
 
-  test('wandering away stops the trace until the finger comes back to the tip', () {
+  test('wandering away pauses the trace until the finger comes back to the tip', () {
     final letter = tracer([line]);
     letter.start(line.first);
     letter.move(line[2]);
     final reached = letter.reached;
     letter.move(const Point(60.0, 50.0));
-    letter.move(line[reached + 2]);
+    letter.move(const Point(60.0, 90.0));
     expect(letter.reached, reached);
 
-    letter.start(line[reached]);
-    letter.move(line[reached + 2]);
-    expect(letter.reached, greaterThan(reached));
+    letter.move(line[reached]);
+    letter.move(line.last);
+    expect(letter.isComplete, isTrue);
+  });
+
+  test('jumping ahead along the line does not skip the part in between', () {
+    final letter = tracer([line]);
+    letter.start(line.first);
+    letter.move(const Point(30.0, 0.0));
+    letter.move(const Point(30.0, 80.0));
+    letter.move(line[16]);
+
+    expect(letter.reached, lessThan(3));
   });
 
   test('a short bar traced out and back cannot be skipped at its start', () {
@@ -83,6 +93,54 @@ void main() {
     for (final point in bar) {
       letter.move(point);
     }
+    expect(letter.isComplete, isTrue);
+  });
+
+  test('cutting across a small loop does not skip it', () {
+    final small = [
+      for (var degrees = 0; degrees <= 360; degrees += 20)
+        Point(10 * cos(degrees * pi / 180), 10 * sin(degrees * pi / 180)),
+    ];
+    final letter = tracer([small]);
+
+    letter.start(small.first);
+    letter.move(small[small.length ~/ 2]);
+    letter.move(small.last);
+
+    expect(letter.isComplete, isFalse);
+  });
+
+  test('a finger a little off the line still traces it', () {
+    final letter = tracer([line]);
+
+    letter.start(line.first);
+    for (final point in line) {
+      letter.move(point + const Point(5.0, 0.0));
+    }
+
+    expect(letter.isComplete, isTrue);
+  });
+
+  test('a fast swipe along the line still counts every part it passes', () {
+    final letter = tracer([line]);
+
+    letter.start(line.first);
+    letter.move(line[10]);
+    letter.move(line.last);
+
+    expect(letter.isComplete, isTrue);
+  });
+
+  test('lifting the finger keeps the progress, to continue from there', () {
+    final letter = tracer([line]);
+
+    letter.start(line.first);
+    letter.move(line[10]);
+    letter.end();
+    expect(letter.reached, greaterThanOrEqualTo(10));
+
+    letter.start(letter.tip!);
+    letter.move(line.last);
     expect(letter.isComplete, isTrue);
   });
 
