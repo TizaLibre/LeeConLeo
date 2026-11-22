@@ -7,7 +7,7 @@
 | Framework | **Flutter** (stable channel) | One codebase for Android + iOS, with web possible later. Smooth touch and custom drawing |
 | Game-like activities | **Flame** | Runner, drag scenes, particle feedback. Embedded as widgets inside normal Flutter screens |
 | State | **Riverpod** | Testable, no global singletons |
-| Navigation | **go_router** | Map → unit → activity, with deep links for testing |
+| Navigation | **go_router** | Map → unit → activity, with deep links for testing. Screens replace each other (`go`), so each one handles the system back (button or gesture) with `SystemBack`, going up one level like its own back button |
 | Local storage | **drift** (SQLite) | Profiles, progress and the event log. Queryable for the teacher view and CSV export |
 | Audio | **just_audio** (speech), **flame_audio** (effects) | Short clips, low latency, preloading per activity |
 | Localization | Flutter `intl` / ARB | Adult-facing UI only (settings, teacher view). Child-facing prompts are audio |

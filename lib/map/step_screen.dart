@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
@@ -12,6 +12,7 @@ import '../app/startup_providers.dart';
 import '../app/widgets/leo_avatar.dart';
 import '../app/widgets/loading_view.dart';
 import '../app/widgets/pulse.dart';
+import '../app/widgets/system_back.dart';
 import '../core/audio/audio_providers.dart';
 import '../core/audio/utterance.dart';
 import '../core/content/models/content_bundle.dart';
@@ -82,10 +83,13 @@ class _StepScreenState extends ConsumerState<StepScreen> {
     final step = content?.stepById(widget.stepId);
     final tint = content?.stageOf(widget.stepId)?.tint;
     final argb = tint == null ? null : parseHexColor(tint);
-    return Scaffold(
-      backgroundColor: argb == null ? AppTheme.cream : Color(argb),
-      body: SafeArea(
-        child: content == null || step == null ? const LoadingView() : _body(content, step),
+    return SystemBack(
+      onBack: () => _go('/'),
+      child: Scaffold(
+        backgroundColor: argb == null ? AppTheme.cream : Color(argb),
+        body: SafeArea(
+          child: content == null || step == null ? const LoadingView() : _body(content, step),
+        ),
       ),
     );
   }

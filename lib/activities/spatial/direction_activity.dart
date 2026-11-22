@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 import '../../core/content/activity_ids.dart';
 import '../common/activity_context.dart';

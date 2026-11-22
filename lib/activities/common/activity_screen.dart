@@ -1,10 +1,11 @@
 import 'dart:async';
 import 'dart:math';
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../app/widgets/system_back.dart';
 import '../../core/audio/audio_providers.dart';
 import '../../core/content/content_providers.dart';
 import '../../core/content/models/content_bundle.dart';
@@ -175,6 +176,12 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
     context.go(StepRoutes.afterGame(ref.read(activityRegistryProvider), step));
   }
 
+  void _back() {
+    if (widget.activityId != ActivityIds.review) return _continue();
+    ref.read(promptPlayerProvider).stop();
+    context.go('/stickers');
+  }
+
   void _again() {
     final content = ref.read(contentProvider).value;
     if (content == null) return;
@@ -200,13 +207,16 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
   Widget build(BuildContext context) {
     final scene = _stage?.scene;
     final showScene = scene != null && _showsScene;
-    return Scaffold(
-      backgroundColor: _tint,
-      body: Stack(
-        children: [
-          if (showScene) Positioned.fill(child: SceneBand(asset: 'assets/images/$scene')),
-          SafeArea(child: _buildBody()),
-        ],
+    return SystemBack(
+      onBack: _back,
+      child: Scaffold(
+        backgroundColor: _tint,
+        body: Stack(
+          children: [
+            if (showScene) Positioned.fill(child: SceneBand(asset: 'assets/images/$scene')),
+            SafeArea(child: _buildBody()),
+          ],
+        ),
       ),
     );
   }

@@ -1,7 +1,8 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:go_router/go_router.dart';
 
 import '../app/app_theme.dart';
+import '../app/widgets/system_back.dart';
 import 'about_view.dart';
 import 'adults_guide.dart';
 import 'parental_gate.dart';
@@ -22,6 +23,10 @@ class _AdultsScreenState extends State<AdultsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    return SystemBack(onBack: () => context.go('/'), child: _screen(context));
+  }
+
+  Widget _screen(BuildContext context) {
     return DefaultTabController(
       length: AdultsScreen.tabs.length,
       child: Scaffold(

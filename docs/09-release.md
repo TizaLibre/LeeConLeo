@@ -56,6 +56,8 @@ reviewed before publishing (Chilean data protection law, Google Play Families po
 
 - **Store listing:** name, short and full description in Spanish, icon, phone and
   tablet screenshots, a 1024×500 feature graphic, contact email, privacy policy URL.
+  The texts are in `store/listing.md`; the icon and feature graphic in `store/` come from
+  `flutter test tool/branding/render_branding_test.dart`.
 - **Data safety:** no data collected, no data shared.
 - **Content rating:** the questionnaire (no violence, no user content, no purchases).
 - **Target audience:** under 8, which enrolls the app in the Families program and its
