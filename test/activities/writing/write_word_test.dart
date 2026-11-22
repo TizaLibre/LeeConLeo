@@ -116,8 +116,12 @@ void main() {
     String asked() => player.spoken.last.split(' ').last;
 
     Future<void> done(WidgetTester tester) async {
+      final answered = log.events.length;
       await tester.tap(find.byKey(WriteWordView.doneKey));
-      await tester.runAsync(() => Future<void>.delayed(const Duration(milliseconds: 200)));
+      for (var wait = 0; wait < 50 && log.events.length == answered; wait++) {
+        await tester.runAsync(() => Future<void>.delayed(const Duration(milliseconds: 100)));
+        await tester.pump();
+      }
       await tester.pump();
     }
 
@@ -176,7 +180,8 @@ void main() {
 
       await tester.tap(find.byKey(WriteWordView.clearKey));
       await tester.pump();
-      await done(tester);
+      await tester.tap(find.byKey(WriteWordView.doneKey));
+      await tester.pump();
 
       expect(log.events, isEmpty);
     });
