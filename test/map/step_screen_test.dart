@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lee_con_leo/activities/common/activity_screen.dart';
@@ -94,6 +94,31 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(StepScreen.mapKey));
     await tester.pumpAndSettle();
+    expect(find.byType(PathMap), findsOneWidget);
+  });
+
+  testWidgets('the system back goes up one level: game, step, map', (tester) async {
+    await pumpApp(tester, (data) {
+      finishSpatialSteps(data);
+      data.progress.markPlayed((stepId: 'a', activityId: ActivityIds.meet));
+    });
+    Future<void> back() async {
+      await tester.binding.handlePopRoute();
+      await tester.pumpAndSettle();
+    }
+
+    await tester.tap(find.byKey(const ValueKey('step-a')));
+    await tester.pumpAndSettle();
+    await tester.tap(card(ActivityIds.find));
+    await tester.pumpAndSettle();
+    expect(find.byType(ActivityScreen), findsOneWidget);
+
+    await back();
+    expect(find.byType(ActivityScreen), findsNothing);
+    expect(find.byType(StepScreen), findsOneWidget);
+
+    await back();
+    expect(find.byType(StepScreen), findsNothing);
     expect(find.byType(PathMap), findsOneWidget);
   });
 

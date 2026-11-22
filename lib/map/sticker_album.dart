@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
@@ -9,6 +9,7 @@ import '../app/startup_providers.dart';
 import '../app/widgets/leo_avatar.dart';
 import '../app/widgets/loading_view.dart';
 import '../app/widgets/sticker_card.dart';
+import '../app/widgets/system_back.dart';
 import '../core/audio/audio_providers.dart';
 import '../core/audio/utterance.dart';
 import '../core/content/models/content_bundle.dart';
@@ -45,6 +46,10 @@ class _StickerAlbumState extends ConsumerState<StickerAlbum> {
 
   @override
   Widget build(BuildContext context) {
+    return SystemBack(onBack: _back, child: _page());
+  }
+
+  Widget _page() {
     return Scaffold(
       backgroundColor: AppTheme.cream,
       body: SafeArea(

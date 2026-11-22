@@ -1,17 +1,22 @@
 import 'dart:io';
 import 'dart:ui' as ui;
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:image/image.dart' as img;
 import 'package:lee_con_leo/activities/common/widgets/letter_bubble.dart';
 import 'package:lee_con_leo/app/app_theme.dart';
 import 'package:lee_con_leo/app/widgets/loading_view.dart';
 
 const outDir = 'assets/branding';
+const storeDir = 'store';
 const iconBackground = Color(0xFF8FD3F4);
+const grass = Color(0xFFA8DB7E);
+const grassShade = Color(0xFF98D06E);
+const outline = Color(0xFF3B2A20);
 
 void main() {
   setUpAll(() async {
@@ -32,6 +37,113 @@ void main() {
     await _render(tester, const _Icon(safeArea: 0.54), 1152, '$outDir/splash_android12.png');
     await _render(tester, const LoadingView(animate: false), 1200, '$outDir/splash.png');
   });
+
+  testWidgets('render the store icon and feature graphic', (tester) async {
+    Directory(storeDir).createSync(recursive: true);
+    await _render(
+      tester,
+      const _Icon(background: iconBackground, safeArea: 0.86),
+      512,
+      '$storeDir/icon_512.png',
+    );
+    await _render(
+      tester,
+      const _FeatureGraphic(),
+      1024,
+      '$storeDir/feature_graphic.png',
+      height: 500,
+      opaque: true,
+    );
+  });
+}
+
+class _FeatureGraphic extends StatelessWidget {
+  const _FeatureGraphic();
+
+  static const letters = [
+    ('m', Offset(420, 60), 92.0),
+    ('a', Offset(560, 40), 80.0),
+    ('p', Offset(420, 322), 70.0),
+    ('o', Offset(550, 330), 64.0),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return ColoredBox(
+      color: iconBackground,
+      child: Stack(
+        children: [
+          const Positioned.fill(child: CustomPaint(painter: _Hills())),
+          for (final (letter, at, size) in letters)
+            Positioned(
+              left: at.dx,
+              top: at.dy,
+              width: size,
+              height: size,
+              child: LetterBubble(letter: letter, letterShare: 0.9),
+            ),
+          const Positioned(
+            left: 64,
+            top: 150,
+            child: Text(
+              'Lee con Leo',
+              style: TextStyle(
+                fontFamily: AppTheme.letterFont,
+                fontSize: 92,
+                color: outline,
+                height: 1.2,
+              ),
+            ),
+          ),
+          Positioned(
+            right: 70,
+            bottom: 18,
+            width: 300,
+            height: 420,
+            child: SvgPicture.asset('assets/images/leo/leo_cheering.svg'),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _Hills extends CustomPainter {
+  const _Hills();
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final back = Path()
+      ..moveTo(0, size.height * 0.78)
+      ..quadraticBezierTo(
+        size.width * 0.3,
+        size.height * 0.62,
+        size.width * 0.6,
+        size.height * 0.76,
+      )
+      ..quadraticBezierTo(size.width * 0.8, size.height * 0.84, size.width, size.height * 0.7)
+      ..lineTo(size.width, size.height)
+      ..lineTo(0, size.height)
+      ..close();
+    final front = Path()
+      ..moveTo(0, size.height * 0.9)
+      ..quadraticBezierTo(size.width * 0.45, size.height * 0.8, size.width, size.height * 0.92)
+      ..lineTo(size.width, size.height)
+      ..lineTo(0, size.height)
+      ..close();
+    final line = Paint()
+      ..color = outline
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 5;
+    canvas
+      ..drawPath(back, Paint()..color = grassShade)
+      ..drawPath(back, line)
+      ..drawPath(front, Paint()..color = grass)
+      ..drawPath(front, line);
+  }
+
+  @override
+  bool shouldRepaint(_Hills oldDelegate) => false;
 }
 
 class _Icon extends StatelessWidget {
@@ -87,8 +199,15 @@ class _Icon extends StatelessWidget {
   }
 }
 
-Future<void> _render(WidgetTester tester, Widget art, double size, String path) async {
-  tester.view.physicalSize = Size.square(size);
+Future<void> _render(
+  WidgetTester tester,
+  Widget art,
+  double size,
+  String path, {
+  double? height,
+  bool opaque = false,
+}) async {
+  tester.view.physicalSize = Size(size, height ?? size);
   tester.view.devicePixelRatio = 1;
   addTearDown(tester.view.reset);
   final key = GlobalKey();
@@ -110,5 +229,7 @@ Future<void> _render(WidgetTester tester, Widget art, double size, String path) 
     final data = await image.toByteData(format: ui.ImageByteFormat.png);
     return data!.buffer.asUint8List();
   });
-  File(path).writeAsBytesSync(bytes!);
+  File(path).writeAsBytesSync(
+    opaque ? img.encodePng(img.decodePng(bytes!)!.convert(numChannels: 3)) : bytes!,
+  );
 }

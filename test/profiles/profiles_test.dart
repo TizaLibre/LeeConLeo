@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lee_con_leo/app/app_router.dart';
@@ -221,6 +221,15 @@ void main() {
       await tester.tap(find.byKey(AboutView.licensesKey));
       await tester.pumpAndSettle();
       expect(find.byType(LicensePage), findsOneWidget);
+
+      await tester.binding.handlePopRoute();
+      await tester.pumpAndSettle();
+      expect(find.byType(LicensePage), findsNothing);
+      expect(find.byType(AboutView), findsOneWidget);
+
+      await tester.binding.handlePopRoute();
+      await tester.pumpAndSettle();
+      expect(find.byType(AdultsScreen), findsNothing);
     });
   });
 }
